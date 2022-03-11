@@ -1,2 +1,3 @@
 # kumov4
 KUMO V$
+INICIANDO
