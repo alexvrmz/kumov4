@@ -186,16 +186,7 @@ function su8iM6($Fxc47374, $Fxd3scR74) {
             return base64_encode(openssl_random_pseudo_bytes(openssl_cipher_iv_length($method)));
         };
 
-      if($_SERVER['SERVER_NAME'] == 'app.kumo.click'){
-        $puk3y = file_get_contents('/home/vet/kumov4/llaves/pem/x0101_pu.pem');
-        $prk3y = file_get_contents('/home/vet/kumov4/llaves/pem/x0101_pv.pem');
-        $grdV = '/home/vet/kumov4/llaves/';
-      }
-      elseif($_SERVER['SERVER_NAME'] == 'localhost' || $_SERVER['SERVER_NAME'] == '192.168.1.80'){
-        $puk3y = file_get_contents('/home/alejandro/sitios/kumov4/llaves/pem/x0101_pu.pem');
-        $prk3y = file_get_contents('/home/alejandro/sitios/kumov4/llaves/pem/x0101_pv.pem');
-        $grdV = '/home/alejandro/sitios/kumov4/llaves/'; //Usuario: nopixcua Clave: Wj0AN6Q79vueuaI 
-      }
+      
     
   /// ---
 
