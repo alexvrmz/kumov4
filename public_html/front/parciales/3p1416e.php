@@ -19,7 +19,7 @@
 </script>
 <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
-      <b>Version</b> <a href="app?accion=v3r">2021.08.28</a>
+      <b>Version</b> <a href="app?accion=v3r"><?= $versionKUMO ?></a>
     </div>
     <strong>Copyright &copy; <?php date('Y'); ?> <a href="http://kumo.click" target="_blank">kumo.click</a>.</strong> Todos los derechos reservados.
   </footer>

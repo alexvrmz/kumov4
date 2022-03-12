@@ -1,9 +1,8 @@
-<?php
+<?php 
 foreach($_REQUEST as $k => $v){$$k=$v;} // echo $k.' -> '.$v.' | ';
 session_start(); // --- Validar sesión ---
 error_reporting(E_ALL ^ E_NOTICE);
 //error_reporting(0);
-
 $usuario_id = $_SESSION['usuarioID'];
 include ('ApiPHP/conexion.php');
 include ('ApiPHP/funciones.php');

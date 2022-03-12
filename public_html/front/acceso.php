@@ -184,7 +184,7 @@ var getInfo;
     </div>
     <!-- /.login-card-body -->
   </div>
-  <div class="text-center texto-neon-azul" style="color: white;"><h3><a href="https://kumo.click" style="color: white;">Kumo.click</a></h3> <br><p style="font-size: 18px;">V 21.0829.01</p></div>
+  <div class="text-center texto-neon-azul" style="color: white;"><h3><a href="https://kumo.click" style="color: white;">Kumo.click</a></h3> <br><p style="font-size: 18px;"><?= $versionKUMO ?></p></div>
 </div>
 <!-- /.login-box -->
 
