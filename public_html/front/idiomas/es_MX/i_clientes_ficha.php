@@ -7,6 +7,7 @@ define('regresar', 'Regresar');
 define('datosCliente', 'Datos');
 define('guardar', 'Guardar');
 define('editar', 'Editar');
+define('mascotas_cliente', 'Mascotas de ');
 
 
 define('ntel', '# de Teléfono');

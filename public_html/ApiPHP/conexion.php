@@ -3,12 +3,12 @@ date_default_timezone_set("America/Mexico_City");
 setlocale(LC_MONETARY, 'es_MX');
 error_reporting(E_ALL ^ E_NOTICE);
 //error_reporting(0);
-if($_SERVER['SERVER_NAME'] == 'localhost' || $_SERVER['SERVER_NAME'] == '192.168.1.80' ){
+$servidor = $_SERVER['SERVER_NAME'];
+if($servidor == 'localhost' || $servidor == '192.168.1.80' ){
     $conexion = new mysqli('localhost', 'root', '', 'kumoV4');
     //$conexion = new mysqli('kumo.click', 'uNh7uH', 'Rjf6ge.Fa', 'kumo_v4');
-   // $conexion = new mysqli('localhost', 'uNh7uH', 'Rjf6ge.Fa', 'hiiqwla5x64x');
 }
-elseif($_SERVER['SERVER_NAME'] == 'app.kumo.click'){
+elseif($servidor == 'app.kumo.click'){
     $conexion = new mysqli('localhost', 'uNh7uH', 'Rjf6ge.Fa', 'kumo_v4');
 }
 $tildes = $conexion->query("SET NAMES 'utf8'");
@@ -31,12 +31,12 @@ $dRV = $iDi['config_rDven'];
 ////------ Varibles de configuracion
 $carpetaFondos = "dist/img/wallpappers/animals/";
 
-if($_SERVER['SERVER_NAME'] == 'app.kumo.click'){
+if($servidor == 'app.kumo.click'){
   $puk3y = file_get_contents('/home/app/kumov4/llaves/pem/x0101_pu.pem');
   $prk3y = file_get_contents('/home/app/kumov4/llaves/pem/x0101_pv.pem');
   $grdV = '/home/app/kumov4/llaves/';
 }
-elseif($_SERVER['SERVER_NAME'] == 'localhost' || $_SERVER['SERVER_NAME'] == '192.168.1.80'){
+elseif($servidor == 'localhost' || $_SERVER['SERVER_NAME'] == '192.168.1.80'){
   $puk3y = file_get_contents('/home/alejandro/sitios/kumov4/llaves/pem/x0101_pu.pem');
   $prk3y = file_get_contents('/home/alejandro/sitios/kumov4/llaves/pem/x0101_pv.pem');
   $grdV = '/home/alejandro/sitios/kumov4/llaves/'; //Usuario: nopixcua Clave: Wj0AN6Q79vueuaI 

@@ -16,13 +16,7 @@ include('parciales/7i7ul0.php');
       <div class="card-body">
         <div class="card-body p-0">
           <div class="btn-group" role="group">
-            <?php if(isset($_SESSION['formMascota']) == true){ ?>
-              <a data-toggle="modal" data-target="#modal-nuevo" class="btn bg-gradient-success btn-app" style="padding-top: 6px;" ><i class="fad fa-paw"></i> <?= continuarFormulario ?></a>
-              <a href="ApiPHP/mascotas_api?accion=borrarFormulario" class="btn bg-gradient-danger btn-app" style="padding-top: 6px;" ><i class="fad fa-trash"></i> <?= eliminarFormulario ?></a>
-            <?php }elseif(isset($_SESSION['formMascota']) == false){ ?>
-              <button type="button" data-toggle="modal" data-target="#modal-nuevo" class="btn bg-gradient-success btn-app" style="padding-top: 6px;" ><i class="fad fa-paw"></i> <?= btn_46r364rU5u4ri0 ?></button>
-            <?php } ?>
-              <a href="app?accion=mascotasHuerfanas" class="btn bg-gradient-warning btn-app" style="padding-top: 6px;" ><i class="fad fa-dog"></i> <?= mascotas_huerfanas ?></a>
+            <a href="app?accion=mascotas" class="btn bg-gradient-success btn-app" style="padding-top: 6px;" ><i class="fad fa-dog-leashed"></i> <?= regresarMascotasRelacion ?></a>
           </div>
         </div>
       </div>
@@ -30,7 +24,7 @@ include('parciales/7i7ul0.php');
 
       <div class="card <?= $brr4 ?> card-outline col-md-12">
         <div class="card-header">
-          <h3 class="profile-username text-center"><?= listadoMascotas ?></h3>  
+          <h3 class="profile-username text-center"><?= listadoMascotasHuerfanas ?></h3>  
         </div>
         <div class="card-body">
           <?php if($numMascotas == 0){ ?>

@@ -9,10 +9,16 @@ if($accion === "procesaMascota" || $accion == 'borrarFormulario'){
 	include('conexion.php');
  	include('funciones.php');
  	include('fncnesF0rM5.php');
-}
+} 
 include('mascotasFunciones.php');
-if($accion === 'mascotas'){
+if($accion === 'mascotas' || $accion === 'mascotasHuerfanas'){
 	$C001 = "SELECT * FROM mascotas WHERE mascota_universo = $Universo";
+	if($accion === 'mascotasHuerfanas'){
+		$C001 .= " AND mascota_dueno = 0";
+	}
+	else{
+		$C001 .= " AND mascota_dueno != 0";
+	}
 	$S001 = $conexion->query($C001) or die ("Fallo al consultar mascotas");
 	$numMascotas = $S001->num_rows;
 
@@ -380,11 +386,15 @@ elseif($accion == 'fichaMascota'){
 	$S007 = $conexion->query($C007) or die ("Fallo al seleccionar raza de mascota");
 	$datoRaza = $S007->fetch_assoc();
 	$mascotaRaza = $datoRaza['raza_descripcion'];
-
-	$C009 = "SELECT cliente_nombre1, cliente_nombre2, cliente_apellido1, cliente_apellido2, cliente_id FROM clientes WHERE Universo = $Universo AND cliente_id = ".$mascota['mascota_dueno']." ";
-	$S009 = $conexion->query($C009) or die ("Fallo al consultar cliente: ".$C009);
-	$datoCliente = $S009->fetch_assoc();
-	$mascota['mascota_dueno'] = dCry2($datoCliente['cliente_apellido1']).' '.dCry2($datoCliente['cliente_nombre1']);
+	if($mascota['mascota_dueno'] == 0){
+		$mascota['mascota_dueno'] = 'Sin Relaci&oacute;n';
+	}
+	else{
+		$C009 = "SELECT cliente_nombre1, cliente_nombre2, cliente_apellido1, cliente_apellido2, cliente_id FROM clientes WHERE Universo = $Universo AND cliente_id = ".$mascota['mascota_dueno']." ";
+		$S009 = $conexion->query($C009) or die ("Fallo al consultar cliente: ".$C009);
+		$datoCliente = $S009->fetch_assoc();
+		$mascota['mascota_dueno'] = dCry2($datoCliente['cliente_apellido1']).' '.dCry2($datoCliente['cliente_nombre1']);
+	}
 
 	$edadCompleta = calcularEdad($mascota['mascota_nacimiento']);
 	$edad = $edadCompleta->format('%Y').' Año(s) '.$edadCompleta->format('%m').' Mes(es) y '.$edadCompleta->format('%d').' Dia(s)';

@@ -92,8 +92,8 @@ elseif($accion == 'procesaCliente'){
 	if($clienteEstadoActual != $clienteEstado){ $clienteMunicipio = ''; }
 	if($clientePais == 'nada' || $clientePais == ''){ $_SESSION['mensajeForm'][] = 'Selecciona Pais.'; $_SESSION['formError']++; }
 	if($clienteMunicipio == 'nada' || $clienteMunicipio == '' || $clienteMunicipio == 'Nada'){ $_SESSION['mensajeForm'][] = 'Selecciona Delegacón/Municipio.'; $_SESSION['formError']++; }
-	if($clienteEstado == 'nada' || $clienteEstado == ''){ $_SESSION['mensajeForm'][] = 'Selecciona Estado'; $_SESSION['formError']++; }
-
+	if($clienteEstado == 'nada' || $clienteEstado == 'Nada' || $clienteEstado == ''){ $_SESSION['mensajeForm'][] = 'Selecciona Estado'; $_SESSION['formError']++; }
+ 
 	$_SESSION['formCliente'] = [];
 	$_SESSION['formCliente']['clientePaisActual'] = $clientePais;
 	$_SESSION['formCliente']['clienteEstadoActual'] = $clienteEstado;
@@ -193,6 +193,8 @@ elseif($accion == 'procesaCliente'){
 			llevame('../app?accion=editarCliente&clienteID='.$eCry($clienteID));
 		}
 		else{
+			/*$_SESSION['formCliente']['clientePaisActual'] = $clientePais;
+			$_SESSION['formCliente']['clienteEstadoActual'] = $clienteEstado;*/
 			llevame('../app?accion=clientes');
 		}
 	}

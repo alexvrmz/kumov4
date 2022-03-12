@@ -9,7 +9,7 @@ include ('ApiPHP/conexion.php');
 include ('ApiPHP/funciones.php');
 
 $paises = [
-  'AR' => 'Argentina',
+  //'AR' => 'Argentina',
   'US' => 'Estados Unidos',
   'MX' => 'México',
 ];
@@ -242,6 +242,25 @@ if(v4lID44x50("100-001", $usuario_id) == TRUE){
       // --- BACKEND ----
       include('ApiPHP/mascotas_api.php');
       include('front/mascota_ficha.php');
+      
+    }
+    else{
+      $_SESSION['m3ns4J3'] = 'No tienes acceso a este Módulo';
+      $_SESSION['m3n3Rr0R'] = 'si';
+      include('front/404.php');
+    }
+  }
+  elseif($accion == 'mascotasHuerfanas'){
+    if(v4lID44x50("200-001", $usuario_id) == TRUE){
+      
+      // ---- Marcar la sección en el menú ---
+      $menu_mascotas_t = 'active';
+      $menu_mascotas_abierto = 'menu-open';
+      $menu_mascotas = 'active';
+      
+      // --- BACKEND ----
+      include('ApiPHP/mascotas_api.php');
+      include('front/mascotasHuerfanas.php');
       
     }
     else{

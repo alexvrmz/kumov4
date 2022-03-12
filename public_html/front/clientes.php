@@ -183,11 +183,14 @@ include('parciales/7i7ul0.php');
                     </select>
                   </div>
 
+                  <!--<pre>
+                    <?= print_r(C0nMun($_SESSION['formCliente']['clienteEstado'])) ?>
+                  </pre>-->
 
                   <div class="form-group">
                     <label for="clienteEstado"><?= estado ?></label>
                     <select class="form-control" id="clienteEstado" name="clienteEstado" onchange="this.form.submit()" >
-                      <option value="nada" selected><?= selecciona ?></option>
+                      <option value="nada" ><?= selecciona ?></option>
                         <?php foreach (consulta_estados($_SESSION['formCliente']['clientePais']) as $key => $tR4ns) {  ?>
                           <option value="<?= $tR4ns['estadoID'] ?>"<?php if ($_SESSION['formCliente']['clienteEstado'] == $tR4ns['estadoID']){ echo ' selected'; } ?> ><?= $tR4ns['estadoNombre'] ?></option>    
                         <?php } ?>
@@ -239,6 +242,8 @@ include('parciales/7i7ul0.php');
                 
               </div>
               <div class="modal-footer justify-content-between">
+                <input type="hidden" name="clientePaisActual" value="<?= $_SESSION['formCliente']['clientePais'] ?>">
+                <input type="hidden" name="clienteEstadoActual" value="<?= $_SESSION['formCliente']['clienteEstado'] ?>">
                 <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fad fa-times"></i> <?= cerrar ?></button>
                 <button type="submit" class="btn btn-success"><i class="fad fa-save"></i> <?= guardar ?></button>
               </div>
