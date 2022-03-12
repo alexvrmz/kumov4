@@ -1,4 +1,3 @@
-<?php
 foreach($_REQUEST as $k => $v){$$k=$v;}  //echo $k.' -> '.$v.' | ';
 session_start();
 //$accion = $dCry($accion);
@@ -277,13 +276,13 @@ elseif ($accion == '5u540l_04') {
 
 			
 			unset($sQl_d474_4rr4y);	
-			$sQl_d474_4rr4y = ['p3rXoNmRs' => '1',
-											 'p3rXou5Rs' => $fh65G['usuarioID'],
-											 'p3rXo3PRs' => '1',
-											 'p3rXoFPRs' => date('Y-m-d H:i:s')
+			$sQl_d474_4rr4y = ['po_permiso_id' => '1',
+											 'po_usuario_id' => $fh65G['usuarioID'],
+											 'po_estado' => '1',
+											 'po_registro' => date('Y-m-d H:i:s')
 											];		
       $accion = 'insertar';
-			ejecutaDB('p3rXo70R64D0s', $sQl_d474_4rr4y, $accion, $p4r4m37r05);							
+			ejecutaDB('permisosOtrogados', $sQl_d474_4rr4y, $accion, $p4r4m37r05);							
 		}
 		else{
 			include('../front/idiomas/'.$_SESSION['idioma'].'/i_8i74c0r4.php');

@@ -62,7 +62,9 @@
 # Pendientes 2022/03/11!
 - Cambiar en el formulario de ficha de Mascota el select de Cliente al igual que en el formulario de Agregar mascota
 - Ordenar la lista de Razas por orden Alfabetico
-
+- Al agregar mascota no se guarda el ID de cliente
++ Al agregar permiso a usuario no se abre el formulario con la lista de permisos del modulo seleccionado
+- Iniciar el modulo de administracion de razas
 
 Tipos de Individuos 
 1 usuarios
@@ -77,6 +79,15 @@ Tipos de Documentos
 
 
 # Actualizaciones!
+- V 2022.03.12
+  - Se agregan 282 razas de Perros
+  - Se agregan 4 razas de Hamsters
+  - Se agregan 10 razas de Peces
+  - Se agregan pestanas en ficha de mascota para mostrar Resumen, Citas, Vacunas, Esteticas y otros
+  - Se Inicia el Modulo de Administracion de Especies
+    - Se crea modulo Especies
+    - Se crean permisos para modulo especies
+    - Se cambian los nombre de la tabla y columnas de Permisos Otrogados en codigo y mysql
 
 - V 2022.03.11
   - Se agregan 63 razas de Gatos

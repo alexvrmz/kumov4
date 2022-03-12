@@ -46,7 +46,7 @@ include('parciales/7i7ul0.php');
                   <?php endif; */?>
 
                   <?php if(v4lID44x50("300-003", $usuario_id) == TRUE): /// --- editar permisos ?>
-                      <a href="app?accion=5uXds4H&u5u4oxX=<?= $eCry($usuario['usuarioID']) ?>" class="btn btn-app bg-warning"><i class="fad fa-key"></i> <?= btn_p3rm505 ?></a>
+                      <a href="app?accion=permisosAsignados&u5u4oxX=<?= $eCry($usuario['usuarioID']) ?>" class="btn btn-app bg-warning"><i class="fad fa-key"></i> <?= btn_p3rm505 ?></a>
                   <?php endif; ?> 
             </div>
           </div>

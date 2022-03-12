@@ -159,12 +159,12 @@ if ($accion == 'r3gu') {
 				$ax = 'insertar';
 				unset($fg);
 				$fg = [
-					'p3rXoNmRs' => $value,
-					'p3rXou5Rs' => $u,
-					'p3rXo3PRs' => 1,
-					'p3rXoFPRs' => $tm
+					'po_permiso_id' => $value,
+					'po_usuario_id' => $u,
+					'po_estado' => 1,
+					'po_registro' => $tm
 				];
-				ejecutaDB('p3rXo70R64D0s', $fg, $ax, $p4r4);
+				ejecutaDB('permisosOtrogados', $fg, $ax, $p4r4);
 				echo 'se agrego permiso: '.$value.' al usuario: '.$u.'<br>';
 			}
 			/// ---

@@ -105,13 +105,7 @@ include('parciales/7i7ul0.php');
         <!-- /.card-footer-->
       </div>
       <!-- /.card -->
-      <?php if($_SESSION['pt5_xx05'] != ''){ ?>
-        <script type="text/javascript">
-          $(window).on('load', function() {
-              $('#modal-nuevo').modal('show');
-          });
-        </script>
-      <?php } ?>
+     
 
 
       <div class="modal fade" id="modal-nuevo">
@@ -139,7 +133,7 @@ include('parciales/7i7ul0.php');
                     
                     </select>
                   </div>
-                 
+
                   <div class="form-group">
                     <label for="pt5_xx05"><?= lbl_n3wp3rdm50 ?></label>
                     <select class="form-control" id="pt5_xx05" name="pt5_xx05" required>
@@ -173,6 +167,15 @@ include('parciales/7i7ul0.php');
   <!-- /.content-wrapper -->
 
 <?php
-unset($_SESSION['pt5_xx05']);
 include('parciales/3p1416e.php');
  ?>
+<?php if(isset($_SESSION['pt5_xx05']) == true){ ?>
+  <script type="text/javascript">
+    $(window).on('load', function() {
+      $('#modal-nuevo').modal('show');
+    });
+  </script>
+<?php } 
+
+unset($_SESSION['pt5_xx05']);
+?>

@@ -8,6 +8,11 @@ define('datosMascota', 'Datos de la Mascota');
 define('guardar', 'Guardar');
 define('editar', 'Editar');
 
+define('resumen', 'Resumen');
+define('consultas', 'Citas');
+define('vacunas', 'Vacunas');
+define('otros', 'Otros');
+define('esteticas', 'Estética');
 
 define('raza', 'RAZA');
 define('pelaje', 'PELAJE');

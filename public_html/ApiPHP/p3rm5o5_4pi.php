@@ -137,16 +137,16 @@ elseif ($accion == 'p3rf5Gg') { /// --- Accion actualizar
   }
 		
 }
-elseif ($accion === '5uXds4H') {
+elseif ($accion === 'permisosAsignados') {
 	$u5u4oxX = $dCry($u5u4oxX);
 	if(!empty($u5u4oxX)){
     // --- Consulta para permisos de usuario
-    $q5u5xXd = "SELECT * FROM p3rXo70R64D0s WHERE p3rXou5Rs = '".$u5u4oxX."' ";
+    $q5u5xXd = "SELECT * FROM permisosOtrogados WHERE po_usuario_id = '".$u5u4oxX."' ";
     $c5u5xXd = $conexion->query($q5u5xXd) or die ("Falló al obtener permisos de usuario " . $q5u5xXd);
     $d4705_u5u = [];
     while($dU5u4o = $c5u5xXd->fetch_assoc()){
 			
-			$n66p33r = $dU5u4o['p3rXoNmRs'];
+			$n66p33r = $dU5u4o['po_permiso_id'];
 			
 			$q5u5xXer4 = "SELECT p3ry6d35cRXx FROM p3rM5sx_e WHERE p3ry6IDXx = '".$n66p33r."' ";
     	$c5u5xdsXd = $conexion->query($q5u5xXer4) or die ("Falló al obtener permisos de usuario " . $q5u5xXer4);
@@ -156,12 +156,12 @@ elseif ($accion === '5uXds4H') {
 
 
 
-      $x4rr36l0 = ['p3gThiDRs' => $dU5u4o['p3rXoiDRs'],
-                   'p3gThNmRs' => $dU5u4o['p3rXoNmRs'],
+      $x4rr36l0 = ['p3gThiDRs' => $dU5u4o['po_id'],
+                   'p3gThNmRs' => $dU5u4o['po_permiso_id'],
 									 'p3d3scr' => $n6shb,
-                   'p3gThu5Rs' => $dU5u4o['p3rXou5Rs'],
-                   'p3gTh3PRs' => $dU5u4o['p3rXo3PRs'],
-									 'p3gThFPRs' => $dU5u4o['p3rXoFPRs']
+                   'p3gThu5Rs' => $dU5u4o['po_usuario_id'],
+                   'p3gTh3PRs' => $dU5u4o['po_estado'],
+									 'p3gThFPRs' => $dU5u4o['po_registro']
                   ];
       array_push($d4705_u5u, $x4rr36l0); 
     }
@@ -207,25 +207,26 @@ elseif ($accion === 'sD4xG5d5') { /// --- carga permisos por modulo
 		unset($_SESSION['pt5_xx05']);
 		$_SESSION['pt5_xx05'] = $d4705_u5u;
 		
-		llevame('../app?accion=5uXds4H&u5u4oxX='.$eCry($pt5_xx04));
+		llevame('../app?accion=permisosAsignados&u5u4oxX='.$eCry($pt5_xx04));
 		/// --- guardar en SESSION los permisos de modulo
   }
 	elseif($pt5_xx05 != '' || $pt5_xx05 != 'nada'){
+		$C009 = "SELECT * FROM permisosOtrogados WHERE po_permiso_id ";
 		$accion = 'insertar';
 		unset($sQl_d474_4rr4y);
-		$sQl_d474_4rr4y = ['p3rXoNmRs' => $pt5_xx05,
-											 'p3rXou5Rs' => $pt5_xx04,
-											 'p3rXo3PRs' => 1,
-											 'p3rXoFPRs' => date("Y-m-d H:i:s")
+		$sQl_d474_4rr4y = ['po_permiso_id' => $pt5_xx05,
+											 'po_usuario_id' => $pt5_xx04,
+											 'po_estado' => 1,
+											 'po_registro' => date("Y-m-d H:i:s")
 											];		
-    ejecutaDB('p3rXo70R64D0s', $sQl_d474_4rr4y, $accion, $p4r4m37r05);
+    ejecutaDB('permisosOtrogados', $sQl_d474_4rr4y, $accion, $p4r4m37r05);
 		$_SESSION['m3n3Rr0R'] = 'no';
 		include('../front/idiomas/'.$_SESSION['idioma'].'/i_8i74c0r4.php');
 		$_SESSION['m3ns4J3'] = lbl_8i7_x014.$pt5_xx05.' / '.$pt5_xx04;
 		bi74c0('4ddP3rm', $_SESSION['m3ns4J3'], '');
 		unset($_SESSION['pt5_xx02']);
 		unset($_SESSION['pt5_xx05']);
-		llevame('../app?accion=5uXds4H&u5u4oxX='.$eCry($pt5_xx04));
+		llevame('../app?accion=permisosAsignados&u5u4oxX='.$eCry($pt5_xx04));
 		
 	}
   else{
@@ -233,7 +234,7 @@ elseif ($accion === 'sD4xG5d5') { /// --- carga permisos por modulo
 		include('../front/idiomas/'.$_SESSION['idioma'].'/i_8i74c0r4.php');
 		$_SESSION['m3ns4J3'] = lbl_8i7_x015;
 		bi74c0('4ddP3rm2', $_SESSION['m3ns4J3'], '');
-    llevame('../app?accion=5uXds4H&u5u4oxX='.$eCry($pt5_xx04));
+    llevame('../app?accion=permisosAsignados&u5u4oxX='.$eCry($pt5_xx04));
   }
 }
 
@@ -245,24 +246,24 @@ elseif ($accion == 'psDef4Gg') { /// --- Accion actualizar estado permiso
 
 	if(!empty($h7gr)){
 		$accion = 'actualizar';
-		$p4r4m37r05 = "p3rXoiDRs = '$h7gr'"; //-- id
+		$p4r4m37r05 = "po_id = '$h7gr'"; //-- id
 		unset($sQl_d474_4rr4y);
 		include('../front/idiomas/'.$_SESSION['idioma'].'/i_8i74c0r4.php');
 		if($txgt5 == 'd3547iV'){ $txgt5 = 0; $ssx = lbl_8i7_x017; } elseif ($txgt5 == '47iV'){ $txgt5 = 1; $ssx = lbl_8i7_x018; }
-		$sQl_d474_4rr4y = ['p3rXou5Rs' => $u5u4oxX,//-usuario
-											 'p3rXo3PRs' => $txgt5,//- estado
-											 'p3rXoNmRs' => $f4G55t7,//- numero perm
-											 'p3rXoFPRs' => date("Y-m-d H:i:s")
+		$sQl_d474_4rr4y = ['po_usuario_id' => $u5u4oxX,//-usuario
+											 'po_estado' => $txgt5,//- estado
+											 'po_permiso_id' => $f4G55t7,//- numero perm
+											 'po_registro' => date("Y-m-d H:i:s")
 											];		
 		
 
-		ejecutaDB('p3rXo70R64D0s', $sQl_d474_4rr4y, $accion, $p4r4m37r05);
+		ejecutaDB('permisosOtrogados', $sQl_d474_4rr4y, $accion, $p4r4m37r05);
 
 		
 		$_SESSION['m3ns4J3'] = $ssx.lbl_8i7_x016.' '.$h7gr;
 		bi74c0('3dtP3rm', $_SESSION['m3ns4J3'], '');
 
-    llevame('../app?accion=5uXds4H&u5u4oxX='.$eCry($u5u4oxX));
+    llevame('../app?accion=permisosAsignados&u5u4oxX='.$eCry($u5u4oxX));
 
 	}
   else {
@@ -270,7 +271,7 @@ elseif ($accion == 'psDef4Gg') { /// --- Accion actualizar estado permiso
     $_SESSION['m3ns4J3'] = lbl_8i7_x019;
     $_SESSION['m3n3Rr0R'] = 'si';
 		bi74c0('3dtP3rm2', $_SESSION['m3ns4J3'], '');
-    llevame('../app?accion=5uXds4H&u5u4oxX='.$eCry($u5u4oxX));
+    llevame('../app?accion=permisosAsignados&u5u4oxX='.$eCry($u5u4oxX));
   }
 		
 }

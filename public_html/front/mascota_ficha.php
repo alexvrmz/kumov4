@@ -121,6 +121,57 @@ include('parciales/7i7ul0.php');
             </div>
             <div class="card-body">
               <div class="card-body p-0">
+                <ul class="nav nav-tabs" id="custom-content-below-tab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="custom-content-below-home-tab" data-toggle="pill" href="#resumen" role="tab" aria-controls="custom-content-below-home" aria-selected="true">
+                      <i class="fad fa-file-invoice" style="--fa-secondary-opacity: 1.0; --fa-primary-color: #d51b1b; --fa-secondary-color: #bbb;"></i> 
+                      <?= resumen ?>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-content-below-profile-tab" data-toggle="pill" href="#consultas" role="tab" aria-controls="custom-content-below-profile" aria-selected="false">
+                      <i class="fad fa-calendar-check" style="--fa-secondary-opacity: 1.0; --fa-primary-color: #d51b1b; --fa-secondary-color: #bbb;"></i> 
+                      <?= consultas ?>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-content-below-messages-tab" data-toggle="pill" href="#vacunas" role="tab" aria-controls="custom-content-below-messages" aria-selected="false">
+                      <i class="fad fa-syringe" style="--fa-secondary-opacity: 1.0; --fa-primary-color: #d51b1b; --fa-secondary-color: #bbb;"></i> 
+                      <?= vacunas ?>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-content-below-messages-tab" data-toggle="pill" href="#esteticas" role="tab" aria-controls="custom-content-below-messages" aria-selected="false">
+                      <i class="fad fa-shower" style="--fa-secondary-opacity: 1.0; --fa-primary-color: #d51b1b; --fa-secondary-color: #bbb;"></i> 
+                      <?= esteticas ?>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="custom-content-below-settings-tab" data-toggle="pill" href="#otros" role="tab" aria-controls="custom-content-below-settings" aria-selected="false">
+                      <i class="fad fa-window-restore" style="--fa-secondary-opacity: 1.0; --fa-primary-color: #d51b1b; --fa-secondary-color: #bbb;"></i>  <?= otros ?>
+                    </a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="custom-content-below-tabContent">
+                  <div class="tab-pane fade show active" id="resumen" role="tabpanel" aria-labelledby="custom-content-below-home-tab">
+                     Resumen
+                  </div>
+                  <div class="tab-pane fade" id="consultas" role="tabpanel" aria-labelledby="custom-content-below-profile-tab">
+                     Citas
+                  </div>
+                  <div class="tab-pane fade" id="vacunas" role="tabpanel" aria-labelledby="custom-content-below-messages-tab">
+                     Vacunas
+                  </div>
+                  <div class="tab-pane fade" id="esteticas" role="tabpanel" aria-labelledby="custom-content-below-profile-tab">
+                     Esteticas
+                  </div>
+                  <div class="tab-pane fade" id="otros" role="tabpanel" aria-labelledby="custom-content-below-settings-tab">
+                     Otros
+                  </div>
+                </div>
+                <div class="tab-custom-content">
+                  <!--<p class="lead mb-0">Custom Content goes here</p>-->
+                </div>
               </div>
             </div>
             <!--/.card-body -->

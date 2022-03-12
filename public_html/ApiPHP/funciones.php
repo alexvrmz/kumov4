@@ -10,13 +10,13 @@ function v4lID44x50($fhn4, $u53) {
   $Csd7Hd5td = $conexion->query($Qsd7Hd5td) or die ("Falló listado de permisos" . $Qsd7Hd5td);
   $p = $Csd7Hd5td->fetch_array();
 
-  $Qjdf87 = "SELECT * FROM p3rXo70R64D0s WHERE p3rXou5Rs = '".$u53."' AND p3rXoNmRs = '".$p['p3ry6IDXx']."' ";
+  $Qjdf87 = "SELECT * FROM permisosOtrogados WHERE po_usuario_id = '".$u53."' AND po_permiso_id = '".$p['p3ry6IDXx']."' ";
   $Cjdf87 = $conexion->query($Qjdf87) or die ("Falló listado de usuarios" . $Qjdf87);
   $po = $Cjdf87->fetch_array();
 
   $Cjdf87 = $p['p3ry6m0DuXx'].'-'.$p['p3ry6nUm3Xx'];
 
-  if($Cjdf87 == $fhn4 && $po['p3rXo3PRs'] == 1){
+  if($Cjdf87 == $fhn4 && $po['po_estado'] == 1){
     $res = true;
   }
   else{

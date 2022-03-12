@@ -152,7 +152,7 @@ if(v4lID44x50("100-001", $usuario_id) == TRUE){
       include('front/404.php');
     }
 	}
-  elseif($accion == '5uXds4H'){	/// --- ver Permisos otorgados
+  elseif($accion == 'permisosAsignados'){	/// --- ver Permisos otorgados
 		/// --- ACCESO MODULO PERMISOS
 		if(v4lID44x50("300-001", $usuario_id) == TRUE){
 

@@ -281,7 +281,7 @@
                   </a>
                 </li>
                 
-                <?php if($accion === '5uXds4H'){ ?>
+                <?php if($accion === 'permisosAsignados'){ ?>
                   <li class="nav-item">
                     <a href="#" class="nav-link <?= $menu_permisos_2 ?>">
                       <i class="fad fa-user-lock nav-icon"></i>
