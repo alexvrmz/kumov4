@@ -219,6 +219,66 @@
             </li>
           <?php } ?>
 
+          <?php if(v4lID44x50("700-001", $usuario_id) == TRUE){ /// --- ?>
+            <li class="nav-item <?= $menu_consultas_abierto ?>">
+              <a href="app?accion=consultas" class="nav-link <?= $menu_consultas ?>">
+                <i class="nav-icon fad fa-calendar-check"></i>
+                <p>
+                  <?= consultas ?>
+                  <i class="right fad fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="app?accion=consultas" class="nav-link <?= $menu_consultas ?>">
+                    <i class="fad fa-list nav-icon"></i>
+                    <p><?= listadoConsultas ?></p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          <?php } ?>
+
+          <?php if(v4lID44x50("1700-001", $usuario_id) == TRUE){ /// --- ?>
+            <li class="nav-item <?= $menu_especies_abierto ?>">
+              <a href="app?accion=especies" class="nav-link <?= $menu_especies ?>">
+                <i class="nav-icon fad fa-crow"></i>
+                <p>
+                  <?= especies ?>
+                  <i class="right fad fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="app?accion=especies" class="nav-link <?= $menu_especies ?>">
+                    <i class="fad fa-list nav-icon"></i>
+                    <p><?= listadoEspecies ?></p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          <?php } ?>
+
+          <?php if(v4lID44x50("1800-001", $usuario_id) == TRUE){ /// --- ?>
+            <li class="nav-item <?= $menu_razas_abierto ?>">
+              <a href="app?accion=razas" class="nav-link <?= $menu_razas ?>">
+                <i class="nav-icon fad fa-feather"></i>
+                <p>
+                  <?= razas ?>
+                  <i class="right fad fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="app?accion=razas" class="nav-link <?= $menu_razas ?>">
+                    <i class="fad fa-list nav-icon"></i>
+                    <p><?= listadoRazas ?></p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          <?php } ?>
+
 
           <?php if(v4lID44x50("1600-000", $usuario_id) == TRUE){ /// --- ?>
             <li class="nav-item <?= $menu_pR0VxD_abierto ?>">

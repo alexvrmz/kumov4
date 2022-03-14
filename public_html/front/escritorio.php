@@ -156,6 +156,79 @@ include('parciales/7i7ul0.php');
       <?php } ?>
 
 
+      <div class="col-lg-3 col-6">
+        <div class="small-box bg-pink">
+          <div class="inner">
+            <h3><?= $nEs ?></h3>
+            <?php if($nEs == 1){ ?>
+                <p><?= especieRegistrada ?></p>
+            </div>
+            <div class="icon">
+              <i class="fad fa-crow" style="--fa-secondary-opacity: 1.0; --fa-primary-color:black; --fa-secondary-color: yellow;"></i>
+            </div>
+              <a href="app?accion=especies" class="small-box-footer"><?= ver ?><i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+            <?php }
+            elseif($nEs > 1) { ?>
+                  <p><?= especiesRegistradas ?></p>
+            </div>
+            <div class="icon">
+              <i class="fad fa-crow" style="--fa-secondary-opacity: 1.0; --fa-primary-color:black; --fa-secondary-color: yellow;"></i>
+            </div>
+              <a href="app?accion=especies" class="small-box-footer"><?= ver ?><i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <?php }
+            elseif($nEs == 0) {?>
+                    <p><?= especiesRegistradas ?></p>
+                    </div>
+          <div class="icon">
+            <i class="fad fa-crow" style="--fa-secondary-opacity: 1.0; --fa-primary-color:black; --fa-secondary-color: yellow;"></i>
+          </div>
+            <a href="app?accion=especies" class="small-box-footer"><?= agrergarUna ?><i class="fas fa-arrow-circle-right"></i></a>
+        </div>
+      </div>
+      <?php } ?>
+
+
+
+      <div class="col-lg-3 col-6">
+        <div class="small-box bg-red">
+          <div class="inner">
+            <h3><?= $nRa ?></h3>
+            <?php if($nRa == 1){ ?>
+                <p><?= razaRegistrada ?></p>
+            </div>
+            <div class="icon">
+              <i class="fad fa-feather" style="--fa-secondary-opacity: 1.0; --fa-primary-color:grey; --fa-secondary-color: white;"></i>
+            </div>
+              <a href="app?accion=razas" class="small-box-footer"><?= ver ?><i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+            <?php }
+            elseif($nRa > 1) { ?>
+                  <p><?= razasRegistradas ?></p>
+            </div>
+            <div class="icon">
+              <i class="fad fa-feather" style="--fa-secondary-opacity: 1.0; --fa-primary-color:grey; --fa-secondary-color: white;"></i>
+            </div>
+              <a href="app?accion=razas" class="small-box-footer"><?= ver ?><i class="fas fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <?php }
+            elseif($nRa == 0) {?>
+                    <p><?= razasRegistradas ?></p>
+                    </div>
+          <div class="icon">
+            <i class="fad fa-feather" style="--fa-secondary-opacity: 1.0; --fa-primary-color:grey; --fa-secondary-color: white;"></i>
+          </div>
+            <a href="app?accion=razas" class="small-box-footer"><?= agrergarUna ?><i class="fas fa-arrow-circle-right"></i></a>
+        </div>
+      </div>
+      <?php } ?>
+
+
       
 
 
@@ -172,7 +245,7 @@ include('parciales/7i7ul0.php');
 <?php } ?>
 
 
-<script type='text/javascript' src='//pl16580984.effectivecpmgate.com/1d/07/e2/1d07e2804630f80d0665034474aa45ea.js'></script>
+<!--<script type='text/javascript' src='//pl16580984.effectivecpmgate.com/1d/07/e2/1d07e2804630f80d0665034474aa45ea.js'></script>ADSSS-->
 
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6960218161476043"

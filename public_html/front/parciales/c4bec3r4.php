@@ -17,6 +17,10 @@
   <link rel="stylesheet" href="dist/css/estilos.css">
   <!-- Chart.Js -->
   <link rel="stylesheet" href="plugins/chart.js/Chart.css">
+  <?php if($accion == 'consultas'){ ?>
+     <!-- fullCalendar -->
+    <link rel="stylesheet" href="plugins/fullcalendar/main.css"> 
+  <?php } ?>
 
   <!-- Toastr -->
   <link rel="stylesheet" href="plugins/toastr/toastr.min.css">

@@ -8,6 +8,7 @@ define('ver', 'Ver ');
 define('usuarioRegistrado', 'Usuario');
 define('usuariosRegistrados', 'Usuarios');
 define('agrergarUno', 'Agregar Uno!'); 
+define('agrergarUna', 'Agregar Una!'); 
 define('proveedorRegistrado', 'Proveedor'); 
 define('clienteRegistrado', 'Clientes'); 
 define('clientesRegistrados', 'Clientes');
@@ -15,6 +16,12 @@ define('proveedoresRegistrados', 'Proveedores');
 define('actualizacionesSistema', 'Mira las Actualizaciones del Sistema');
 define('mascotaRegistrada', 'Mascota');
 define('mascotasRegistradas', 'Mascotas');
+define('especieRegistrada', 'Especie');
+define('razaRegistrada', 'Raza');
+define('especiesRegistradas', 'Especies');
+define('razasRegistradas', 'Razas');
+
+
  
 
 

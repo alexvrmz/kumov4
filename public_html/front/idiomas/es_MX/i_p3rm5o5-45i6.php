@@ -22,4 +22,9 @@ define('lbl_n3wp3rMnuM','Permiso Número');
 define('btn_C4nC3L4raD','Cancelar');
 define('btn_6u4rD4raD','Guardar');
 
+define('lbl_copy', 'Copiar');
+define('lbl_csv', 'CSV');
+define('lbl_prt', 'Imprimir');
+
+
 ?>

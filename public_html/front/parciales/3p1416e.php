@@ -54,7 +54,7 @@
 <!-- Toastr -->
 <script src="plugins/toastr/toastr.min.js"></script>
 
-<?php if($accion == 'mascotas' || $accion == 'clientes' || $accion == 'v3hFh4' || $accion == 'eDtSrv' || $accion == 'eDtD' || $accion == 'N3wTr4' || $accion == 'Tr4V' || $accion == 'mascotasHuerfanas'){ ?>
+<?php if($accion == 'mascotas' || $accion == 'clientes' || $accion == 'v3hFh4' || $accion == 'eDtSrv' || $accion == 'eDtD' || $accion == 'N3wTr4' || $accion == 'Tr4V' || $accion == 'mascotasHuerfanas' /*|| $accion == 'consultas'*/){ ?>
   <!-- Tempusdominus Bootstrap 4 -->
 
   <script src="plugins/moment/moment.min.js"></script>
@@ -161,7 +161,7 @@
   });
 </script>
 
-<?php if($accion == 'mascotas' || $accion == 'clientes' || $accion == 'escritorio' || $accion == '5u550l' || $accion == 'bin4kuru' || $accion == 'm0d78Os' || $accion == 'pR0VxD' || $accion == 'mascotasHuerfanas'){ ?>
+<?php if($accion == 'mascotas' || $accion == 'clientes' || $accion == 'escritorio' || $accion == '5u550l' || $accion == 'bin4kuru' || $accion == 'm0d78Os' || $accion == 'pR0VxD' || $accion == 'mascotasHuerfanas' || $accion == 'especies' || $accion == 'razas' || $accion == 'permisosAsignados'){ ?>
   <!-- DataTables  & Plugins -->
   <script src="plugins/datatables/jquery.dataTables.min.js"></script>
   <script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
@@ -179,7 +179,7 @@
 <?php } ?>
 
 <?php if($accion == 'escritorio' || $accion == '5u550l' || $accion == 'bin4kuru' || $accion == 'm0d78Os'
-      || $accion == 'pR0VxD'){ ?>
+      || $accion == 'pR0VxD' || $accion == 'especies' || $accion == 'razas' || $accion == 'permisosAsignados'){ ?>
   <script>
     $(function () {
       $("#example1").DataTable({
@@ -189,11 +189,11 @@
       }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
       $('#example2').DataTable({
         "paging": true,
-        "lengthChange": false,
-        "searching": false,
+        "lengthChange": true,
+        "searching": true,
         "ordering": true,
         "info": true,
-        "autoWidth": false,
+        "autoWidth": true,
         "responsive": true,
       });
     });
@@ -209,6 +209,12 @@
     </script>
   <?php } ?> 
 <?php }?>
+
+<?php if($accion == 'consultas'){ ?>
+  <!-- fullCalendar 2.2.5 -->
+  <script src="plugins/moment/moment.min.js"></script>
+  <script src="plugins/fullcalendar/main.js"></script>
+<?php } ?>
 
 </body>
 </html>

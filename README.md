@@ -65,6 +65,10 @@
 - Al agregar mascota no se guarda el ID de cliente
 + Al agregar permiso a usuario no se abre el formulario con la lista de permisos del modulo seleccionado
 - Iniciar el modulo de administracion de razas
+- Revisar las notificaciones en todas las areas
+- Al agregar permiso a usuario la lista de permisos despues de seleccionar el modulo que solo cargue los permisos que el usuario no tiene
+- En lista de persmisos asignados agregar columna de modulo de persmiso
+- EN menu revisar o agregar validacion de modulo activo
 
 Tipos de Individuos 
 1 usuarios
@@ -76,9 +80,34 @@ Tipos de Documentos
 
 1 Foto Principal Mascota
 
+Datos Consulta/Cita
+  1 Fecha
+  2 Proxima Fecha
+  3 mascotaID x
+  4 clienteID x
+  5 Peso x
+  6 Talla x
+  7 Temperatura x
+  8 Diagnostico x
+  9 TratamientosID x
+  10 estudiosID x
+  11 Observaciones x
+  12 Usuario
+
 
 
 # Actualizaciones!
+- V 2022.03.14
+  - Se termina el modulo de administracion de Especies.
+  - Modulo Razas
+    - se crea el modulo razas
+    - Se crean los permisos para el modulo razas
+  - Se termina el modulo de administracion de Razas.
+  - Se establece y crea tabla y columnas para Consultas/Citas
+  - Se inicia la creacion del modulo citas
+  - Se actualizan permisos 700 de vehiculos a consutas
+  
+
 - V 2022.03.12
   - Se agregan 282 razas de Perros
   - Se agregan 4 razas de Hamsters
@@ -87,7 +116,7 @@ Tipos de Documentos
   - Se Inicia el Modulo de Administracion de Especies
     - Se crea modulo Especies
     - Se crean permisos para modulo especies
-    - Se cambian los nombre de la tabla y columnas de Permisos Otrogados en codigo y mysql
+    - Se cambian los nombres de la tabla y columnas de Permisos Otrogados en codigo y mysql
 
 - V 2022.03.11
   - Se agregan 63 razas de Gatos

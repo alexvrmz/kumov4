@@ -19,7 +19,7 @@ include('parciales/7i7ul0.php');
             <?php if(isset($_SESSION['formMascota']) == true){ ?>
               <a data-toggle="modal" data-target="#modal-nuevo" class="btn bg-gradient-success btn-app" style="padding-top: 6px;" ><i class="fad fa-paw"></i> <?= continuarFormulario ?></a>
               <a href="ApiPHP/mascotas_api?accion=borrarFormulario" class="btn bg-gradient-danger btn-app" style="padding-top: 6px;" ><i class="fad fa-trash"></i> <?= eliminarFormulario ?></a>
-            <?php }elseif(isset($_SESSION['formMascota']) == false){ ?>
+            <?php }elseif(isset($_SESSION['formMascota']) == false && v4lID44x50("200-003", $usuario_id) == TRUE ){ ?>
               <button type="button" data-toggle="modal" data-target="#modal-nuevo" class="btn bg-gradient-success btn-app" style="padding-top: 6px;" ><i class="fad fa-paw"></i> <?= btn_46r364rU5u4ri0 ?></button>
             <?php } ?>
               <a href="app?accion=mascotasHuerfanas" class="btn bg-gradient-warning btn-app" style="padding-top: 6px;" ><i class="fad fa-dog"></i> <?= mascotas_huerfanas ?></a>
@@ -97,7 +97,7 @@ include('parciales/7i7ul0.php');
       </div>
 
 
-
+    <?php if(v4lID44x50("200-003", $usuario_id) == TRUE ){ ?>
       <div class="modal fade " id="modal-nuevo">
         <div class="modal-dialog ">
           <div class="modal-content <?= $brr4 ?> card-outline">
@@ -223,6 +223,7 @@ include('parciales/7i7ul0.php');
 
 
       </div>
+    <?php } ?>
 
       
   </section>

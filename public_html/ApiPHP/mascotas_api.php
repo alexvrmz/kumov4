@@ -412,30 +412,3 @@ elseif($accion == 'fichaMascota'){
 	$mascotaEspecie = $datoEspecie['especie_descripcion'];
 	
 }
-elseif($accion == 'crearCapeta'){
-	echo '<pre>';
-	print_r($_REQUEST);
-	echo '</pre>';
-
-	$carpeta = '../docs/1/mascota-1000';
-	$crearCarpetaMascota = '';
-	if(!file_exists($carpeta)){
-		$crearCarpetaMascota = mkdir($carpeta, 0777);
-	}
-
-	if($crearCarpetaMascota == 1){
-		echo 'Se creo la carpetaMascota '.$carpeta.'<br>';
-	}
-	else{
-		echo 'No se creo la carpetaMascota '.$carpeta.'<br>';
-	}
-
-	$permiso = chmod($carpeta, 0777);
-	if($permiso == 1){
-		echo 'Se dieron permisos para carpetaMascota '.$carpeta.'<br>';
-	}
-	else{
-		echo 'No se dieron permisos para carpetaMascota '.$carpeta.'<br>';
-	}
-
-}

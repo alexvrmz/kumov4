@@ -10,8 +10,16 @@ define('lbl_lI574D0_iN5','Listado');
 define('lbl_u5u4ri05','Usuarios');
 define('mascotas','Mascotas');
 define('listadoMascotas', 'Listado Mascotas');
+define('listadoEspecies', 'Listado Especies');
 define('clientes','Clientes');
 define('listadoClientes', 'Listado Clientes');
+define('especies', 'Especies');
+define('razas', 'Razas');
+define('consultas', 'Consultas/Citas');
+define('listadoConsultas', 'Listado Consultas');
+
+
+
 
 define('lbl_lI574D0_u5u','Listado');
 define('lbl_m0Dul05','Módulos');

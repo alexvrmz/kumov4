@@ -29,4 +29,12 @@ $nP = $S018->num_rows;
 $C019 = "SELECT cliente_id FROM clientes WHERE Universo = $Universo AND cliente_activo = 1";
 $S019 = $conexion->query($C019) or die ("Fallo al seleccionar Clientes: ".$C019);
 $nC = $S019->num_rows;
+
+$C020 = "SELECT especie_id FROM especies WHERE especie_estado = 1 AND (especie_universo = $Universo OR especie_universo = 0)";
+$S020 = $conexion->query($C020) or die ("Fallo al seleccionar Especies: ".$C020);
+$nEs = $S020->num_rows;
+
+$C021 = "SELECT raza_id FROM razas WHERE raza_estado = 1 AND (raza_universo = $Universo OR raza_universo = 0)";
+$S021 = $conexion->query($C021) or die ("Fallo al seleccionar Razas: ".$C021);
+$nRa = $S021->num_rows;
 ?>

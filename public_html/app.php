@@ -268,6 +268,82 @@ if(v4lID44x50("100-001", $usuario_id) == TRUE){
       include('front/404.php');
     }
   }
+  elseif($accion == 'especies'){
+    if(v4lID44x50("1700-001", $usuario_id) == TRUE){
+      
+      // ---- Marcar la sección en el menú ---
+      $menu_especies_t = 'active';
+      $menu_especies_abierto = 'menu-open';
+      $menu_especies = 'active';
+      
+      // --- BACKEND ----
+      include('ApiPHP/especies_api.php');
+      include('front/especies.php');
+      
+    }
+    else{
+      $_SESSION['m3ns4J3'] = 'No tienes acceso a este Módulo';
+      $_SESSION['m3n3Rr0R'] = 'si';
+      include('front/404.php');
+    }
+  }
+  elseif($accion == 'editarEspecie'){
+    if(v4lID44x50("1700-002", $usuario_id) == TRUE){
+      
+      // ---- Marcar la sección en el menú ---
+      $menu_especies_t = 'active';
+      $menu_especies_abierto = 'menu-open';
+      $menu_especies = 'active';
+      
+      // --- BACKEND ----
+      include('ApiPHP/especies_api.php');
+      include('front/especie_editar.php');
+      
+    }
+    else{
+      $_SESSION['m3ns4J3'] = 'No tienes acceso a este Módulo';
+      $_SESSION['m3n3Rr0R'] = 'si';
+      include('front/404.php');
+    }
+  }
+  elseif($accion == 'razas'){
+    if(v4lID44x50("1800-001", $usuario_id) == TRUE){
+      
+      // ---- Marcar la sección en el menú ---
+      $menu_razas_t = 'active';
+      $menu_razas_abierto = 'menu-open';
+      $menu_razas = 'active';
+      
+      // --- BACKEND ----
+      include('ApiPHP/razas_api.php');
+      include('front/razas.php');
+      
+    }
+    else{
+      $_SESSION['m3ns4J3'] = 'No tienes acceso a este Módulo';
+      $_SESSION['m3n3Rr0R'] = 'si';
+      include('front/404.php');
+    }
+  }
+  elseif($accion == 'editarRaza'){
+    if(v4lID44x50("1800-002", $usuario_id) == TRUE){
+      
+      // ---- Marcar la sección en el menú ---
+      $menu_razas_t = 'active';
+      $menu_razas_abierto = 'menu-open';
+      $menu_razas = 'active';
+      
+      // --- BACKEND ----
+      include('ApiPHP/razas_api.php');
+      include('front/razas_editar.php');
+      
+    }
+    else{
+      $_SESSION['m3ns4J3'] = 'No tienes acceso a este Módulo';
+      $_SESSION['m3n3Rr0R'] = 'si';
+      include('front/404.php');
+    }
+  }
   elseif($accion == 'clientes'){
     if(v4lID44x50("200-001", $usuario_id) == TRUE){
       
@@ -316,6 +392,62 @@ if(v4lID44x50("100-001", $usuario_id) == TRUE){
       // --- BACKEND ----
       include('ApiPHP/clientes_api.php');
       include('front/cliente_ficha.php');
+      
+    }
+    else{
+      $_SESSION['m3ns4J3'] = 'No tienes acceso a este Módulo';
+      $_SESSION['m3n3Rr0R'] = 'si';
+      include('front/404.php');
+    }
+  }
+  elseif($accion == 'consultas'){
+    if(v4lID44x50("700-001", $usuario_id) == TRUE){
+      
+      // ---- Marcar la sección en el menú ---
+      $menu_consultas_t = 'active';
+      $menu_consultas_abierto = 'menu-open';
+      $menu_consultas = 'active';
+      
+      // --- BACKEND ----
+      include('ApiPHP/consultas_api.php');
+      include('front/consultas.php');
+      
+    }
+    else{
+      $_SESSION['m3ns4J3'] = 'No tienes acceso a este Módulo';
+      $_SESSION['m3n3Rr0R'] = 'si';
+      include('front/404.php');
+    }
+  }
+  elseif($accion == 'editarConsulta'){
+    if(v4lID44x50("700-003", $usuario_id) == TRUE){
+      
+      // ---- Marcar la sección en el menú ---
+      $menu_consultas_editar = 'active';
+      $menu_consultas_abierto = 'menu-open';
+      $menu_consultas = 'active';
+      
+      // --- BACKEND ----
+      include('ApiPHP/consultas_api.php');
+      include('front/consultas_editar.php');
+      
+    }
+    else{
+      $_SESSION['m3ns4J3'] = 'No tienes acceso a este Módulo';
+      $_SESSION['m3n3Rr0R'] = 'si';
+      include('front/404.php');
+    }
+  }
+  elseif($accion == 'fichaConsulta'){
+    if(v4lID44x50("700-004", $usuario_id) == TRUE){
+      
+      // ---- Marcar la sección en el menú ---
+      $menu_consultas_ficha = 'active';
+      $menu_consultas_abierto = 'menu-open';
+      $menu_consultas = 'active';
+      // --- BACKEND ----
+      include('ApiPHP/consultas_api.php');
+      include('front/consulta_ficha.php');
       
     }
     else{
