@@ -224,14 +224,14 @@ elseif($accion == 'procesaMascota'){
 				'mascota_nacimiento' => $mascotaNacimiento,
 				'mascota_sistema' => date("Y-m-d H:i:s"),
 				'mascota_dueno' => $mascotaCliente,
-				//'mascota_activa' => 1,
+				'mascota_activa' => 1,
 				'mascota_universo' => $Universo
 			];
 			$accion = 'insertar';
 			$paramatros = NULL;
-			/*echo '<pre>';
+			echo '<pre>';
 			print_r($sql_array);
-			echo '</pre>';*/
+			echo '</pre>';
 			$mascotaID = ejecutaDB('mascotas', $sql_array, $accion, $paramatros);
 			
 			$carpetaMascota = '../docs/'.$Universo;
