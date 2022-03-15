@@ -18,7 +18,7 @@ $C016 = "SELECT usuarioID FROM u5u405 WHERE Universo = $Universo AND u5hOn8ir5 =
 $S016 = $conexion->query($C016) or die ("Fallo al seleccionar Usuarios: ".$C016);
 $nU = $S016->num_rows;
 
-$C017 = "SELECT mascota_id FROM mascotas WHERE mascota_universo = $Universo AND mascota_activa = 1";
+$C017 = "SELECT mascota_id FROM mascotas WHERE mascota_universo = $Universo AND mascota_estado = 1";
 $S017 = $conexion->query($C017) or die ("Fallo al seleccionar Mascotas: ".$C017);
 $nM = $S017->num_rows;
 

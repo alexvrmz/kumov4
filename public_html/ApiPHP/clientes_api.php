@@ -241,7 +241,7 @@ elseif($accion == 'fichaCliente'){
 	/*$edadCompleta = calcularEdad($cliente['cliente_nacimiento']);
 	$edad = $edadCompleta->format('%Y').' Año(s) '.$edadCompleta->format('%m').' Mes(es) y '.$edadCompleta->format('%d').' Dia(s)';*/
 
-	$C001 = "SELECT * FROM mascotas WHERE mascota_universo = $Universo AND mascota_dueno = ".$dCry($clienteID)." AND mascota_activa = 1";
+	$C001 = "SELECT * FROM mascotas WHERE mascota_universo = $Universo AND mascota_dueno = ".$dCry($clienteID)." AND mascota_estado = 1";
 	$S001 = $conexion->query($C001) or die ("Fallo al consultar mascotas: ".$C001);
 	$numMascotas = $S001->num_rows;
 

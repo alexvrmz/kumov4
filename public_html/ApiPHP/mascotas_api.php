@@ -148,12 +148,12 @@ elseif($accion == 'editarMascota'){
 elseif($accion == 'procesaMascota'){
 
 	$mascotaNombre = limpia($mascotaNombre);
-	$mascotaEspecie = limpia($mascotaEspecie);
-	$mascotaRaza = limpia($mascotaRaza);
-	$mascotaSexo = limpia($mascotaSexo);
-	$mascotaEsteril = limpia($mascotaEsteril);
-	$mascotaColor = limpia($mascotaColor);
-	$mascotaCliente = limpia($mascotaCliente);
+	//$mascotaEspecie = limpia($mascotaEspecie);
+	//$mascotaRaza = limpia($mascotaRaza);
+	///$mascotaSexo = limpia($mascotaSexo);
+	//$mascotaEsteril = limpia($mascotaEsteril);
+	///$mascotaColor = limpia($mascotaColor);
+	///$mascotaCliente = limpia($mascotaCliente);
 
 	$_SESSION['mensajeForm'] = [];
 	$_SESSION['formError'] = 0;
@@ -224,14 +224,14 @@ elseif($accion == 'procesaMascota'){
 				'mascota_nacimiento' => $mascotaNacimiento,
 				'mascota_sistema' => date("Y-m-d H:i:s"),
 				'mascota_dueno' => $mascotaCliente,
-				'mascota_activa' => 1,
+				'mascota_estado' => 1,
 				'mascota_universo' => $Universo
 			];
 			$accion = 'insertar';
 			$paramatros = NULL;
-			/*echo '<pre>';
+			echo '<pre>';
 			print_r($sql_array);
-			echo '</pre>';*/
+			echo '</pre>';
 			$mascotaID = ejecutaDB('mascotas', $sql_array, $accion, $paramatros);
 			
 			$carpetaMascota = '../docs/'.$Universo;
