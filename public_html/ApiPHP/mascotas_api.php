@@ -224,7 +224,7 @@ elseif($accion == 'procesaMascota'){
 				'mascota_nacimiento' => $mascotaNacimiento,
 				'mascota_sistema' => date("Y-m-d H:i:s"),
 				'mascota_dueno' => $mascotaCliente,
-			//	'mascota_activa' => 1,
+				//'mascota_activa' => 1,
 				'mascota_universo' => $Universo
 			];
 			$accion = 'insertar';
