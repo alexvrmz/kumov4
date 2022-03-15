@@ -229,9 +229,9 @@ elseif($accion == 'procesaMascota'){
 			];
 			$accion = 'insertar';
 			$paramatros = NULL;
-			echo '<pre>';
+			/*echo '<pre>';
 			print_r($sql_array);
-			echo '</pre>';
+			echo '</pre>';*/
 			$mascotaID = ejecutaDB('mascotas', $sql_array, $accion, $paramatros);
 			
 			$carpetaMascota = '../docs/'.$Universo;
