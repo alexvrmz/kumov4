@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 15-03-2022 a las 05:45:15
--- Versión del servidor: 10.4.20-MariaDB
--- Versión de PHP: 7.4.21
+-- Tiempo de generación: 16-03-2022 a las 00:49:55
+-- Versión del servidor: 10.1.38-MariaDB
+-- Versión de PHP: 5.6.40
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -29,14 +30,14 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `1Bin4kuru` (
   `kuRuIDBiN` int(11) NOT NULL,
-  `kuRuD3SBiN` text DEFAULT NULL,
+  `kuRuD3SBiN` text,
   `kuRuUSIDBiN` int(11) DEFAULT NULL,
   `kuRuUUIDBiN` int(11) DEFAULT NULL,
   `kuRuVEIDBiN` int(11) DEFAULT NULL,
   `kuRuEMDBiN` int(11) DEFAULT NULL,
   `kuRuFLIDBiN` int(11) DEFAULT NULL,
   `kuRuDIDBiN` int(11) DEFAULT NULL,
-  `kuRuPIDBiN` int(11) DEFAULT 0,
+  `kuRuPIDBiN` int(11) DEFAULT '0',
   `kuRuAXIBiN` int(11) NOT NULL,
   `kuRuTIMBiN` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -206,7 +207,7 @@ CREATE TABLE `3s7A2` (
   `xXclAB3s742x` varchar(2) NOT NULL COMMENT 'Cve_Ent - Clave de la entidad',
   `xXN00Ms742x` varchar(40) NOT NULL COMMENT 'Nom_Ent  - Nombre de la entidad',
   `xXAbr3Vs742x` varchar(10) NOT NULL COMMENT 'Nom_Abr - Nombre abreviado de la entidad',
-  `xXAK7iVOs742x` tinyint(1) NOT NULL DEFAULT 1,
+  `xXAK7iVOs742x` tinyint(1) NOT NULL DEFAULT '1',
   `estado_pais` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Tabla de Estados de la República Mexicana';
 
@@ -533,7 +534,7 @@ CREATE TABLE `c4TD0cxxV` (
   `d0C_xDOTR` text NOT NULL,
   `d0C_xDtv` int(11) NOT NULL,
   `d0C_xDico` text NOT NULL,
-  `d0C_xDED0` int(11) NOT NULL DEFAULT 1,
+  `d0C_xDED0` int(11) NOT NULL DEFAULT '1',
   `d0C_xDini` int(11) DEFAULT NULL,
   `xXUNVrSXx` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -585,7 +586,7 @@ CREATE TABLE `c4TS3rxxV` (
   `s3R_xDd35` text NOT NULL,
   `s3r_xDTMP` text NOT NULL,
   `s3r_xDOTR` text NOT NULL,
-  `s3R_xDED0` int(11) NOT NULL DEFAULT 1,
+  `s3R_xDED0` int(11) NOT NULL DEFAULT '1',
   `s3R_xDtv` int(11) NOT NULL,
   `s3R_xDico` text NOT NULL,
   `s3R_xDini` int(11) DEFAULT NULL,
@@ -625,23 +626,23 @@ CREATE TABLE `clientes` (
   `cliente_usuario` text NOT NULL,
   `cliente_psswd` text NOT NULL,
   `cliente_nombre1` text NOT NULL,
-  `cliente_nombre2` text DEFAULT NULL,
+  `cliente_nombre2` text,
   `cliente_apellido1` text NOT NULL,
-  `cliente_apellido2` text DEFAULT NULL,
+  `cliente_apellido2` text,
   `cliente_sexo` int(11) NOT NULL,
-  `cliente_ni` text DEFAULT NULL,
-  `cliente_ne` text DEFAULT NULL,
-  `cliente_calle` text DEFAULT NULL,
-  `cliente_colonia` text DEFAULT NULL,
-  `cliente_municipio` text DEFAULT NULL,
+  `cliente_ni` text,
+  `cliente_ne` text,
+  `cliente_calle` text,
+  `cliente_colonia` text,
+  `cliente_municipio` text,
   `cliente_estado` int(11) DEFAULT NULL,
-  `cliente_pais` text DEFAULT NULL,
+  `cliente_pais` text,
   `cliente_cp` int(11) DEFAULT NULL,
-  `cliente_telefono1` text DEFAULT NULL,
-  `cliente_telefono2` text DEFAULT NULL,
+  `cliente_telefono1` text,
+  `cliente_telefono2` text,
   `cliente_nacimiento` date DEFAULT NULL,
-  `cliente_registro` timestamp NOT NULL DEFAULT current_timestamp(),
-  `cliente_activo` int(11) NOT NULL DEFAULT 1,
+  `cliente_registro` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `cliente_activo` int(11) NOT NULL DEFAULT '1',
   `Universo` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -673,12 +674,12 @@ CREATE TABLE `consultas` (
   `con_usuario` int(11) NOT NULL,
   `con_tratamientos` int(11) DEFAULT NULL,
   `con_estudios` int(11) DEFAULT NULL,
-  `con_peso` text DEFAULT NULL,
-  `con_talla` text DEFAULT NULL,
-  `con_temp` text DEFAULT NULL,
-  `con_diagnostico` text DEFAULT NULL,
-  `con_observaciones` text DEFAULT NULL,
-  `con_fecha` timestamp NOT NULL DEFAULT current_timestamp(),
+  `con_peso` text,
+  `con_talla` text,
+  `con_temp` text,
+  `con_diagnostico` text,
+  `con_observaciones` text,
+  `con_fecha` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `con_nuevaFecha` timestamp NULL DEFAULT NULL,
   `con_estado` int(11) NOT NULL,
   `con_universo` int(11) NOT NULL
@@ -704,13 +705,13 @@ CREATE TABLE `D0cUM3n705` (
   `D0cIMxS` text NOT NULL,
   `D0cFil3xS` text NOT NULL,
   `D0cv3HiDxS` int(11) NOT NULL,
-  `D0cu53RxS` int(11) NOT NULL DEFAULT 0,
-  `D0c4c7iv0xS` int(11) NOT NULL DEFAULT 1,
+  `D0cu53RxS` int(11) NOT NULL DEFAULT '0',
+  `D0c4c7iv0xS` int(11) NOT NULL DEFAULT '1',
   `D0c7ip0xS` int(11) NOT NULL,
   `D0cFDxS` date DEFAULT NULL,
   `D0cFSxS` datetime DEFAULT NULL,
   `D0cFVxS` date DEFAULT NULL,
-  `D0cALTxS` text DEFAULT NULL,
+  `D0cALTxS` text,
   `D0cTR4xS` int(11) DEFAULT NULL,
   `D0cS3RxS` int(11) DEFAULT NULL,
   `xXUNVrSXx` int(11) NOT NULL
@@ -783,7 +784,7 @@ CREATE TABLE `documentos` (
   `doc_tipo` int(11) NOT NULL,
   `doc_usuario` int(11) NOT NULL,
   `doc_estado` int(11) NOT NULL,
-  `doc_Sistema` timestamp NOT NULL DEFAULT current_timestamp(),
+  `doc_Sistema` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `doc_fecha` timestamp NULL DEFAULT NULL,
   `doc_vencimiento` timestamp NULL DEFAULT NULL,
   `doc_alarma` int(11) DEFAULT NULL,
@@ -843,13 +844,13 @@ INSERT INTO `especies` (`especie_id`, `especie_descripcion`, `especie_estado`, `
 
 CREATE TABLE `features` (
   `id` int(11) NOT NULL,
-  `titulo` mediumtext DEFAULT NULL,
-  `descripcion` mediumtext DEFAULT NULL,
-  `link` mediumtext DEFAULT NULL,
-  `ico` mediumtext DEFAULT NULL,
-  `color` mediumtext DEFAULT NULL,
-  `version` mediumtext DEFAULT NULL,
-  `fecha` timestamp NOT NULL DEFAULT current_timestamp()
+  `titulo` mediumtext,
+  `descripcion` mediumtext,
+  `link` mediumtext,
+  `ico` mediumtext,
+  `color` mediumtext,
+  `version` mediumtext,
+  `fecha` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -914,7 +915,7 @@ CREATE TABLE `llaves` (
 
 CREATE TABLE `m0d3loS` (
   `j5uBxIDx` int(11) NOT NULL,
-  `j5uBxD35x` text DEFAULT NULL,
+  `j5uBxD35x` text,
   `j5uBxMIDx` int(11) DEFAULT NULL,
   `j5uBxMiMgx` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -1885,8 +1886,8 @@ INSERT INTO `m0d3loS` (`j5uBxIDx`, `j5uBxD35x`, `j5uBxMIDx`, `j5uBxMiMgx`) VALUE
 
 CREATE TABLE `m0d78Os` (
   `m0DxL0_id` int(11) NOT NULL,
-  `m0DxL0_descripcion` text DEFAULT NULL,
-  `m0DxL0_numero` text DEFAULT NULL,
+  `m0DxL0_descripcion` text,
+  `m0DxL0_numero` text,
   `m0DxL0_estado` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -1923,7 +1924,7 @@ INSERT INTO `m0d78Os` (`m0DxL0_id`, `m0DxL0_descripcion`, `m0DxL0_numero`, `m0Dx
 CREATE TABLE `m4rC45v3Hi` (
   `m4rCxID5s` int(11) NOT NULL,
   `m4rCxD35c5s` varchar(64) DEFAULT NULL,
-  `m4rCxIm463N5s` text DEFAULT NULL,
+  `m4rCxIm463N5s` text,
   `m4rCxTV` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -1998,9 +1999,9 @@ CREATE TABLE `mascotas` (
   `mascota_esteril` int(11) NOT NULL,
   `mascota_color` int(11) NOT NULL,
   `mascota_nacimiento` date DEFAULT NULL,
-  `mascota_sistema` datetime DEFAULT current_timestamp(),
+  `mascota_sistema` datetime DEFAULT CURRENT_TIMESTAMP,
   `mascota_dueno` int(11) DEFAULT NULL,
-  `mascota_estado` int(11) DEFAULT 1,
+  `mascota_estado` int(11) DEFAULT '1',
   `mascota_universo` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -2079,7 +2080,7 @@ CREATE TABLE `MNcPi0s` (
   `zSMNcPi0sX3DOIDIx` int(11) NOT NULL COMMENT 'Relación con estados.id',
   `zSMNcPi0sCL4BX` varchar(3) NOT NULL COMMENT 'Cve_Mun – Clave del municipio',
   `zSMNcPi0sN0omX` varchar(100) NOT NULL COMMENT 'Nom_Mun – Nombre del municipio',
-  `zSMNcPi0sAC7X` tinyint(1) NOT NULL DEFAULT 1
+  `zSMNcPi0sAC7X` tinyint(1) NOT NULL DEFAULT '1'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Tabla de Municipios de la Republica Mexicana';
 
 --
@@ -4566,9 +4567,9 @@ INSERT INTO `MNcPi0s` (`zSMNcPi0sidX`, `zSMNcPi0sX3DOIDIx`, `zSMNcPi0sCL4BX`, `z
 
 CREATE TABLE `p3rM5sx_e` (
   `p3ry6IDXx` int(11) NOT NULL,
-  `p3ry6d35cRXx` text DEFAULT NULL,
-  `p3ry6m0DuXx` text DEFAULT NULL,
-  `p3ry6nUm3Xx` text DEFAULT NULL
+  `p3ry6d35cRXx` text,
+  `p3ry6m0DuXx` text,
+  `p3ry6nUm3Xx` text
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -4757,29 +4758,29 @@ INSERT INTO `permisosOtrogados` (`po_id`, `po_permiso_id`, `po_usuario_id`, `po_
 
 CREATE TABLE `proveedores` (
   `prov_id` int(11) NOT NULL,
-  `pR0nic` text DEFAULT NULL,
-  `pR0RZ` text DEFAULT NULL,
-  `pR0RFC` text DEFAULT NULL,
-  `pR0CLL` text DEFAULT NULL,
-  `pR0NE` text DEFAULT NULL,
-  `pR0NI` text DEFAULT NULL,
-  `pR0C0L` text DEFAULT NULL,
-  `pR0CP` text DEFAULT NULL,
+  `pR0nic` text,
+  `pR0RZ` text,
+  `pR0RFC` text,
+  `pR0CLL` text,
+  `pR0NE` text,
+  `pR0NI` text,
+  `pR0C0L` text,
+  `pR0CP` text,
   `pR0MuAl` int(11) DEFAULT NULL,
   `pR0ED0` int(11) DEFAULT NULL,
   `pR0PAS` int(11) DEFAULT NULL,
-  `pR0R3P` text DEFAULT NULL,
-  `pR0T3L1` text DEFAULT NULL,
-  `pR0T3L2` text DEFAULT NULL,
-  `pR0MAL` text DEFAULT NULL,
-  `pR0IVA` text DEFAULT NULL,
+  `pR0R3P` text,
+  `pR0T3L1` text,
+  `pR0T3L2` text,
+  `pR0MAL` text,
+  `pR0IVA` text,
   `pR0FR` datetime DEFAULT NULL,
   `pR0USI` int(11) DEFAULT NULL,
   `pR0TV` int(11) DEFAULT NULL,
   `pR0TS` int(11) DEFAULT NULL,
   `pR0TT` int(11) DEFAULT NULL,
   `pR0TM` int(11) DEFAULT NULL,
-  `pR0ACT` int(11) NOT NULL DEFAULT 1,
+  `pR0ACT` int(11) NOT NULL DEFAULT '1',
   `Universo` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -4970,7 +4971,7 @@ CREATE TABLE `razas` (
   `raza_descripcion` text NOT NULL,
   `raza_especie` int(11) NOT NULL,
   `raza_inicial` int(11) NOT NULL,
-  `raza_estado` int(11) NOT NULL DEFAULT 1,
+  `raza_estado` int(11) NOT NULL DEFAULT '1',
   `raza_universo` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -5356,9 +5357,9 @@ CREATE TABLE `tr4m7s` (
   `xIoTrFIx` date DEFAULT NULL,
   `xIoTrFFx` date DEFAULT NULL,
   `xIoTrALTx` int(11) NOT NULL,
-  `xIoTrFSx` timestamp NOT NULL DEFAULT current_timestamp(),
+  `xIoTrFSx` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `xIoTrIMPx` float NOT NULL,
-  `xIoTrEDOx` int(11) NOT NULL DEFAULT 1,
+  `xIoTrEDOx` int(11) NOT NULL DEFAULT '1',
   `xXUNVrSXx` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -5399,7 +5400,7 @@ INSERT INTO `tr4m7s` (`xIoTrIDx`, `xIoTrIDC4Tx`, `xIoTrV3Hx`, `xIoTrUS3x`, `xIoT
 
 CREATE TABLE `u5u405` (
   `usuarioID` int(11) NOT NULL,
-  `fb_id` text DEFAULT NULL,
+  `fb_id` text,
   `u5hUS8ir5` text NOT NULL,
   `usuarioN1` text NOT NULL,
   `usuarioN2` text NOT NULL,
@@ -5420,15 +5421,15 @@ CREATE TABLE `u5u405` (
   `config_accent` text NOT NULL,
   `config_sidebar` text NOT NULL,
   `config_brand` text NOT NULL,
-  `config_7im3Bl0` int(11) NOT NULL DEFAULT 10,
-  `config_DrKm0d` int(11) NOT NULL DEFAULT 0,
-  `config_m0dstr` int(11) NOT NULL DEFAULT 1,
-  `config_vista` int(11) NOT NULL DEFAULT 1,
+  `config_7im3Bl0` int(11) NOT NULL DEFAULT '10',
+  `config_DrKm0d` int(11) NOT NULL DEFAULT '0',
+  `config_m0dstr` int(11) NOT NULL DEFAULT '1',
+  `config_vista` int(11) NOT NULL DEFAULT '1',
   `config_rDven` int(11) NOT NULL,
   `u5h8ir5_iDi` text NOT NULL,
   `u5hpR0lr5` int(11) NOT NULL,
   `u5hFR8ir5` datetime DEFAULT NULL,
-  `usuario_publicidad` int(11) NOT NULL DEFAULT 1,
+  `usuario_publicidad` int(11) NOT NULL DEFAULT '1',
   `Universo` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -5448,7 +5449,7 @@ INSERT INTO `u5u405` (`usuarioID`, `fb_id`, `u5hUS8ir5`, `usuarioN1`, `usuarioN2
 
 CREATE TABLE `v3hiXu7l0s` (
   `xV3hiIDXu7l0s` int(11) NOT NULL,
-  `xV3hiEDOXu7l0s` int(11) NOT NULL DEFAULT 1,
+  `xV3hiEDOXu7l0s` int(11) NOT NULL DEFAULT '1',
   `xV3hi3C0Xu7l0s` text NOT NULL,
   `xV3hiPl4c45Xu7l0s` text NOT NULL,
   `xV3hivINXu7l0s` text NOT NULL,
@@ -5494,7 +5495,7 @@ INSERT INTO `v3hiXu7l0s` (`xV3hiIDXu7l0s`, `xV3hiEDOXu7l0s`, `xV3hi3C0Xu7l0s`, `
 
 CREATE TABLE `x5KIl0mS` (
   `xkIDms` int(11) NOT NULL,
-  `xkNTms` text DEFAULT NULL,
+  `xkNTms` text,
   `xkkm7rGms` text NOT NULL,
   `xkVh3IDms` int(11) NOT NULL,
   `xkFKms` datetime DEFAULT NULL,
@@ -5502,13 +5503,13 @@ CREATE TABLE `x5KIl0mS` (
   `xku5uIDms` int(11) NOT NULL,
   `xkIDPms` int(11) DEFAULT NULL,
   `xkLTSms` double DEFAULT NULL,
-  `xkIMPms` text DEFAULT NULL,
-  `xkPLms` text DEFAULT NULL,
+  `xkIMPms` text,
+  `xkPLms` text,
   `xkTLLms` int(11) DEFAULT NULL,
-  `xkTKms` text DEFAULT NULL,
-  `xkODms` text DEFAULT NULL,
-  `xkCKms` text DEFAULT NULL,
-  `xkRNDms` text DEFAULT NULL,
+  `xkTKms` text,
+  `xkODms` text,
+  `xkCKms` text,
+  `xkRNDms` text,
   `xkDRCms` int(11) DEFAULT NULL,
   `xXUNVrSXx` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -5599,7 +5600,7 @@ INSERT INTO `x7l07` (`xID7l0`, `xN4m37l0`, `x3MPID7l0`, `xu5uID7l0`, `xFR7l0`, `
 
 CREATE TABLE `xXUNVrSXx` (
   `xXUIDXx` int(11) NOT NULL,
-  `xXUIDTPXx` timestamp NOT NULL DEFAULT current_timestamp()
+  `xXUIDTPXx` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -6011,7 +6012,7 @@ ALTER TABLE `r3l3UEF`
 -- AUTO_INCREMENT de la tabla `razas`
 --
 ALTER TABLE `razas`
-  MODIFY `raza_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=362;
+  MODIFY `raza_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=361;
 
 --
 -- AUTO_INCREMENT de la tabla `tr4m7s`

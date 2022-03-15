@@ -16,7 +16,7 @@ if($accion === 'mascotas' || $accion === 'mascotasHuerfanas'){
 	if($accion === 'mascotasHuerfanas'){
 		$C001 .= " AND mascota_dueno = 0";
 	}
-	else{
+	else{ 
 		$C001 .= " AND mascota_dueno != 0";
 	}
 	$S001 = $conexion->query($C001) or die ("Fallo al consultar mascotas");
@@ -179,7 +179,7 @@ elseif($accion == 'procesaMascota'){
 	$_SESSION['formMascota']['mascotaColor'] = $mascotaColor;
 	$_SESSION['formMascota']['mascotaNacimiento'] = $mascotaNacimiento;
 	$_SESSION['formMascota']['mascotaCliente'] = $mascotaCliente; 
-	if($mascotaCliente == 'Ninguno'){ $mascotaCliente = 0;}
+	if($mascotaCliente == 'ninguno'){ $mascotaCliente = 0;}
 
 	if(!empty($mascotaCliente) && !in_array("ninguno", $mascotaCliente)){
 		foreach ($mascotaCliente as $key) {

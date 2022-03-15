@@ -31,6 +31,9 @@ include('parciales/7i7ul0.php');
             <a href="app?accion=mascotas" class="btn btn-app bg-success">
               <i class="fad fa-arrow-left"></i> <?= regresar ?>
             </a>   
+            <a href="app?accion=nuevaConsulta&mascotaID=<?= $eCry($mascotaID) ?>" class="btn btn-app bg-info">
+              <i class="fad fa-plus"></i> <?= agregarConsulta ?>
+            </a>   
   
           </div>
 

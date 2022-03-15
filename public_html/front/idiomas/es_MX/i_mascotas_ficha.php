@@ -21,6 +21,8 @@ define('estadoReproductivo', 'E. Reproductivo');
 define('propietario', 'Dueño');
 define('fechaNacimiento', 'Fecha de Nacimiento');
 define('fechaRegistro', 'Fecha de Registro');
+define('agregarConsulta', 'Nueva Consulta');
+
 
 define('expedienteTitulo', 'Expediente de ');
 
