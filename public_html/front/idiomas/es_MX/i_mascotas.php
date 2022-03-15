@@ -35,12 +35,7 @@ define('cliente', 'Cliente');
 define('continuarFormulario', 'Abrir Formulario');
 define('eliminarFormulario', 'Eliminar Formulario');
 define('foto', 'Fotogrfía');
-
-
-
-
-
-
+define('cerrar', 'Cerrar');
 
 define('lbl_copy', 'Copiar');
 define('lbl_csv', 'CSV');

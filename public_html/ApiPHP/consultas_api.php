@@ -28,9 +28,31 @@ if($accion === 'consultas'){
 			'consultaID' => $consulta['con_id'],
 			'consultaMascota' => $consultaMascota,
 			'consultaEstado' => $consulta['con_estado'],
-			'consultaFecha' => $consulta['con_fecha']
+			'consultaFecha' => $consulta['con_fecha'],
+			'consultaMascotaID' => $consulta['con_mascota']
 		];
 		array_push($LdConsultas, $datosConsulta);
+	}
+
+	$C002 = "SELECT * FROM consultas WHERE con_universo = 1 ORDER BY con_nuevaFecha ASC";
+	$S002 = $conexion->query($C002) or die ("Fallo al consultar consultas: ".$C002);
+	$numConsultasProx = $S002->num_rows;
+	$LdConsultasProx = [];
+	while ($consultaProx = $S002->fetch_array()) {
+		$mascotaID = $consultaProx['con_mascota'];
+		$C019 = "SELECT mascota_nombre FROM mascotas WHERE mascota_id = $mascotaID";
+		$S019 = $conexion->query($C019) or die ("Fallo al consultar Mascota: ".$C019);
+		$datosMascota = $S019->fetch_assoc();
+		$consultaMascota = dCry2($datosMascota['mascota_nombre']);
+		unset($datosConsulta);
+		$datosConsulta = [
+			'consultaID' => $consultaProx['con_id'],
+			'consultaMascota' => $consultaMascota,
+			'consultaEstado' => $consultaProx['con_estado'],
+			'consultaFechaProx' => $consultaProx['con_nuevaFecha'],
+			'consultaMascotaID' => $consultaProx['con_mascota']
+		];
+		array_push($LdConsultasProx, $datosConsulta);
 	}
 
 }

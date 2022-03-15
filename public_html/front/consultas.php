@@ -138,14 +138,13 @@ include('parciales/7i7ul0.php');
 </div>
 
 <?php include('parciales/3p1416e.php'); 
-
+ 
 
 unset($_SESSION['tXFrm']);
 unset($_SESSION['m3n3Rr0R_num']);
 ?>
   <script>
   $(function () {
-
     /* initialize the external events
      -----------------------------------------------------------------*/
     /*function ini_events(ele) {
@@ -204,6 +203,7 @@ unset($_SESSION['m3n3Rr0R_num']);
     });*/
 
     var calendar = new Calendar(calendarEl, {
+      locale: 'es',
       headerToolbar: {
         left  : 'prev,next today',
         center: 'title',
@@ -217,6 +217,8 @@ unset($_SESSION['m3n3Rr0R_num']);
           $fechaH = explode(':', $consulta['consultaFecha']);
           $dia = $fecha[2];
           $hora = $fechaH[0];
+          $minutos = $fechaH[1];
+          $segundos = $fechaH[2];
           $hora = substr($hora, 11, 3);
           $dia = substr($dia, 0, -9);
           $mes = $fecha[1];
@@ -233,10 +235,41 @@ unset($_SESSION['m3n3Rr0R_num']);
         ?>
           {
             title          : '<?= $consulta['consultaMascota'] ?>',
-            start          : new Date(<?= $anho ?>, <?= $mes ?>-1, <?= $dia ?>, <?= $hora ?>),
+            start          : new Date(<?= $anho ?>, <?= $mes ?>-1, <?= $dia ?>, <?= $hora ?>, <?= $minutos ?>, <?= $segundos ?>),
             backgroundColor: '<?= $estado ?>', //red
             borderColor    : '<?= $estado ?>', //red
-            allDay         : false
+            allDay         : false,
+            url: 'app?accion=fichaMascota&mascotaID=<?= $eCry($consulta['consultaMascotaID']) ?>'
+          },
+        <?php } ?>
+        <?php foreach ($LdConsultasProx as $key => $consulta) { 
+          $fecha = explode('-', $consulta['consultaFechaProx']);
+          $fechaH = explode(':', $consulta['consultaFechaProx']);
+          $dia = $fecha[2];
+          $hora = $fechaH[0];
+          $minutos = $fechaH[1];
+          $segundos = $fechaH[2];
+          $hora = substr($hora, 11, 3);
+          $dia = substr($dia, 0, -9);
+          $mes = $fecha[1];
+          $anho = $fecha[0];
+
+          $estado = $consulta['consultaEstado'];
+          if($estado == 1){
+            $estado = 'blue';
+          }
+          elseif($estado == 2){
+            $estado = 'purple';
+          }
+
+        ?>
+          {
+            title          : '<?= $consulta['consultaMascota'] ?>',
+            start          : new Date(<?= $anho ?>, <?= $mes ?>-1, <?= $dia ?>, <?= $hora ?>, <?= $minutos ?>, <?= $segundos ?>),
+            backgroundColor: '<?= $estado ?>', //red
+            borderColor    : '<?= $estado ?>', //red
+            allDay         : false,
+            url: 'app?accion=fichaMascota&mascotaID=<?= $eCry($consulta['consultaMascotaID']) ?>'
           },
         <?php } ?>
       ],

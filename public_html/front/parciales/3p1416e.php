@@ -212,7 +212,8 @@
 
 <?php if($accion == 'consultas'){ ?>
   <!-- fullCalendar 2.2.5 -->
-  <script src="plugins/moment/moment.min.js"></script>
+  <!--<script src="plugins/moment/moment.min.js"></script>-->
+  <script src="plugins/moment/locale/es.js"></script>
   <script src="plugins/fullcalendar/main.js"></script>
 <?php } ?>
 
