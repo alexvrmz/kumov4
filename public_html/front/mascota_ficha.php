@@ -95,7 +95,7 @@ include('parciales/7i7ul0.php');
                     <b><?= estadoReproductivo ?></b> <a class="float-right"><?= $estadoSexual[$mascota['mascota_esteril']] ?></a>
                   </li>
                   <li class="list-group-item">
-                    <b><?= propietario ?></b> <a class="float-right"><?= $mascota['mascota_dueno'] ?></a>
+                    <b><?= propietario ?></b> <a class="float-right" href="app?accion=fichaCliente&clienteID=<?= $eCry($mascota['mascota_duenoID']) ?>"><?= $mascota['mascota_dueno'] ?></a>
                   </li>
                   <li class="list-group-item">
                     <b><?= fechaNacimiento ?></b> <a class="float-right"><?= $mascota['mascota_nacimiento'] ?></a>

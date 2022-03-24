@@ -395,6 +395,7 @@ elseif($accion == 'fichaMascota'){
 		$S009 = $conexion->query($C009) or die ("Fallo al consultar cliente: ".$C009);
 		$datoCliente = $S009->fetch_assoc();
 		$mascota['mascota_dueno'] = dCry2($datoCliente['cliente_apellido1']).' '.dCry2($datoCliente['cliente_nombre1']);
+		$mascota['mascota_duenoID'] = $datoCliente['cliente_id'];
 	}
 
 	$edadCompleta = calcularEdad($mascota['mascota_nacimiento']);

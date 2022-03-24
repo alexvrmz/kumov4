@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 16-03-2022 a las 00:49:55
+-- Tiempo de generación: 24-03-2022 a las 01:01:52
 -- Versión del servidor: 10.1.38-MariaDB
 -- Versión de PHP: 5.6.40
 
@@ -194,7 +194,20 @@ INSERT INTO `1Bin4kuru` (`kuRuIDBiN`, `kuRuD3SBiN`, `kuRuUSIDBiN`, `kuRuUUIDBiN`
 (144, 'zNJ73PR92jrh8KD3uIGLZZIB/jkj5LFnvLDz54xAEwCAMws+N0cHYE33AAEQVxH547q9+gW4Q/gsXQvChuXxl/2Rn3Dtw2pdEGaGgLlkVZWAMhaSXZwD+vboAcfimwYwQVjW0irsj6H39Tb83oWBn8xJBSqnwEB48vcBZzfR0LKjfexkF7E0y1fy3Zn1mGTH6ppmMFvlCBvvxh5pscRnu2xusH2J2PM+9ZW8DcfIAJg1bekvPTZ65PEU9AkSKIfZZ+aWUaIa3v9fQFT8w1dcC9U5YL4GkDTLScX4yT6ltp32YLKAfZyXcSTvB/OSvZuDuDf4VVdvaoPBWYEOv372EA==', 1, 1, 0, 0, 0, 0, 0, 100, '2022-03-12 13:57:15'),
 (145, 'x+7cbYVv794qGmW+6pv4Jm+ouzBjVEZvQicIv60hsDoIQ08+XJ8tbUbBXPnJKk3W9pECPtUVHObJejI+Da0xiDPrtVZZhnwglcvD0iH/E2WVaKU8RKbkhwKmrQCgVzTbcy0s30mxvdyqPcCZwr1cCd6ZFsVFFW70uluuCg01E2FvErvS5dynDhjvj6U28X8NjMpg+M2AnJF3QV4L0APINPbPjgvUqSSVadBumQCMmnOefi3mHXNhnXQH1tEpC1ce4/K+l340wI66nrmqNpYtqiKBFqNEEQ9/+mrMiJB3DQli2cD1/uhVD0gLsLqkZlJ7mGeMaoANl8gtdMMtl7xTNA==', 1, 1, 0, 0, 0, 0, 0, 100, '2022-03-14 10:13:07'),
 (146, '2CGvm6iwjscEoXqdhf3XYptLFYwxbSXqw4jFfpiPpBR9wIZc9FkOjZ8SgMNQcNUksdzrtQ7ps+Qy1QLWzjZOAUejcyIG9fd6ePGvbzuXLM7tZy9n6/6lNKfnkRmCbpU10rJQcbyiS3MEbcC7v69E+3qrE1mddwG0WqidMpWazYtm1XRfoZDFnmzCYLvf2M4nsi6vmObmxFCHJnjwj0zlIy5WxbplmzlpuOVB4fWYY49fEqGvqLqDQa550u2qe6wYpuQ9xl7nWRM5OiQooz8vttz4jEMGfiSsnLxdYDxH72u+IAgSkgdVtKJ5tNy+w4rHM/XxpMKlyPKTgBkj9/4Vgw==', 1, 1, 0, 0, 0, 0, 0, 101, '2022-03-14 10:21:16'),
-(147, 'WS2VL/sUVJ6SaJxTKtDY6mClyto2t2EiRDSZooWqCOQGM0yoi36izkaK7l9RfvCbOoCzXCjxyRxRk8p152aZgaMlRnFwb5xlrdStkoG+Gzirkl13qa4D8q+yxFmSm2BVkHhROBI6jJOtmcPLiZ2nFrGTpkZK7v+3Qp2ueD81iJ8LA94dnKbTSs3vjpsyCTA55z49uNkksWObwLurZvNR0R5+Cc9ktXfNFV13TkGEd/1ZUzNSALUtWw3aHfMMY9FNSxPAzoD9KXYBEZAFDDtaWp7H5tQnmOiXaUeyZBhJ177lIRboyech9m34Fd1JZdfpCtrqxwr8FWjVTgkrgi8dRg==', 1, 1, 0, 0, 0, 0, 0, 100, '2022-03-14 10:46:26');
+(147, 'WS2VL/sUVJ6SaJxTKtDY6mClyto2t2EiRDSZooWqCOQGM0yoi36izkaK7l9RfvCbOoCzXCjxyRxRk8p152aZgaMlRnFwb5xlrdStkoG+Gzirkl13qa4D8q+yxFmSm2BVkHhROBI6jJOtmcPLiZ2nFrGTpkZK7v+3Qp2ueD81iJ8LA94dnKbTSs3vjpsyCTA55z49uNkksWObwLurZvNR0R5+Cc9ktXfNFV13TkGEd/1ZUzNSALUtWw3aHfMMY9FNSxPAzoD9KXYBEZAFDDtaWp7H5tQnmOiXaUeyZBhJ177lIRboyech9m34Fd1JZdfpCtrqxwr8FWjVTgkrgi8dRg==', 1, 1, 0, 0, 0, 0, 0, 100, '2022-03-14 10:46:26'),
+(148, 'an6Kk6E++SwfHrEmLPzSHy874mg69P7ZG0RGlIBnnaPLnN+9OoIm+y5lSgy6ppf3YB07/8Dy46uGzqbKXkrYwDkBh2ReNG7+yUMYNOHwnSYg9r/qY5Qa7w0B1Q9KYGL6KXuJI7SuC4NqquVdn3GZefeMYhNgPIhxoA7wE06UwIpexRzx1OAvTIqrTiGWMmeKHOf1exE4w/KICEePmdbx40SljUQvhw0+EHu0/rldUbd3fFBTaYKAcPktPAgyrT5E6YOfIP/tfEOOsK/AosnjXLP6EQ8QC8NqOTDmeXojKQc9RccQBj9hMYA2tokZn4Lbm1mrNQvgS/rGydA2gs7y7Q==', 1, 1, 0, 0, 0, 0, 0, 100, '2022-03-23 16:32:22'),
+(149, 'OjibXLpIWGYyi1srXGA+I+WhL56pWBUTjuU6kfOeHOlVo08+JUC1O/x/HxxSatc3vehhhD2wv2F1rPZGdlW2ccER2JHjygvKPMAZb6zO3pk95its5R5gnJHb0IO9PyJplYE29qBTE/kljd6gMxVhOm1HA6gWZETs860No0s+YvZ3GXB8ehGdcqC2XTJ29Snv5u6TlN8ZpYpjYJxAUn+oiCzuXLobgP4nWV3tgXULnvuYvQ7uV75o2r+VQ3rfVQ+V6RMpETVgGNBvqrSoAxqptFDIjvXKdi8tJOY84YXzIk9bW6iTqbjEtZf3oMgxYKD2PpUa9Jn14qsG4e2BJGE7WQ==', 1, 1, 0, 0, 0, 0, 0, 101, '2022-03-23 17:46:05'),
+(150, 'ELb+8mPjrkNLxPdzfHc6czvabJInAwv7isv4CQYDxckQWL96i3F0qFDq/XKOjMjKJfgzpVV9wDBGODF9rnNIcgm5QJXG1izpgJf/w0BDYAxdxd79DRWpW7fLE/G2g/TVO7KbA5ncsAPBui6bIrtpzFpWoJu9ruF6HrwlSDcLjcFwwXDJM5Wt4s2qfiFru7ajZIG2SCe6S577cigHBrQnakE4ZhPLcjQQpZVZbFc3zvQDFuauM5r/oHof+IbuIVVpiv3s7oV9nSCkKoHZO31FzR+F7VZfgG+Giz8UzO9b9bQrQdA38RRUv9VzvN8IU7RmMa2b8dnSgHGe/p2KE3UOaw==', 3, 3, 0, 0, 0, 0, 0, 100, '2022-03-23 17:46:17'),
+(151, 'UtbZI2xoteILc1jqapkshNZp82g6XBhBWZec0OcUcP21N4P2uEr29wPRn/PUOft9ooXn/gcYexiadc5CDjgXtELWeAQQqYOSLRsDa1Cc1/MXbWIfe2X27Xm6SV3dr+JnVWH1a84Lx5OXBdlR+he8l+5KrtHvqJLtYwfe28ymMPhWAS+WJjz+cAIk8kGUMdsBilM6+DAZFwADBgf+gwIDeRDpctEPitXtoB9Qap70lWmmXJ7aSwGm1msE7koYqUtIQybWbca3o4hCjfERkQ/Aen4E6WzDkK4akbgD6HiRabu6cYJcSIRZs/o/pxRH4DEQVb11gmoGzSbdWRYYAKgvvg==', 3, 3, 0, 0, 0, 0, 0, 101, '2022-03-23 17:46:39'),
+(152, 'IiqN/qb8HJ00zpAB4ZZnAKjSXKu8oOOo3P4cKZTYBFOwpIf2tic7JrVWzW93+GgpaYU4dzU39WfFSwqNIdQM5wTXZzoKTCGgn6WoWGKK9V4pHsGpPh4BvUSxNNe5U3RhReLT7OxtVm+ygWOKqj/CjWVqbMreyc477t3/Ea9DWRnqnjU/E1RQFfJi6RVQcaYw6yTvNDJ2gASm9MH/b3WHQf+icPN5lGVFIkhRYVul/YPrStFK3mWvj9pu4/SR3FWUtQ4OeRRddort1+XFUkY6Bty+6xx5pwNJESk9bTHwNgZgxCtBuyS0LXuvPzvzmNJ/WatYxB0oBZwYOooblHX4wQ==', 3, 3, 0, 0, 0, 0, 0, 100, '2022-03-23 17:46:43'),
+(153, 'o+8NV+IkOX5aZTgaXSaBhpPbPedn8F6waL9tj6pxzsKgwKRTYrg5IFtFKatAF6stDm8detemz/qzJW4s0f4ziqfYNage53cDfNdA674r+WAmCAIJhuKABr/3cNBbVWYukK+b7IKLP/5xlW9oW7RXuISte81OZH6zeyY0bFcut+SEJ2NFGfW3EXrPV6zzarhHdqqFOOEerB4kFVJ6JQCg9ZPg0JfC2UGzAY9WutzGjU2u+iV6w1A2d+EqU5boGiNFSvHJSPIuegmqnHe88ErnEmbClOW+65/PJTSE89pB3ecb/79K9S5mqa/ssNwP5GaGmvdwi/wxmDp0Q+iC69oT4w==', 3, 3, 0, 0, 0, 0, 0, 101, '2022-03-23 17:47:14'),
+(154, 'Ulsh63/KnlkFi26sjQvW6Z3MfcI2nkbfrFyeuHB5PF5MMGP5aO+MrGJ5VEWcx386usxbWqT7r3nvuUthYNEi1K4fhjZNDVsebinUektfHzcvNAxOau5rU9y9Cbm33ASpZQ7MzjkIKEe8KilaS4MAtoE3+TlbswXZd7dH2TlRcdgDho3/73KS+/ib85ahftLwv5UNFX/rz5iWAV4pTB7XTQAXRXhZk+fYjUjYUPVjYuxHjUZyzqlXTfSkaPmdSq33lWSDWR9BWOpkmSPteBujArjIEcFTrUVsmfIdCuz7pZ1aoa35H5bHqMCNXeIkXX4S0nQQ7Hn0LtnF8OxTsC0YSg==', 3, 3, 0, 0, 0, 0, 0, 100, '2022-03-23 17:47:20'),
+(155, 'YEhlpIlsKmWU0DILsCWhgzMUnw93rkVvEpmVk690RKILKKaMS3g76b+vsoe8IrfZAmGMS3t/2zwsokDZKBF+X/R5QTf4ZLiMB2+f+WQsJlPJ6KAg7NgbF0xpuHTurIpfAJEDGxx+kfBVXYpkfdfqZqK6b3ZjA1IY2Yudz8Dxg2zNkrOcvTtKuQQSBRHv/UgalzGs+tXVfVWNoeTdOsS+lU1yLK/XfAuhPMxKWILS/x5fESOoebpBnockpD1QL2UuVP+H3e+d5LJP4lbIkLrrMU7viLowiafd6lb6pIiKus1eO1n+ONhtt9W6xmk1Sac6Au1Uwqf1ArxF86LMyjyaLA==', 3, 3, 0, 0, 0, 0, 0, 101, '2022-03-23 17:52:08'),
+(156, 'DnP6AAJnzbSDU7jYKIuwPht27G39zzkPK9HOqwGRFbjDQaoi7hK5w0y5EnSuuBCf/2Ul6R6VVD1+egATdClTdOpHo46CJ0wC3meDx8G3LDmzB8LQpZ7103F91Er7eTfdqGmUH802wfn6MoR8vf0hVYtr2FlIFMK8tDl1ptVt9ADxAClto8Ji2pEB9WzG6UlzknmXPyBTCvk2HMLkDorwM4jI/8R5Wf/xcI18zVTHaFsZt2H/pgKO45iWjlzQKmnK7+7OMyF6/O86ns3rdGNDGXGNZW699TGJD/kll8n8Cbf9oS9Bh2FdPaP4G3vOIMCxFc2YeIRwhmvyO56Rfvv+Yw==', 3, 3, 0, 0, 0, 0, 0, 100, '2022-03-23 17:52:14'),
+(157, 'pFU4h6t8DqMAxSIrzpqAcIZDnRzbjNwxF7k3bv35i3eGBLSKK+BU/XxnILedXBrouEuSgo/adQAE6yioPtVKFiK18TLxJ5EDt+2Zag4+WCNfuw18scXg3yVfzAsTFlX70t4WBclNKv6h1K4mC4SPT2iT82D9cjrA2sZAomJvn1l9n5pCyXxJnlBKUZSahmMb6iyumYaiaXoPgwNog/+0UE+9g9bhxByt22OKDOnI+MPRxeEoBjxKI3JOAIQ27UkZ1VanFTXDf2LYnrTvWEnRTNOwD6wkVMwoZDF3OtCT5g/YeYvTorYszc6HfxIcoxPRd0uRB0fjV2Gw6v4QYu3Cyg==', 3, 3, 0, 0, 0, 0, 0, 101, '2022-03-23 17:52:55'),
+(158, 'AxVUWE9ExKBLofIXEABw7xPkI3O6zuFTZYxRtSg9+vEa7+TXCTfbksW1QzGdcmQL1GX8yr171q/6/ac/tCfJoe12DGrEm8hDgX0FSZHyfCJYxV7ue5De9x0H0lsvzMBJ7ocJDk69UQUGdetYmndFe8xQ9su7mhUwuULawq7cZ+jI2qD+tB7vOe1e6HhOFNhYMAT18BO+NJsyw1g0TQQlW5SbNsG2l3lvGFF87WuekOSJ2aXqJ6lL2ZymVWMZpbmBLxZ2Q339GiHAdLuyikrZPebBIQrqaz2iPSGvbfFq0/8oFy970ASaUZjeap8phaIzTXnmRUXZ74G/DjxM/g1wRg==', 3, 3, 0, 0, 0, 0, 0, 100, '2022-03-23 17:53:00'),
+(159, 'p2gRS3b71gY3PgVoy6FtEGs10oSWkF7NXJ90UqFedC8zjKZ9ldqosAFWk/BfRZebjU3iBh7XMj20jI19tmbR1qbJjbrQ2/yfCwDO146sJy+n2ZpLDGlFgCa+qTKVZnuMKQ7Nf0RNexcqngOQO4thmyyJd0FrXtuBEy8VTLzgWAYff46qg9ibsAoFGuYfTytisWpOgHNtmKi5zF4iHxNlQjn77RnuHrZ9yAbXz28/1n15dTTItUqJIxU364NpV/5XV74jbnHHbDuFT38mpkne+dJiCzwSCRkuesAZ4R1gX/N7BA0ZnL8yKh5dowqvx2EncFd6J65s2FHias/3YIP+Bg==', 3, 3, 0, 0, 0, 0, 0, 101, '2022-03-23 17:54:45'),
+(160, 'HBRBn64N7ZhbAt1nhCKjYbOmQiWw0OQbpvC8EHJ119GQkoQ8WDq0a2PDMCRfFkTB51nSSp+zzp1UhhLtJQiwNf9kqzEoAjQ9OrOzyW6jFYHZ98UrFNIZjs7IGHxnS5xWVkf9Ex5CSFLqzssVvNl+xpTslWg3Rr6BtObM1pCv+9VNKEOeBxdmq4rKXqlFvdq1yHQ7y/b9X7LdmR2YcLhvPvfPScDqET8V3G9e7n0T/PrUY1UBek2bOMiAfgF99yeBBTGaFKdJvQ/U3CQpBLIIDS0mlSGdj/64xQ0D/IJAAJQt5AurercYddFeOJmyXq4s5g7XLem3jVYRh6xUG9CbOw==', 3, 3, 0, 0, 0, 0, 0, 100, '2022-03-23 17:54:52');
 
 -- --------------------------------------------------------
 
@@ -519,7 +532,93 @@ INSERT INTO `8i74c0r4` (`x8iiD74`, `x8ic47374`, `x8iu5uR74`, `x8if3cH474`, `x8id
 (232, '4c7p3r', 1, '2022-03-14 16:02:20', 'Se actualizo correctamente el permiso: 19'),
 (233, '4c7p3r', 1, '2022-03-14 16:02:34', 'Se actualizo correctamente el permiso: 30'),
 (234, '4c7p3r', 1, '2022-03-14 16:02:46', 'Se actualizo correctamente el permiso: 31'),
-(235, '4c7p3r', 1, '2022-03-14 16:03:02', 'Se actualizo correctamente el permiso: 32');
+(235, '4c7p3r', 1, '2022-03-14 16:03:02', 'Se actualizo correctamente el permiso: 32'),
+(236, 'acceso', 1, '2022-03-23 16:32:22', 'Ingresó al Sistema el Usuario:  1<br>/= Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36<br>/=::1<br>/=52736'),
+(237, '3xi7', 1, '2022-03-23 17:46:05', 'Salió del sistema el Usuario: 1'),
+(238, '3xi7e', 1, '2022-03-23 17:46:05', 'Se eliminaron los archivos temporales del usuario: 1'),
+(239, 'acceso', 3, '2022-03-23 17:46:16', 'Ingresó al Sistema el Usuario:  3<br>/= Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36<br>/=::1<br>/=54322'),
+(240, '3xi7', 3, '2022-03-23 17:46:39', 'Salió del sistema el Usuario: 3'),
+(241, '3xi7e', 3, '2022-03-23 17:46:39', 'Se eliminaron los archivos temporales del usuario: 3'),
+(242, 'acceso', 3, '2022-03-23 17:46:43', 'Ingresó al Sistema el Usuario:  3<br>/= Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36<br>/=::1<br>/=54368'),
+(243, '3xi7', 3, '2022-03-23 17:47:14', 'Salió del sistema el Usuario: 3'),
+(244, '3xi7e', 3, '2022-03-23 17:47:14', 'Se eliminaron los archivos temporales del usuario: 3'),
+(245, 'acceso', 3, '2022-03-23 17:47:19', 'Ingresó al Sistema el Usuario:  3<br>/= Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36<br>/=::1<br>/=54404'),
+(246, '3xi7', 3, '2022-03-23 17:52:08', 'Salió del sistema el Usuario: 3'),
+(247, '3xi7e', 3, '2022-03-23 17:52:08', 'Se eliminaron los archivos temporales del usuario: 3'),
+(248, 'acceso', 3, '2022-03-23 17:52:13', 'Ingresó al Sistema el Usuario:  3<br>/= Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36<br>/=::1<br>/=54476'),
+(249, '3xi7', 3, '2022-03-23 17:52:55', 'Salió del sistema el Usuario: 3'),
+(250, '3xi7e', 3, '2022-03-23 17:52:55', 'Se eliminaron los archivos temporales del usuario: 3'),
+(251, 'acceso', 3, '2022-03-23 17:53:00', 'Ingresó al Sistema el Usuario:  3<br>/= Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36<br>/=::1<br>/=54538'),
+(252, '3dtu5u2', 3, '2022-03-23 17:54:42', 'Se actualizo el Usuario y Contraseña: alux@kumo.click'),
+(253, '3xi7', 3, '2022-03-23 17:54:45', 'Salió del sistema el Usuario: 3'),
+(254, '3xi7e', 3, '2022-03-23 17:54:45', 'Se eliminaron los archivos temporales del usuario: 3'),
+(255, 'acceso', 3, '2022-03-23 17:54:52', 'Ingresó al Sistema el Usuario:  3<br>/= Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36<br>/=::1<br>/=54674'),
+(256, '3dtP3rm', 3, '2022-03-23 17:55:33', 'Se Desactivo correctamente el permiso! 461'),
+(257, '3dtP3rm', 3, '2022-03-23 17:55:38', 'Se Desactivo correctamente el permiso! 462'),
+(258, '3dtP3rm', 3, '2022-03-23 17:55:39', 'Se Desactivo correctamente el permiso! 463'),
+(259, '3dtP3rm', 3, '2022-03-23 17:55:43', 'Se Desactivo correctamente el permiso! 464'),
+(260, '3dtP3rm', 3, '2022-03-23 17:55:47', 'Se Desactivo correctamente el permiso! 465'),
+(261, '3dtP3rm', 3, '2022-03-23 17:55:50', 'Se Desactivo correctamente el permiso! 466'),
+(262, '3dtP3rm', 3, '2022-03-23 17:55:53', 'Se Desactivo correctamente el permiso! 467'),
+(263, '3dtP3rm', 3, '2022-03-23 17:56:01', 'Se Desactivo correctamente el permiso! 469'),
+(264, '3dtP3rm', 3, '2022-03-23 17:56:09', 'Se Desactivo correctamente el permiso! 473'),
+(265, '3dtP3rm', 3, '2022-03-23 17:56:14', 'Se Desactivo correctamente el permiso! 474'),
+(266, '3dtP3rm', 3, '2022-03-23 17:56:18', 'Se Desactivo correctamente el permiso! 475'),
+(267, '3dtP3rm', 3, '2022-03-23 17:56:25', 'Se Desactivo correctamente el permiso! 476'),
+(268, '3dtP3rm', 3, '2022-03-23 17:56:51', 'Se Desactivo correctamente el permiso! 477'),
+(269, '3dtP3rm', 3, '2022-03-23 17:56:57', 'Se Desactivo correctamente el permiso! 478'),
+(270, '3dtP3rm', 3, '2022-03-23 17:57:02', 'Se Desactivo correctamente el permiso! 479'),
+(271, '3dtP3rm', 3, '2022-03-23 17:57:14', 'Se Desactivo correctamente el permiso! 480'),
+(272, '3dtP3rm', 3, '2022-03-23 17:57:18', 'Se Desactivo correctamente el permiso! 481'),
+(273, '3dtP3rm', 3, '2022-03-23 17:57:22', 'Se Desactivo correctamente el permiso! 482'),
+(274, '3dtP3rm', 3, '2022-03-23 17:57:29', 'Se Desactivo correctamente el permiso! 487'),
+(275, '3dtP3rm', 3, '2022-03-23 17:57:32', 'Se Desactivo correctamente el permiso! 488'),
+(276, '3dtP3rm', 3, '2022-03-23 17:57:37', 'Se Desactivo correctamente el permiso! 489'),
+(277, '3dtP3rm', 3, '2022-03-23 17:57:43', 'Se Desactivo correctamente el permiso! 490'),
+(278, '3dtP3rm', 3, '2022-03-23 17:59:07', 'Se Desactivo correctamente el permiso! 491'),
+(279, '3dtP3rm', 3, '2022-03-23 17:59:43', 'Se Desactivo correctamente el permiso! 493'),
+(280, '3dtP3rm', 3, '2022-03-23 17:59:56', 'Se Desactivo correctamente el permiso! 494'),
+(281, '3dtP3rm', 3, '2022-03-23 18:00:02', 'Se Desactivo correctamente el permiso! 495'),
+(282, '3dtP3rm', 3, '2022-03-23 18:00:07', 'Se Desactivo correctamente el permiso! 496'),
+(283, '3dtP3rm', 3, '2022-03-23 18:00:11', 'Se Desactivo correctamente el permiso! 497'),
+(284, '3dtP3rm', 3, '2022-03-23 18:00:15', 'Se Desactivo correctamente el permiso! 498'),
+(285, '3dtP3rm', 3, '2022-03-23 18:00:21', 'Se Desactivo correctamente el permiso! 499'),
+(286, '3dtP3rm', 3, '2022-03-23 18:00:24', 'Se Desactivo correctamente el permiso! 500'),
+(287, '3dtP3rm', 3, '2022-03-23 18:00:27', 'Se Desactivo correctamente el permiso! 501'),
+(288, '3dtP3rm', 3, '2022-03-23 18:00:29', 'Se Desactivo correctamente el permiso! 502'),
+(289, '3dtP3rm', 3, '2022-03-23 18:00:32', 'Se Desactivo correctamente el permiso! 503'),
+(290, '3dtP3rm', 3, '2022-03-23 18:00:34', 'Se Desactivo correctamente el permiso! 504'),
+(291, '3dtP3rm', 3, '2022-03-23 18:00:38', 'Se Desactivo correctamente el permiso! 505'),
+(292, '3dtP3rm', 3, '2022-03-23 18:00:43', 'Se Desactivo correctamente el permiso! 506'),
+(293, '3dtP3rm', 3, '2022-03-23 18:00:45', 'Se Desactivo correctamente el permiso! 507'),
+(294, '3dtP3rm', 3, '2022-03-23 18:00:47', 'Se Desactivo correctamente el permiso! 508'),
+(295, '3dtP3rm', 3, '2022-03-23 18:00:56', 'Se Desactivo correctamente el permiso! 509'),
+(296, '3dtP3rm', 3, '2022-03-23 18:01:01', 'Se Desactivo correctamente el permiso! 510'),
+(297, '3dtP3rm', 3, '2022-03-23 18:01:05', 'Se Desactivo correctamente el permiso! 511'),
+(298, '3dtP3rm', 3, '2022-03-23 18:01:09', 'Se Desactivo correctamente el permiso! 512'),
+(299, '3dtP3rm', 3, '2022-03-23 18:01:12', 'Se Desactivo correctamente el permiso! 513'),
+(300, '3dtP3rm', 3, '2022-03-23 18:01:17', 'Se Desactivo correctamente el permiso! 516'),
+(301, '3dtP3rm', 3, '2022-03-23 18:01:20', 'Se Desactivo correctamente el permiso! 517'),
+(302, '3dtP3rm', 3, '2022-03-23 18:01:23', 'Se Desactivo correctamente el permiso! 518'),
+(303, '3dtP3rm', 3, '2022-03-23 18:01:27', 'Se Desactivo correctamente el permiso! 519'),
+(304, '3dtP3rm', 3, '2022-03-23 18:01:33', 'Se Desactivo correctamente el permiso! 520');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `binakuru`
+--
+
+CREATE TABLE `binakuru` (
+  `bi_id` int(11) NOT NULL,
+  `bi_cambios` text,
+  `bi_tipoA` int(11) DEFAULT NULL,
+  `bi_IDA` int(11) DEFAULT NULL,
+  `bi_usuario` int(11) NOT NULL,
+  `bi_accion` int(11) DEFAULT NULL,
+  `bi_fecha` int(11) DEFAULT NULL,
+  `universo` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -659,7 +758,8 @@ INSERT INTO `clientes` (`cliente_id`, `cliente_usuario`, `cliente_psswd`, `clien
 (7, 'a@mailo.com', 'uoLYDUNa', 'Hcv/WJcbcLveCO3kMHSdoVDvgSZnfqP5i+nNp1eLQPC1ky0JN/TfN9igvogOAy40OTJARcW8NG67KRgk0ih+g8mhKHRMWbKi2K+kPJ3ee/6PtbWPFKaFGJm3S7I6t6HjDifwgTMYLvZSQ6KvcNSWY30EGXKbIZcLimmELJw1ADGNE4FVWMwQKmfutndVYS2fHO0m27w6Q2FsFqazepuQtmvhfF/Pv7XEwB6fySbMOh7+z2zuq1fAy1Q5zgKySVAPybdSm8skqNlPBuJNzrkXVyCZB7nKxn2p8EjBZgwJZ39xx2JJc0BiEwz8iFZwnan8DjNcpdToRAiYFUPw0x6yDg==', 'pC5kFBgRm5JpTdrmJmrYtzw+kPq28LSh5dcDdDlo0JDj7iF+7GvfyGG+PDGeqeJXXWW366Fgu0tXGPOMEr2WLybyoT2EmDBofm3JQ40dUQU3cQVb1BC3H9Ohmk6ZRi/rc4Teuv+jBGcRcaLFV09Q6GOKT+cQie2+MWKdR1/cbDKqBKNrpOweUF6/TM9G2IyXBuvjSDgwGrLel30aHIJgsXkF5b2V5xxw5mxgx9T/oxT/nl1ILyJufADe6m9b87YCfNcfy+HvNooJLclOZHVuopXAuIJoMg4uCQDoGi/x1wjFYPhRonHJ/coEIxqlaZ45aaJBACwFvmfFfFO6CYuhpA==', 'b3rqT84D2RkGopNW0vfpBa3n9ilIQyxwhtXmouFtmSaXhQC8pt9ADxv2/6tcPxhDNBUOitG0SMOmw2/VbG98itGIg5Ej7vGE03SUmoA1vTi6rTeIVAc+Qbl+dWAP6jG2S6VSL0g99FOWz6VZj7TsXql8XusLImUhRF28DgRf94LoaRJ/Jq/EJG09X/eBXCihA0HuE/0U+eb6UXdStArtUInE5ZEGvuNq9ru3+fTrHAZ6okrlquQVkGPl6KrsPG0XNPMgPZSh4w2FIBqeswx2jBnnlfYj8xJzf6wlhrmWWZikN0MIW2ptL3oKO3s7KVxp5czmMflqzk2+URuoDifFNQ==', 'h/DXqg+B3XDQUmIqzhcj17ZsM19r419aKtVWRuzUIM3pYlVoYiHfYaw8Am2tYtW24J3j/7W59/Bhc+CKONYKQ5WD/fJjVC4C+7cSRCA960fyuYSDDc/6FvVSyCi904mfq4p43KHukcNMWcMfyv6LRgU929cUT3CeqeP9w52f5zyVuT+PfXyEhbdOorsmUUan1fu7IOJLeZ6I+0SkEjHdDe+3vIgmiLVHg/ukaeKgAaYUYTe1lzsotZF5otvpKXIRbZlqXHHMt2lGV4sZjSp0bs5C6JsskswChVL61Qr2uAxn5yaulHhoYNu+IRc/PyHcenC8bs5e2bvNJuj3rI+iHQ==', 1, 'f3jxXfWwKA1A1FueaJ/+6QStPkXDsyKPkUde1EemeE+fvXGSzmBcBn+zsbLqbeNXPcJ+fUm986InWTS8iNirQhY2xM+nOlDJFX1329jHE0LYcml+wakPHVjP/rmaHHsyHXHn72BLGN2Ui1iEXkoQQ4IzljNXmb2ENcOl8Xu9MKZAUGo/r9NJtrDvxy3kNA8A0Wfd35lYw5bjBECor1ad6upxvm0dgj1OHlgwCfNrDKdY7sGRg3EkuiAql9FSgIoyYLq4/gv9svP4PgGwNcdGrVX8xOn4Pzufv9RuYI6opySAiX/ZRl0TBWOEyS5q7gaFF8jWw55DT+WYvZiAFDP98Q==', 'pTrtNafYUm3V3xHRLHHFX0a+ZtOpIbYUbVUwDIxillQOaqnToU+LHY0GzuxsPupCTEFbIk2uVIc93p9eqfSCDAD0wZ2tTXC43x1tm2sxXesae6WFuuNqY9qEdpA2ITO5HNrzUuZoitQajuHrZKi5C+yPWxfz+Jw4JwVnbhpOHrP55w4t+hnHf8J3UGDcYz3CMg/KLAqjTdRtCjkVgzuWTaVbta+WQqzuRZGH1NCZ/rkyMZBEqD/Ufu76P2ow49FanYMV2KrmEzOwVOiiZfrr2cMJXKzTxLLbyChyhgPChuDRn8HCH7+ENFuXxAvSkTpAf1R9/IjcrilgRoJOgaX9Rg==', 'oane9V06XcBTdsohUuhjNalIAl7hCoVmX19YTTOXxpOxYoYVNAmw+TvhzI0nMfn9gBZ4zjmerBeFwPERNhlyk4kSj+YeVodnVyM85bTk5H4pUbIGwqUy4vsQQrag4bROkJc1aAo7LpEntfHk3nT5ZN5Fbdw7nN85/aeHQ8ukdf8MyaiNWO3G2GKUOENap4sNnEZnGQw26Z73EDW0YRQ6ToRybxs6BEEFb87turzEqKlpWQQqlkJWQk9IJHaNX8FNZgy/4XWcuv59L2Dr30cxAdbAtskLrDcIqpuIaMdbPlhuktlWhalqq0dJDUxoEWHPdkFg178j+XVvt3jZrmo1Kw==', 's650ILAiEAmdyatLt46ytrjw+9DG82uwoqBxQrpQZrkaO0ekaLxpgZUie+/G2gBdlUYIhxNDi/K+J4rMU5umnxCbZyKZULYAJsPZ7rDIyhyV1yPxuUvtsRNWIi0nLJLfoVV8VwxTaU6vZBG1msk6E4/yHj3lLbgAiTRtne4GRoCC4wjJ12QwFhjjbmhyBSEvNaLYi3GO8DN7KWcThhyDzIaZwfTfOtkDh0Zqn3SfGqd0Ojv4+wfbEZVtNPkkzSApnRpDQbMkVr2quB9xOuN2OgJTQREGsfxUOEhBkjKYzrOwLGhLh+M3y/Lnt5eUhDB2ANR3tyhi2dgtM8L6e4qi5w==', '703', 15, 'MX', 56530, '2tBUAEMjQOaUo7OJrC6h8w56nXHL3tpnlrhRdj+xGs/89IpuEwVRaIPeALXbJ8npYvoBFLwTP/fHMmKF2CZ0YZkqnrjy59IMeRcO3L+zosMDAo0aM/I/NB6XmhVSCDtUNFXOdVaUy9Z+FYdG+3kN4ocTl1t0ywStl7Zy7pUweMJaAotd8k1xO9mafCQnZI0/z+klPsF0b5ddyBWnAPpEW5xOk80MYGSY7oER2/LSuOWvZexgKq3+d/kgqSS/UScsYAgwWDrp/zwdh+qfhPbzpYF2fy489molGIHDVADLUAG0SBuvm33KstBzRI9w58zJojq4EyX+rgLdHYsG19QiaA==', '2fiJV16zFD7Ntb+UYXGF1KZ/816+RKBEHLNazo9Lrg65r2nOFgA3vKg5v9Gc+O8bj9qNLWAg76QMIMbAPtdxpCkix1fz9ckUmsqTnXP50nitazCUMfVb6QkTWJmfB4KymTLfs3x4Ccct2BoXUsiokUFG8+M8D9E5ePLF+zrihvIfyM6S6gQfROHdQyX9A9tfDWuvCe7Jyf4V2/akHT2PCTsku/yzJHft8vjfga+MJyoC2na6etRppP8AZnJOscnxz371CMCLoAr48ktDTZRAH7dIy1UtH5tJtmlJM3le+76fqVf8t6/bLzd5YX/Afoc0Gxn4K55t8VlntexSohLNLQ==', '1985-03-09', '2022-03-10 18:29:31', 1, 1),
 (8, 'ju@agua.com', 'b8b1c28ee7ef1d78e7aba64e33e66646', 'Y7wPu2sU0MzxgjrlunB8CWpsinLJebTcNlhdKS5J2RvaA5QuJyXKBtgeIB8LVsTJO+nfk5gIPfTRmqJiVoJIMHx4f6UNMdDJfrRreSRPkpukb3EZtBYxvztyJm73nMt4GEV9iPidHUICfGK4MnJPputwrdenB/7d7SJeXKgQ84jkmP/9ALWgMoIblc6lk3iSILzsrZve88zP3fso0FUSypRvUPeHvi6qPnlJ9VvSylMQE2B/IimY4JRe4MKuB1LWxakfoWni3JXBcZxekVY7Q+gxpAq8kIza2dwqV+GeDU9OdE7nrL2wYsN5dbgVtq2XSjM+zTWLAYNxOeJRxpGyYQ==', 'c2zeauhHz3UWQUfsrQArSip9I4TMRcspOBPK4jnoALkWd2Xmtu+O8Jga1HpiD4OT5kHnAiVZFP9+HEVZIOqPvEJwrZrAY6ZgCwxoW1BquSMQJdpwsQghYJB0BM+laVOiORY6y7GM3J3xMIPBhjWADAQqAoAJdFIA6aJB6+7wx3xSKBai45a2gXfNYiisIFXNou70RzTcT2a8mtzkCtnza6uX0vA3dIjwRnzwdb3FOcxpvZ1Angzyswy3KM076E8YuzMOAxKZ2nxi6yZQUEKIDwwZoczvPFEhHEH6VaCMr/rAyBbSvSt5QGnjssJaPR1coAKNQNxA9g4H8Sz09J4rFA==', 'eMmPX/HR7MEkcapkGtgsAXy5YvY7X69Q93b2Srcpe3p2+1wFbbrlgYJvTYZpYt9HD85XPENhYEwO2oRTcbvzooRDcSseCBYAb1+x4aRDjb75EJDdNd3vgnQMhWF38n/Web3ufl/aQAgci53pkpj3s/EAVKsQJLjFJq2VF6fq90IrYfPMPAmcsYf3hvU3Yg1TIjV4jWEBT1m53unTtawD59W3LzOJCK6TbiI78ZR+smZMzOJ8Gqsn2u9ER8ASxE4UlsUPxClvtxa/XgqcVP8KwhUfBDrI9j9V+EuKB/zOiSri2K/rMmZYwxR0pvkyDDIrA2jYOLxIpKisjV9vYPRMlg==', 'H32E5Rygmaj2a+xiLwpvy/xgide++SEpT0NKdmFPAv664ZDqK8n8eJ6ZO00wDSh1Z67TXhIWW08K4NgOkl4ExBHrZf2n3Hgsbkql0IfA7fxK+5RjWluRll2TqE2/9smEfKB1r4zpa7JUNXZoj0AV7Fw6QhipyLYYIPRzSrMSEN9HmJ4bWk33E3FJ4P8xPeXbiq0spIOirqevVcWgFax5AMQvawSxwT5v2WtEd8336e5Gacn4AAFBV18HxiGR3wj/BAgchuy+ai3DHLQYOsuh0BFA8txjCj1IszLNW1OCdCoPEHLS+lJ6GD2hDr75yjg+mHQffXpPwf94orzAs+IUhw==', 2, 'lKhVvltcniIeBn28mEJjcGNxyC3PC/IPIxXrw5kZlEj889r8h41Ghf5FmIcwIPCZMmT0yx/DGJbR4wjCRgWas2LnQIm9FYT4fpjlNYJXDEC6+mI/x5gy8uprRwPQSxi9T+z29KKnB1GOaDu+w2jp4S0+3laWnBpLwe4ZqJlM+c0piS6H+fvlVnWj+z1A3OI8IoTFr2UL7q9SmC6JMHq7vU7xOHafGkaFGdLUCskDFDmG99yMrTSXt6/oStCpl+JygZjX+BcweZq496P5+7rrT+2Olc0Xf9VxavmvpoRCJdGQ+EarVrhbuvDrVt/mpjJvwdTxDdx1GLmghq0iKCMiCg==', 'kS3EdeDUNo+PQ4NvymWboXrUM1fPahpM1doo9fSo0tpmrETwBU4Tkcl8VEtqwaXshhrn6jlk6DQuO4ovbdbzd0q7MwEXYOmvzwSBmadSdGw3cZwwaLeV+vBW2xtIKkY766TVAkajF0YU6xoD2fL9S5mWY6dUly1cWRZfWfM3zUUZOZHn1/pPGsTqSv21ppIi63VhYX2jfLuxdAQDYpVuUVMYCUsnlX8zE5umzpRiJ+Gn8rcVE+A07c5ucUJG5Oa+aiBA31mzK6HMz6uiUrYkwXUVrKh6hBMKO26d56Yqs9Scna+Y3c2Wd5POSWeKTsETtJrSu9J31ffbo5y9Wy1yVw==', 'GQbYuSETjNePGo+YOD650BtPZgus642NsAhQ1G/suo96+cK5fO3kHYP/zVlBmEd21+MKkldp3TfzaQkrkGlDHjCdIznBXZuZuCbAaPMVTHmy/c/7m/MMuFz2ssFSacQJ5x8a+VOKYSHNZEW0NZU0ZB1jGDAJeaPmTWjxwVwDf1TnIufQeZZpPJT848ca+5eiU14zMg1p3/f6y+Gl0tZjdQEmKbp0leFnH+DSfNQ50aBvzY6hW2PqgKP8onMO+kaZk6kXWM5H4ft9nAx9YkddOFaXTC28ocdIYUNKtiqGAo+rbxrfQC9jvUV9P4vT9r1DB5+a2nCxklgOr7Cw+8DocQ==', '27mx7GwCqhEAXFf4QFhw1x1HHEhz77EkSLsM0R7MFay5WIbq8NBGhRy/lUyQTdm2+btXqvaAkCZXdLTd6q/2e34zC4/ANi8Nqaj2BDPbqepXYNXxGMyPc2hUyfk7o+q1SSB8AEgbn4wX2jiVbsPy73RUN8YX890smV4aD1TFpqPEt4262oCEoaw1DalL8zm1BF7VYcKJDO704vBEbquxNLWdhgHeOraV8Qlmvf9+6fMJMdoF5Z4mVAsFJo74UPiwCpapOlLpKUj0nyvChuwEMu7ze/8CgeFFaxtPt/QbJkvEYgypaPPaLc65/ZylbTBcsXaBhI5+F9svilyblP5O7g==', 'Ixtapaluca', 15, 'US', 56530, 'jZnk+VPV1a72yHh4FBD0a5wZmG0VrH8ieLE25J/boaf4IRIjzEgQc8TeTXjjTS5AQmjhf3V9aWXUtf/e/oiG/jkRnComos75zKXudGu2ef/UQGGzyywo0lpvMT7o/2zm9ACQDpSnNQw72lYhuFv07Ld7eUjKWu8tiVSdl71DpHIcdp4ICYowbgHCiq+grLZCTe+KcEP+wMhfzu3bJPGtUCZi3hI1BeCwrDVEwj+DMj6/Y5qFn77zygY9juT3dRAreavZ4nTZV72zF9N2WTS7AlvWI85E/GBBUnDqgkNAE/87PY7z58HWbt79fqTtAubWjPLRXCBGLuzyV5V4GOrTpw==', 'TieGkdTFqq3PriMXRYMxIH8zFKgaVejTNpCHBGv3ZN11nf4Uo1TSkIgoKz337D7gjWABLZk+WgsaG1+3V9hjyHS77ww7bg6HN4EfY6KP76hawT5F92sMyL/byz3QoC9XI5sd4EFu3abxrrHDZ/tZW1wqQ8inJmmO/V1PTniCbdy82xMJezkYmZEl68qxnBSjUtCvb5G9UrunNt0gbmiko+IAj/WmG8O4UpJMAWFDWja48YKOSTo9MZeroR2wIGUFOmR+OguyXlZGONoeuRQnkl1D7jvFlrQmxj7Gu+yn1lF1+jN/74BzdMAsKKEE0M9SikNyo+wJRCtsnNHWcxAmSw==', '1993-05-06', '2022-03-10 23:17:55', 1, 1),
 (11, 'will@ams.com', '8dc8ceb8bd6ba99ddbbc35ac6ff6b126', 'sVwACJWvuEb4u6QnPrWb60cbVoWcJuc/wGufaC1Vy2ssOAw5RxqNDgg3GG9pWWWJ6iyifVbNvCl06Ff4vTG0lDj7HJRyc1qjEr4/ZYqXNCdq0Ui5O0Y370A0pstX9GnoHTJ+rA70154CBeepiHktQgG51jhWFJETruY0s5Gfhxvrqz68xkjvjr9MjKid16PJEtgJHTMKOlyRS+aDifV105ozpS0oRIInpfUMNGl+NKF+4PjMgH9Fs3xjfzoeSjxcnvIi1EK87WBarUQseJrXbW2VpVrqFP658E5fOs+YyxPbiwmla14wzVTCySpQQaDF6lpMQ5RncSKN0Sj0tWZ0gQ==', 'jPLsdOjcmcA7KZ9mC5F/MYDjOGGUXdSoG3uu3INK3mgzCM7vRTmY29921PNmGbSjlUHMhAzZo/g7S0XjGRe8w9xHuWA0Bpdha+3ebhtAIVzQkSHWAXACKv/UJy0Xr93Gxtk8BxHnfWp3fHCxss0zswY3LUPAKuv07F48szVg2O36PI3zLSjYGWxfoU9LKSWCk+I1qSVhGSVPF7/ikEH6xYg0Bv/iPoSbzGKUwqLCUZHpRl2AnoBZ6ClKStKqX1I7n9JQ6eouIMHjYRUBnmnwtaTnlj8c47DOQ4Gi7gANA5mMLp3C4Z9s6Jo8PVJdFwp5K+QodOPtvtbtHHqKz/cLyg==', 'eevEtSR3ihC7H5obIE0iCQArgrVtwaCNnFuO2eOdwmVKS7rd2TqK1F5N8KMljDW9Y5bnUuF3wTT+1kI3ExuAb077N+5X9y1AYOcydkY2fLDH1j+6Mvd0Nk1Fb5FrdSFqG+S35KLY6O/xYjNLo8ctT4MVRj1Nk09kKHxGZkUEXDRb4wstlLxXooHlw62f0lpQx7jwIZHc4pYBzNoC3b8ekm6qv40M5j17MywvDVVPrl0CJgo4BD1tCN3CZf7cJCDAWqhJrMNwNT8Whs6RNzY00WEnPawEDHWr+/6lew8iZzfD+YVuFTIbet3W44SJgsXTa6gOgtgROC56ZwCviFT+cg==', 'QCRi7iwu2md/vKBygrgS81pVKnlT1B23Gpshgd/U8VBSHpwrJj3KWxuLu+6/JKOQHe8LonxHCnRjMDJplpObUP8yH3crabGSX/RGF/Bo0JTK8S5cu+A7L3HTzQOH7lOIUX51h04YAQtnHbTpVYgLZkIyz6Gce5oJaq6/ejoIU1Wq5VCzTScPLxxVIRu90bxXIiv9oLntBmVFt9j+GERj06Mb5nZ0C9p3WbnYHxz51Oe5cg+xAbGuYQSyTxoC04mcSG9yIJeSdmwYMPyFRuxwT+1Rs9rb9TZgZM5lBPqRHnaWAFEA/ubBzkm4xDMKZDCqSR4FyMFMAuw6zQusRKL4IQ==', 1, 'ZAQx5NaS5P116aKkkkuWRu4DWRqK4YI2Zbi1Plj4r5b5vSPkRc6xAi6KH3BCOl3NDvK2r42YSJaooPKkKPRMN4AsDFnpUGE6HUbx4yx/Zq+kLY0h0EiFjVuIf1BVLF5Zrxpc8nxcm9tU9z8/X1nNAb2ldEmvw/8D1E8eCRuYq/UkRJLxyYNebIsHBGMvbwX1hoSS35fFBQwkWGpPngr3aCzJ3UirfxQfiC3FpU6MPukLuZqSh8BR0G38Ic8wDihpzOzcU+kPSeoCRW5YhFQJzQc8tKEE0J4VZURXsgc6d06+r3DFx8d2KWfaz1+JmbJ4AN/dYbDsWACNbbmCAQJ0nw==', 'xNKnTQn8fVedSXDS6KBLe7f4F/5guo2uNdyE7ekCvS4zLHboPXyLZ+w+Pus7LMgGIJG2tIjNHR1pF+N09Bz6PcE+itTpKHLuwxbRfTyQNSPsyHV7Km+ZIaz/o9bUc2UUk2Hk4BCNYBowLBLfnTZq2/lF++/SbNB0KS3ijQPXTu4JWLkWBrOp1iMAjN6jG21+Z6Aml04vr+UZ41JLnhSxdDUh7NK3jvta8dwJRBMbCBkasl3BYEjr6tbGYtHXGTWHXYn2Wmrncjt3Djol/vuFMleVbRVL7kapeV7K48bsG9M8ipAIM0Y9h+cCwOkAViQExZKuFt4iWq8Q27emyuSvVw==', 'a+lWm1if1FTP8/qY7YRI3Q1E/Ky3w9NRLGP4wdu31Mld69CJpOdC2kZ1oQWglXNjxoQRJflbWvJr20Wt8Y4kIAk9aqgEwLLCKCb6LKhdyhdtuhcDNIYcLzuCbb+cgbjlWahVU90bxYZD8GHDN9ZD7OhUcOM139Pftfht/1p32kH/vR6rRitd1Y8UbTwAuxLv0kyw7CDffvEDi5KbqktUElsNv0mXPxlxKZiGbv4UNIgqfqytCCjC0B1GLDd6SO9dLDumN2T18LUJ6FdNSfdiDGWbMewzjLaKmMM3xsLql4dewFe60WU4bpd4UQtog/vYRs0VakczRxuBAYRFnSOvdg==', 'NI/TFZ5+489AP1ZWIMO0bjjrDB+44yBNNf95g/t2qVJfs+YI/joowtrQ4yhqYY8VFlqFVPyyott4aLyY+ys3x2JHWgYVxHV3g9J5ESP1HuUo1/qMhJ4OerrkbjnMbTTA558IaYMkeLxf6c28OEGFvOM+SMFKz02O0rVUkiJrUJElBxnr/HcvagQkI7aiTUVMau+mo+T1wm9MCyowH0TMIML2hbZyt6jhf5pw+gCSEKXpCfMeETg6thxWEnZ0vtnaIGQn9Cd2rNtkCsEtwaZNBBLvJ8VCGwfpMi9lpv8DvvoJZ8oYD8eaGztWH/XT2oDykH34axgYbeY5d9HHETSmJA==', 'Arkansas', 33, 'US', 11700, 'E1vcUZSWmfIhu7+qPry3eithTc6upVXlLwKJUrdj19AAhTd5GpplVGL/y2pBcV/LpPbMKbHo82ye3NiRDjVoc08GXokc0rF9PcXOS1Zzf2CJNWTwKpXTENhZKsRyuEdVk+PGXIHfWNgbWixPdB+SDm49Y5j2lEDSG+OnzGngn5Liz/jB5jJJRY9KRb/I4msdjGIxZpLswY9ZpER0sxBPoHWKP1bx0JmAVAWS57a52IOe+PD5QJzlsl8inXK5PGrzgY/Flxi3pNJqr7Mq1pxmkv3KiQnYwSlYyD5qU75VtSKmwti2XeUzezZEQOdlepqbpLG8B0i0ANEU9V/AmJUhVg==', 'dJ9e0aqYM+MLuNTbDr+NYmVXAYbuyHHAsOohSL9+3Y9IIP1SrDTgo8mSg88bnegh4wuYz6QF/tAvuQzkdmKwU2K0oPWkUi3NSMepddB4PedZ6f0Er3IJoWz1UtItn6PpE+y+rVrl/zG3HJd7x+v4/4XfSk36/Fy716u7JKPlZL0XWJ44li1ylHgUweyQfDoyysibUlCqyUBC0jypck36kyPvIyczWjWwkwiA07zZHfyJ479IHtS9mZ9werihrI/3LJq5aW4CBIEkiLkwnpiDH2Btwi+7nGZqhGKNG7wKLDLNx7+P1yF1x4lQzOGwXDctjcGnlPuuUGfPUvbdSDybLA==', '1965-03-03', '2022-03-10 22:57:20', 1, 1),
-(12, 'leslie@kumo.click', '47f4b4aaeb6cf1364a4dc3c1b759ffdb', 'ePTwxdLDy0J1Y/plfw8hlVb1Pa/SYr/BSpu5FBa3458fwDj5HTBRO4p8bmcPnbp2brw2hJY2pgRZkB5C4W72Pn+m+exl10ZHmlFNrao1qbDM9FWN4VFE9fZ77FdBCCljdmR2oibozf5EN8gEprnNgA3+6N/mGJQoL8XTRPk0gZyqF4BVedKX4fhEhhLGqw/YXlVedv/agxiDdSM/dal+Zkx6scQA1USfAKyZ0J8uci8XlzcyKCSTvG8XXiVmVX91BFjALD9BABOb9xefjOa8UbubQBvfY9OYZzZS5Yzx3VeuC0uyvIm7j88jljhKLietj21WjR1UqMyW9r0YiQYQKw==', 'EZAsOul/xr9MqjwrlMZbR+vUK2+VOBg0uY7C5KjbHttuImYwgq3c7QYwuLL0CCXWFUdR2UZNY0btMI/KLYMiF0PCJzdXnG/KYoIkKYkQo9wEpSky4FttZ+ZtB/RFDeGHshGd4nkd8tu2cSvFYmorckCxA4W3TEgXsj3N6Tp7Sq69iAhxxn9IJbsfNHM3hsPAORuHQ59PWL8+zLKwlPFoTH/1bYlFrYf8VtFGhaQ8j0JyA0J8QPYWCsOR5kKof5sIZhpKV8JAVt4W5L9/Ua+CilFREDzHKhMDrGGsY+3tz77CNUH0eH3n0MflOpuj2WOJY2o4JL+synlhxiliexys1w==', 'L9bso/m8BlU7c1BAx+qoknDKAmsAejjJPr1oFb8xvxEcD0ByBhAqb/evsHJUXz6aovPQzXAux8RUD5FCrIADnJFOX6F28gIDsNiPyW31ack4dddGi2qH2ZhxMgsX2ew6ne6JBNJfKVULHTIXd3JnVumjQw01d//rU4KiISJ+xqN2HK/9Ncx23dHW5XyI8aj0hnhI5mUBWbPS96Vv2PwFORSpl93pw/1I28737sB/BrJlUDMdFqh8+fkvElSC34vyoNdxtkBKKX7WetlpQcEQG9h6zTLH5UsmUeKDpofn1WI2+XivJCUt5Vj8JaRD5E4SZ5O47xnpYXlbOqyWA3YjHg==', '0NjO3GNNCRJ0Nokyp1sx+XPpk9i7olF0xJwgSBAknRYRId+5SbFRvfOnFfQwLvwwmVrJm+FYJuE+ZdPcFBEOC31yOJ4WMzzr+taHOD46JnclaSq+xiEOJfCi+b/YlBdTx7Tq0o8D4eANiPLekOn9DQm9zqq301Wjb8/FaLyLsoSwxk3G7MPWmbz3trSXi19s4UcDlo0SPLKTsp9TfMhCo5ls667q3zUXCJwQ+3fVFlXHfx4JE9hh0Lsa7OFCWm0CO5lQByUGMO+nTpMEEdYrXw258mtLsgp42DhsuddFdEVinf/A6WvRRe8o7eb4RmTUA218ct8At7AZb8LzgAstJg==', 2, 'WhFPvN8sn5NVdURXczabrzfmdB/SEsp2+qN3z+d2netRB1VOuVCOOtI6Tp491UmW9XA8s6e6SvPwx2BqzidQ81Stm5p4scRJKmDQR6kJgiQcYcVb33UrjfbUBQGNMyi4GI7ZTV1VANHaEusbM5Yw68EeVm/xRsukTzNEri8fFsAGBI+my82NWG8MX7jqCpuAMLagyT9a+KRskQY+YDB3s7CWbiXRVVN54B/Yurqp7vzxk5BdoihZpRaU4/QC9Cs2Bj/Ik5gLwOVdA3lFVoqF7uxPUE1WIDIi/b9YNZtPkOPn3oJUqa3vR3GUgC+4F+AEBQnFk92P1AFcpyjGtNeBTw==', 'FhqA1i5jAi8/jHAcAA2ssdtGIFAnaUWakJ30BommHDXjGmz8eZN+VpXOrZJFVnm5+AnVXD8AzZD3RwoExhtGmB1P0BwfyQaEwdfghSM3L1ksNjCcC+I42zKQlIU9laqjV13xZ0PmrpDDtfoJyrkhVPS9KtG3MwEOnnI3MqGrDPBtRs9z1+/BDngpSQ67UA6XI3dhOOQdwDrDLihtadWtDiQQaoNP0CIuuWfMqw8TqAw9svG2c4e/CpHSv0/U6Nau7Twb6jtPSsI794Vg2D72J+WeKpmoTABpVHsa7bbBmuDxzak1EyOk2S1O7/ZxwyxHqj/tkCBHcVitw5fHRJU0pw==', 'CntZgpvdlU8YwXmlPi5MBkOUvuVRQzCfEcZlZ0KyvpG3zIgG5Q//+S8f0EDz4oO3ualW87CevTHqfLfjNBzJUK5RmrNrcqS2Gngqpur9YkUThXKgADbU0OurN5Odr97YDFO80p5TU0mmsRFEuzcznnTbBR8UPzgr9X7EJMsNYQlx5+q5FH8UKvNGwQ0xYRfzvxw+cIYfqzjiNbIJ6PWuAcM7s9HNrKTeWTRmUWLMCiFg8UO4BY88Tjkiy09qBdKXP0gdAFfmLc4XT+HnkA4bxTqmwks0A/dMGhJhZ4GZEnZADfNMHKixdp44bRT4kNgp4chkIZJf2Zownd4aARZSYQ==', 'imZ418y7T/K6vgwR0iyaN5g/H7PtuJ6UlNVDSAwcC39+2EqFJEvD/cD/E+ZeziipxENVRP3jiLjqpRKFn2AvzX8qoZ/mjZkKBpx3i5yoDaD7CMtOOqxF+Lx2/GMmRZ6uo93Jo6oUXnhLt6hlNOaHRm3FY+SxxnAW0v5Zv3xn0Y3I1zBDoHpKYcKANvnYxznijha3crbN6vm7yf/MwQOsIVlJ9bbfnwVDs3kMIh/l7/3TYpmXYHeA7Hffua6OzpMEkmGMfE92YZmagafr3U/DahRiIXkeOxSA9ayxdgShHUTDdcBd2v3Ch5JX8Hchzkbhr/SrZgdFD5DV/Ts3qgnkug==', '703', 15, 'MX', 56585, 'pB6pC0kdyNzFb4t4IgvhSZh+uhD4ezLvFroLPmYe+p3rupiMr8u9mvaFISP2Kkj14CijU8wYA70mPdvKrBA49oM3EvfNhe3X7tCrBGo4wonGxkj5wpPO+zJfAffHESzgZe7xhdiIsJclb5OAUT0ltqWVNkrXmYwy66rm1XcRzgiILp7Jb5pV4SCNy39ey7j5E/NWuHSdXIjkWATyrqceN+WdYqH54hpUg708Vzy2rDtlWUKnSSrXWN0oCILnyL37UQcrZ+fyA1/MlifCoT1DAcYFzXv9Ar7v3o4y3nwAja3Pq6WxqpM8tgn+w29uqEj2Z0XrZO7AK5zE3F1iW+3GXQ==', 'E5IYQ188YiIXCbxWTZTmYVO//vUlfcP7WiSFz2d81IgzvsjX4ESxceOoryjT1ICGBwte1285HuIZNxQLTu1h69CtQc5k/I0dZpyE9wy6dj/4KvLET0wUDyJKy9dFNeWzGs1u+3DEdG+iq5+gNAZCSKXJxgZ1/cbIXdRQBatKteO4nmXGCNhy3StHClXLv1d6JXDpy4TLxTP6WppCxHvmroKrcboiiWFTXNueY12VedQgkQcgwebqgehlMYofCmNDmXKWKJ2LICx9DKh050BnKvPml0Arw/d8SbPY/VFZR7j/H67L0XSTMu/u0HsdBRrp5yWblbii37j8kWak2d0aSA==', '2022-03-20', '2022-03-11 23:33:39', 1, 1);
+(12, 'leslie@kumo.click', '47f4b4aaeb6cf1364a4dc3c1b759ffdb', 'ePTwxdLDy0J1Y/plfw8hlVb1Pa/SYr/BSpu5FBa3458fwDj5HTBRO4p8bmcPnbp2brw2hJY2pgRZkB5C4W72Pn+m+exl10ZHmlFNrao1qbDM9FWN4VFE9fZ77FdBCCljdmR2oibozf5EN8gEprnNgA3+6N/mGJQoL8XTRPk0gZyqF4BVedKX4fhEhhLGqw/YXlVedv/agxiDdSM/dal+Zkx6scQA1USfAKyZ0J8uci8XlzcyKCSTvG8XXiVmVX91BFjALD9BABOb9xefjOa8UbubQBvfY9OYZzZS5Yzx3VeuC0uyvIm7j88jljhKLietj21WjR1UqMyW9r0YiQYQKw==', 'EZAsOul/xr9MqjwrlMZbR+vUK2+VOBg0uY7C5KjbHttuImYwgq3c7QYwuLL0CCXWFUdR2UZNY0btMI/KLYMiF0PCJzdXnG/KYoIkKYkQo9wEpSky4FttZ+ZtB/RFDeGHshGd4nkd8tu2cSvFYmorckCxA4W3TEgXsj3N6Tp7Sq69iAhxxn9IJbsfNHM3hsPAORuHQ59PWL8+zLKwlPFoTH/1bYlFrYf8VtFGhaQ8j0JyA0J8QPYWCsOR5kKof5sIZhpKV8JAVt4W5L9/Ua+CilFREDzHKhMDrGGsY+3tz77CNUH0eH3n0MflOpuj2WOJY2o4JL+synlhxiliexys1w==', 'L9bso/m8BlU7c1BAx+qoknDKAmsAejjJPr1oFb8xvxEcD0ByBhAqb/evsHJUXz6aovPQzXAux8RUD5FCrIADnJFOX6F28gIDsNiPyW31ack4dddGi2qH2ZhxMgsX2ew6ne6JBNJfKVULHTIXd3JnVumjQw01d//rU4KiISJ+xqN2HK/9Ncx23dHW5XyI8aj0hnhI5mUBWbPS96Vv2PwFORSpl93pw/1I28737sB/BrJlUDMdFqh8+fkvElSC34vyoNdxtkBKKX7WetlpQcEQG9h6zTLH5UsmUeKDpofn1WI2+XivJCUt5Vj8JaRD5E4SZ5O47xnpYXlbOqyWA3YjHg==', '0NjO3GNNCRJ0Nokyp1sx+XPpk9i7olF0xJwgSBAknRYRId+5SbFRvfOnFfQwLvwwmVrJm+FYJuE+ZdPcFBEOC31yOJ4WMzzr+taHOD46JnclaSq+xiEOJfCi+b/YlBdTx7Tq0o8D4eANiPLekOn9DQm9zqq301Wjb8/FaLyLsoSwxk3G7MPWmbz3trSXi19s4UcDlo0SPLKTsp9TfMhCo5ls667q3zUXCJwQ+3fVFlXHfx4JE9hh0Lsa7OFCWm0CO5lQByUGMO+nTpMEEdYrXw258mtLsgp42DhsuddFdEVinf/A6WvRRe8o7eb4RmTUA218ct8At7AZb8LzgAstJg==', 2, 'WhFPvN8sn5NVdURXczabrzfmdB/SEsp2+qN3z+d2netRB1VOuVCOOtI6Tp491UmW9XA8s6e6SvPwx2BqzidQ81Stm5p4scRJKmDQR6kJgiQcYcVb33UrjfbUBQGNMyi4GI7ZTV1VANHaEusbM5Yw68EeVm/xRsukTzNEri8fFsAGBI+my82NWG8MX7jqCpuAMLagyT9a+KRskQY+YDB3s7CWbiXRVVN54B/Yurqp7vzxk5BdoihZpRaU4/QC9Cs2Bj/Ik5gLwOVdA3lFVoqF7uxPUE1WIDIi/b9YNZtPkOPn3oJUqa3vR3GUgC+4F+AEBQnFk92P1AFcpyjGtNeBTw==', 'FhqA1i5jAi8/jHAcAA2ssdtGIFAnaUWakJ30BommHDXjGmz8eZN+VpXOrZJFVnm5+AnVXD8AzZD3RwoExhtGmB1P0BwfyQaEwdfghSM3L1ksNjCcC+I42zKQlIU9laqjV13xZ0PmrpDDtfoJyrkhVPS9KtG3MwEOnnI3MqGrDPBtRs9z1+/BDngpSQ67UA6XI3dhOOQdwDrDLihtadWtDiQQaoNP0CIuuWfMqw8TqAw9svG2c4e/CpHSv0/U6Nau7Twb6jtPSsI794Vg2D72J+WeKpmoTABpVHsa7bbBmuDxzak1EyOk2S1O7/ZxwyxHqj/tkCBHcVitw5fHRJU0pw==', 'CntZgpvdlU8YwXmlPi5MBkOUvuVRQzCfEcZlZ0KyvpG3zIgG5Q//+S8f0EDz4oO3ualW87CevTHqfLfjNBzJUK5RmrNrcqS2Gngqpur9YkUThXKgADbU0OurN5Odr97YDFO80p5TU0mmsRFEuzcznnTbBR8UPzgr9X7EJMsNYQlx5+q5FH8UKvNGwQ0xYRfzvxw+cIYfqzjiNbIJ6PWuAcM7s9HNrKTeWTRmUWLMCiFg8UO4BY88Tjkiy09qBdKXP0gdAFfmLc4XT+HnkA4bxTqmwks0A/dMGhJhZ4GZEnZADfNMHKixdp44bRT4kNgp4chkIZJf2Zownd4aARZSYQ==', 'imZ418y7T/K6vgwR0iyaN5g/H7PtuJ6UlNVDSAwcC39+2EqFJEvD/cD/E+ZeziipxENVRP3jiLjqpRKFn2AvzX8qoZ/mjZkKBpx3i5yoDaD7CMtOOqxF+Lx2/GMmRZ6uo93Jo6oUXnhLt6hlNOaHRm3FY+SxxnAW0v5Zv3xn0Y3I1zBDoHpKYcKANvnYxznijha3crbN6vm7yf/MwQOsIVlJ9bbfnwVDs3kMIh/l7/3TYpmXYHeA7Hffua6OzpMEkmGMfE92YZmagafr3U/DahRiIXkeOxSA9ayxdgShHUTDdcBd2v3Ch5JX8Hchzkbhr/SrZgdFD5DV/Ts3qgnkug==', '703', 15, 'MX', 56585, 'pB6pC0kdyNzFb4t4IgvhSZh+uhD4ezLvFroLPmYe+p3rupiMr8u9mvaFISP2Kkj14CijU8wYA70mPdvKrBA49oM3EvfNhe3X7tCrBGo4wonGxkj5wpPO+zJfAffHESzgZe7xhdiIsJclb5OAUT0ltqWVNkrXmYwy66rm1XcRzgiILp7Jb5pV4SCNy39ey7j5E/NWuHSdXIjkWATyrqceN+WdYqH54hpUg708Vzy2rDtlWUKnSSrXWN0oCILnyL37UQcrZ+fyA1/MlifCoT1DAcYFzXv9Ar7v3o4y3nwAja3Pq6WxqpM8tgn+w29uqEj2Z0XrZO7AK5zE3F1iW+3GXQ==', 'E5IYQ188YiIXCbxWTZTmYVO//vUlfcP7WiSFz2d81IgzvsjX4ESxceOoryjT1ICGBwte1285HuIZNxQLTu1h69CtQc5k/I0dZpyE9wy6dj/4KvLET0wUDyJKy9dFNeWzGs1u+3DEdG+iq5+gNAZCSKXJxgZ1/cbIXdRQBatKteO4nmXGCNhy3StHClXLv1d6JXDpy4TLxTP6WppCxHvmroKrcboiiWFTXNueY12VedQgkQcgwebqgehlMYofCmNDmXKWKJ2LICx9DKh050BnKvPml0Arw/d8SbPY/VFZR7j/H67L0XSTMu/u0HsdBRrp5yWblbii37j8kWak2d0aSA==', '2022-03-20', '2022-03-11 23:33:39', 1, 1),
+(13, 'ass@skiibby.com', '53316a8134426ba4c1b2138d35c8d678', '2ZvlEW719meHHbHibfdGYTp/5bzhGWVB5YmXhujhJVrOXcyuh+pLzsDdB+Vuv5vR+/1j7ip0qGNYSMJh0Yj+uJV3ukdk5/qISlcE2AZJvgYiwde1tuNWKJ9Rh0/7se7KSlbf7i68hqc+vcTKfb7gSz3mSEA0x0/MImTD0aZ9GLLdSKwBEzw80kQy9VfqPPRc4n0ygGWSGMH1MSMvQefwF+TbqoEUiFFDGznBzqKsw2fCiGhB7fBIBQuwrvZNK+hHq2GqCPSE2U64x39jld4X++NpRyPF0fCO+c8NH0TwwfpgCyDs4CXZWjYxsVv2wYCkWuFHeRRHmTi4CqMbeQrUfA==', 'T4wjrrw8VGJRIsnG9u+3DOUM4Ri5blX58lbZZuLCEi8FQaJohegtRurx7HzC/5em3jVjEX/DtwIczcfbcYHb5J/Gy0KwwZl6pny0jwj30jOSRg1//vNVBP9PQyvX3JQ9F55+5vCd1ZyZjsTBy6NYx4IG4PTPinw4fpFHMoNV/DK1P4vkvCOqOWdgkhr0NR4cqM1Qc0sokxzniiyY8S2zf11a+QyWMTRREDSxgmjAsbpJkUmJ03reiWvO0af14vN7D2VojVC/ReYbGX+puIyfM6lTTWtU40q82SfAIb9ZLcY0z+J4kwMy2E/hcLsrgINiSDuQdquzacaTDlNrNo09ng==', 'nQLfzZYLD8HlMArBtKSjC8ejoDA7vuI14nYAWWmHfjmtUTkf7SUi4FNXPkxPuVE06sTMgnhMqjTn1+x1HltKaFHLNTR3JaKcRrjHLdg7ddOy99qCStCs9AOu1YnkbQq5YRvSfVD9lzprjEVMNwqDGjL100V88j/g9utFN/gndbkZUr+rF1QQ1P+nbCLTvKK1Y2JZxHJ/9+DLbSYLu6P4qfJyGo4l7Kc/NVBDGX63Oa7uiYVkoAPvPgQ50rn83I1/Wf/s5ZRGH4K0cTEGsuBeZS7GFmGnPxwiqZfcCOoq03MT0WMVNElD1nnHPFeVbvGeLghXbZHvK6qg7i5BT+n9Fg==', 'o9ajvkbSOSkjupkt9UTv47jubO6Q6holnID5T9Zt9T3VDeXcALcURi3uRwdAvwSjldhN8rSm+63tPhSSydp89EFo9MU2mQwj1P/N7VxJRTILZLAiQiXGUujXqYw7gH6SZegkayHJpwVlQ8Qm7FyzNTNJtiipVVGCcYmwKjaZfzpgSoipfxpK78fpKbq/qpeXM/kiRkC+5pUez2ZnZiggeufMESGbTQ2sLi9q6Tgg+x64atomTunZX1ZL/xZVtJFeNTiSXub3yUZJebY5mT7GVaOxkfWCRT4Puld62c8TLif5knkJQuChd870xAe3UrGl1ZNY++hRoZ9eM+ftreptuw==', 2, '16PqcJSS7ZS/SoIBOjC43CQFDEqbV2R+b0dcawG54b5BJuGaQyz7kX0xBpuhmP5mSW+viVCoQKs14/MEdGy2p4fQ5zLGQ+iVU7BVCNAH4UbHj7BCY80ZG4IgrzWnPhrgbELJvPPwh19CTTYFPlfCbbatddmerOodIOLqBARSEGKk70qPxO0Rgqg8Bboigz8DcWE3EwMpNn1s4JmkF8dj3rfZyRNiFTkPiGt/aKsPoHwupjFIPkZG6uKiqmStFK5Bb7jcotcK3ucJUCdp0Qb9wGlY5U6QpcWps+Kq+wTLK8HeArRpC+7KliCd2pI3iEdTOOIWNtkploFF5EBu9x/IQg==', 'fIL5omoifzUQZc2P5jYC2ct3eAKKp5dKfGgQyiAhJzleFeyJtzgGRoygzsRfqdnCZBXWdHR+ApUhR1nD//DykqigJ5yNsNxZalJcffhUZ/X7JFj0lja8k6fo2OMS3qjeEL5nx4W3mSn0oAGId1hdJuTIxTO+yVFYeKVG7cMgO5VPEkAWkqzVWvo2l+VxsCAA+XcdpHyA21+7h3R0LH99ZxoDCfa30/9hXVhDvaQRBluDrq+Wu8k5yKKeNgU4HwpYUU/RIVm0IgUQ4njiL/kGrkaCmui3qRXP+4uWQOa10reOpM1p1X00aZukqyOc3mbyoW2oaDUOosBqbxEGyFDAKw==', 'gZdYxezAO4Za1Hxu+uwvjyVdgGCjft1v1jmnjRQh2Vm2li9mCb0GWwDAqcUpihMtBmRq/ILl5NfEjtTwMnfm7iJFDBskJr2HZqCqKLxUPVMP7+XILU5JCACLCRlNMoVz4cn9yhhmUpVBotZ9hDRgBn9+5uy0MKI1T5OszriSbppnjOAmt+lWl5eNdhEm3JIYDB02mGp6zzUUzRa6CpOXx7y7eiW2pXCiXEFONYMMmQFX6kpZXCsrbrBvUKIKyr5HqMZf1bimTiJGefiRKGzTo1wNPmxAKiBAZ4f/RCWSF28OJy17/V+0V5A/52+ub9EX+lywdKpfkOftKA5LUec0Dw==', 'Vh92xoyp9EtaM3VjZdJ8PxW5Z9UmKQEsHhXmcyg7hMo9WMpqGaKEN6wubmSb1RpeaOQr4vJktOnMaYNZixcbIbZQIa2xGP0MKJv9L+pUbQzgzVrdZ305PV8Ius+cNXG/l+DA6BnzBokBUfDCpf1CxwrFi/0jLprtG7HMaXHaAAmNMj/tae1D9KusG1ms5yHDr0HP6yMALhEuuMUwfoeQdgKJ65+A4vprO6OA1kn8e7df7gzISuxzG6GZtA8aQEjIGxfQJgGL/xB42WouvDkMVQF4CMMPrQvkd3Dn9ScZbdJVHnqZtwwFxu1z3m8+50KZSLECoBZ+9SJOQw0A8zRW7w==', '287', 9, 'MX', 11700, 'i/L6vN4brFeIQtR7n8kS6p8EDRPwqPoxskK5euyhzB1IXG+MmJQtwYspl9EKR+mB/Tb3gaB1CwMlRO4BJLvJX9+qgDB25zwkKvmGUII01RtLIsR9InQOdMwKwMp8L81eiePlBv5D4MVXipVKdxYgmGdRxBaEkGK2b21cKvooDjmG/Lc7lb0rVYyhyPR6lM3Sys8r8B8Jt6q5uwQJ7J/NRGc/gAiU6QTaubfG4iv5k12BRNNb/7PJvHjllrWGy9YDWpNB6Uhdwm7zCwgqY3lTEw9bXfHmOAwM6AMhbtOlpmRPbjZL4YrMDXTtMUPlF9/N9we3SBYas2YacHDZW3/xiQ==', 'KWkB9V6lmO0XmaoOZETML4mH1WDLtOUVOLWJI2PS/dIQK/1X6IsEVi1c+wnsmfdJSNWxQB4or8AOg+ZNmRjfdBNf8LPZT41doyIya+HEno62JKaH97zeIRkx9MhCJhEiylcFUSK8HCDoHepeywp9uYqOKp/GIoGOjCrohPdOuG/B6JNM8pxD4tFsguIAYSz4pFumMToNdd2i4IbzTWzHT93L7zjkgysMijsllPjX8hoZwI6mA4VKzzinlvl5k4UEwZUKaWe6V0SdSl159t2pRe9OIca+uaXEL0iifnRPx413TAGfSzLQvqOwt5093cOpPciez4KtK3r0muBqGUi4qw==', '1993-03-02', '2022-03-23 22:34:11', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -690,8 +790,8 @@ CREATE TABLE `consultas` (
 --
 
 INSERT INTO `consultas` (`con_id`, `con_mascota`, `con_cliente`, `con_usuario`, `con_tratamientos`, `con_estudios`, `con_peso`, `con_talla`, `con_temp`, `con_diagnostico`, `con_observaciones`, `con_fecha`, `con_nuevaFecha`, `con_estado`, `con_universo`) VALUES
-(1, 17, 1, 1, NULL, NULL, '200', '150', '36', 'diag', 'obs', '2022-03-14 21:00:00', '2022-03-21 06:00:00', 1, 1),
-(2, 18, 1, 1, NULL, NULL, '200', '150', '36', 'diag', 'obs', '2022-03-15 00:18:19', '2022-03-21 06:00:00', 1, 1);
+(1, 17, 1, 1, NULL, NULL, '200', '150', '36', 'diag', 'obs', '2022-03-14 21:00:00', '2022-03-21 20:30:00', 1, 1),
+(2, 18, 1, 1, NULL, NULL, '200', '150', '36', 'diag', 'obs', '2022-03-15 00:18:19', '2022-03-21 21:00:00', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -807,7 +907,8 @@ INSERT INTO `documentos` (`doc_id`, `doc_descripcion`, `doc_archivo`, `doc_indiv
 (9, 'Foto Principal', 'fotoPrincipal-68-1647018184.jpg', 68, 2, 1, 1, 1, '2022-03-11 17:03:04', '2022-03-11 17:03:04', '2022-03-11 17:03:04', 0, 0, 1),
 (10, 'Foto Principal', 'fotoPrincipal-69-1647039749.jpg', 69, 2, 1, 1, 1, '2022-03-11 23:02:29', '2022-03-11 23:02:29', '2022-03-11 23:02:29', 0, 0, 1),
 (11, 'Foto Principal', 'fotoPrincipal-70-1647111581.jpeg', 70, 2, 1, 1, 1, '2022-03-12 18:59:41', '2022-03-12 18:59:41', '2022-03-12 18:59:41', 0, 0, 1),
-(12, 'Foto Principal', 'fotoPrincipal-74-1647319001.jpg', 74, 2, 1, 1, 1, '2022-03-15 04:36:41', '2022-03-15 04:36:41', '2022-03-15 04:36:41', 0, 0, 1);
+(12, 'Foto Principal', 'fotoPrincipal-74-1647319001.jpg', 74, 2, 1, 1, 1, '2022-03-15 04:36:41', '2022-03-15 04:36:41', '2022-03-15 04:36:41', 0, 0, 1),
+(13, 'Foto Principal', 'fotoPrincipal-75-1648074944.jpeg', 75, 2, 1, 1, 1, '2022-03-23 22:35:44', '2022-03-23 22:35:44', '2022-03-23 22:35:44', 0, 0, 1);
 
 -- --------------------------------------------------------
 
@@ -2017,7 +2118,7 @@ INSERT INTO `mascotas` (`mascota_id`, `mascota_nombre`, `mascota_especie`, `masc
 (21, 'Ewj5ZPlm8WBEsl7/dMZcLyIWfUaCjMVnTLmteUFQDUOwCiks9PtA1SZkCvLAn+NXRElNyHoxPvQfmwwo6raoXzlbppZFNgtL+zJ1h3IXS/HZ9hx/mvog6VwWaB/z3B6ba8C5u9D5E/Be7/cpg7yIwhHdDsnlWkIu88tsHyZDlR5WX8kPxCYlkVysH1YcjWsREERWHDeUXPL6Ee8byjcu6QLIEL7S+iRqbBhH5CHkQH3sC+rsD/JpdLO5ZjPKHfXSIB9tviYG95yEm6NfwoSUkw8OIPxGFGwRaQYH+I+XAOUZO6KQDqq+JCbizx/Wm+MB5bwyroyccc/tYi0+efFPAQ==', 1, 1, 1, 1, 3, '2020-11-28', '2021-09-13 17:35:08', 1, 1, 1),
 (22, 'qP3smYHIO3U9i7O4/mcutwuApZZh+gxBq0U+Lr21LbCSVJ6kvbAFS7fsVlphK3/vAWcGwihTedudXncgTfzwFj7B+pX+5E0Ub9qdvt5FWQm6Z7OCjg+bSQK4cHr8KbkuRmxesZfYWhFBbiLJ5kYSTX4oWW88AzbJ3bjH5jAvycJk/srChDjHV3SbBoy74x8oQJsgzpdJjsfrg/j0gWFYOiy9T2tNUwnLt7GiRc3lRFT+uwdYfG5puMoeoWFEQNf6dr60SrIETBwRRE1S8t4NfHQzG0dDtgggBDtYJX6Xi+CKqBP1qP6UiagKEbHRANmzRCaMASYMLQHQ5x997KPxUw==', 1, 1, 1, 4, 3, '2019-09-07', '2021-09-13 17:37:11', 1, 1, 1),
 (23, 'AXtfuchtqHaO3zwhzELJQLpUC/+LysSJeBwI+qykXA1S6dUahgXrosj15I4XG5gNlIFH4KetjJWVzWmE19Se+ii+T/a2hON60rbSm31xlFS0vHwG9hzpDtpO1JWJ66kVhtzYhw2bCeaemLgwOPI8apN8d4HuVoAsl1j2Vt4ggmI27wZgupUvRaiQ7I9rYZ0zcFPYdJIyaRJ7AgQ1Nvei8ddN+ZEbwZbs3pVOGjtWL8t+mFCqpsLIG0PaqE+HACxJBZ9NlB2sXn8VS+VKoRnDbXfJ8A2i3RYxDtUI75JRCKTEjmGFwk7/w2Dz88McNT0o4WI/GqTNPnIi8TmHa4nfmA==', 1, 3, 2, 1, 5, '2021-09-01', '2021-09-13 17:39:15', 2, 1, 1),
-(24, 'eGIkB0tM6TM9NU7OwxcDhN2UnkxL+dr+RD4ALZpBdIp6YjRdIHL4LOkHdUW3/nEt7/8TUN1k5mZS9wkcRzoJN3x5VUMeJ0Y5FMnBmjZLC1dMazh8a5U6q+TI3sPmJat6SUIzNkB595h3zUkebLubibYfaysEQiuei2WIbQurFwrqLU6FIULJWKeWdEttGZMzIzhEBw7NgCaAXL/O20IRGQh27RiB8uydsvVTpNKJu50jvQysBaDdjqqKpvLXeH9rWNBKBD9hAy7gZu1Q6cv9fAT7xo8wEPP5pdz8FAc1tcb346gRx0DioL4WlPXgtr4yQVeThQoPA9j+bw1uRpecLg==', 2, 2, 1, 1, 2, '2020-08-31', '2021-09-13 17:40:21', 0, 1, 1),
+(24, 'G1tXQMMq8ZjC/cmpBbnvnb0DYhNv40yTfGV22MModSVc9tTaKwburchw3ta6NU5VSZ7RGKqiSA5h/Q7hYR/qABO1/zEkhQaGSctm3pOFisuyZbMVx+XQRASEPrTdaC4b7M1v1xsPcOCIO9Ndcw295YdOM3/I/RBFQ15XF6602bIFPJb0IafqgXVCBRgiz7lgAyRSEHl7wUMaPB/2iU7S+HSdTx3M6uwi33fEanzSc7nm30eQS6xmeDz+Fd3+lMvn1S/IaHCILPqTsqd7TqwLMV+JEwEZTtKgJGm/guIAKg1Nx7CMYQ52D2UjzeZP2nfbdqNYOLROgvd0bZ2HADQecA==', 2, 2, 1, 1, 2, '2020-08-31', '2021-09-13 17:40:21', 13, 1, 1),
 (25, 'UCD4yIdXuurHHErKO6amQUTSaFeGfPgq11Y+NBXcVmAh6i4zJ1rcTKIyC30ojvXEqiSs6Kh5jCMtjXO0m0zj/LgSRuuwkA172Z4lyseUYNpkKiXaE2jq3g/9ctef3yXcL1VaZ7rlZW30iylq7UgBl3ebYHzHTPoHzus5bqp9HG2tNBlE7D/5kFgN88roBCEr4TEqjIEqiD+dzHo7q9pXVYUDqUeJqMTEmE7nTznmSCBEnWNs8Uupu1mwQokvxoLrSPhR4EVwLCTCUnld1/koVv/GFMkZFoL6CpoU9iIKry+297urbDs7JuNDiCWmMHT6Qbim8l/j9mHXBRpElBoe7A==', 1, 1, 1, 1, 5, '2021-08-30', '2021-09-13 17:41:21', 1, 1, 1),
 (26, 'AW5fXWDsjv7DvVgHt8CfsoaWDPqSvRK5ftXl/Vh4ZO/dFHw+JQinYnzzsB62yYPGyOjU2pwV17MtDohPGJU+/Ms1uIdB3fek2hGcLrM1R0oCVwr1zBg9ox+N80/6oMOjIGLo+fFQgjMa8EqsL/v7GyulMGibnrHO3ArNDeKakjB8IL+jAtw6sHuc1h6/enqrijrMthP7JVnEEswN4v/fEJnI3ZKBc+sTX84cQM0A7CNjSlZjkFHSBewzxtFo0tqqHEmrZaWkcBDB7al5HG8261TTQ/2aolVTuO+cbr85N1SQ1yQGS4eWnRN5AEfQed+T2jEigoV6P67hfl7G/8OtkA==', 2, 80, 1, 1, 6, '2011-05-05', '2021-09-13 17:44:22', 2, 1, 1),
 (27, 'YH2+jgUcla1lBbWtQT+5gu6zSxJQ0RBoYYdd22xa18/Snf1EAqJy3Q/vTkcAoqhYttJ/+ENLHGXZz/f86RpJXZJ4f+gLJLAdNQjLb/owdo0KBunMqJe0IIEqoaayhmgXLWQtdumA8o6/VZ+SDbFxyP+B5ZkNL7LlMaD8U/wP3fsdu38k11ULs5WnJ2tmGBSo+jOQMxgRn/jlnmyiYep+No+NOH81rsX4ylGr9uik3DAPJKyI2KWvpQiyb/XFclaHvhKwszeDo9wAxgGMTsTYxW/yABpkWsTb8Y7L+JYykz0Y+o7mJwi8htK+J8OkrsMqYi+8VXDLhsgdes9uMjYKZw==', 2, 320, 1, 4, 2, '2011-09-08', '2021-09-13 17:45:37', 1, 1, 1),
@@ -2067,7 +2168,8 @@ INSERT INTO `mascotas` (`mascota_id`, `mascota_nombre`, `mascota_especie`, `masc
 (71, 't0vlwfoclSQvnRqT9ktqxeApMxMivojtfzK4dxlwYbnQyvhtBD/1fc+CC+jlG1FFaKSXlf5z7FinH467XCy5jNPCo/H7CbYXpByXfBkaCQiI/NW5GJ91A+Clcc9i+DMVToyqksv1MoPvvwuDb9IPV/U/ChsZoSSx74Y/nFJXq6l9dl/2dlNte007+vaP0ELwgI0ApcZnNjcq7zMeR9zKpm2RBjaawdlLeWClTo2/wY0qRmPwylt/u/Y3YceDlKplf1y51R0lmRFjrqSxiFaVZyqBX0hjleu+Yg1lo7dlSFO402eLc1v8aWgchg/T/VN5+pSMR1AofkeBsneP9fJxvQ==', 2, 78, 2, 4, 6, '2022-03-08', '2022-03-14 22:31:25', 3, 1, 1),
 (72, 'Yho56eCBP9QjnZZIuUZnuQaZfTaEdrW/65mX8oM0AjlasXC6d8Bay9g7q5CPGhSgTJjNwDoBzuJ+seihrvQM09JjFOmCYHAuAed1tyGcUpVhwv9Gy3DAV36KR/wu//hUI7/3zSoS4TuXIc/7jpcovXNrllHaS6pocftybITOH1Eh7WnHnERkiv4zTSVqitbimpx5a9W7KZTZy/yjJC8TNPC7C1EZfZSZd2h6WhNasY3lSd7Say0qTAfeJTdLYPS6QAYKp5i7jYogRKfhgnjrSLbqMZTqc56DWLVaV/q0RM8+160J0fMGxDppruMd+xLXaZkUnTvs9baOC1F8C80vEQ==', 2, 283, 1, 1, 2, '2019-04-10', '2022-03-14 22:32:47', 3, 1, 1),
 (73, 'BFwU8HBoh/VYXXn/1INQkOV7kac6VTGhuiXA6A5OG226LAukHUny8YQwQLVVJc0ZzXyIM8onG8G2J82BZI7OsvkwvmMeqUTxFg84Q+7D8vQwJTowT5sONM1OKQSpbddZimu+LIpEUQQQNXO4YiEqjh3qM5qrTvpyXNonAnfd9wF0f2tSsvN4yhnljlsdmGLUrT3ygzV72m30WauTbYs5hQbDji2TdpFbkuXkNyTASRx8ceW+e4m+EHdbTEUFrLXSu/+PCjzzIrU6bnEWjGBRPFONNfUTtkz0DX4sSyCQYdJAGwV+eP6AU7DO/fVOyj7md3Af/mXZdd2pd71Cc9ApuQ==', 6, 351, 1, 1, 1000, '2022-03-07', '2022-03-14 22:35:09', 1, 1, 1),
-(74, 'VSWG2IDCfQecrk3AsgUhiyK3/uVjxT1uXm5tVwSJ6QZ6+ldIgfahyxMNRYdDX6fe9qmKZr0HwjnKSYq59t77MP/OdG6zf5Al1GJ+gEgSSF5pGp0oZn+vvFspQIVvzC1qGUrXFD5qonu4omaER6NuJrqUMZGonOwG3Jj1SzTChhsAilZD8Ze5YXxpGPRTBQ2UnmsXKpzGKN6bxJ+cTpeP3pthkvMqb2AKFVPPNMYoqlQ4PitcmSU9mEUkhLX+ZjcUcOHAiH8PT5GpTrBfe5zUU+RgpeTB9uFZwo9HmzyQbjSj1XFHNdyQhYLFYjl8tRHz1gOjjaLlPP81EOOtSZ4woQ==', 6, 351, 1, 4, 1000, '2022-02-28', '2022-03-14 22:36:41', 1, 1, 1);
+(74, 'VSWG2IDCfQecrk3AsgUhiyK3/uVjxT1uXm5tVwSJ6QZ6+ldIgfahyxMNRYdDX6fe9qmKZr0HwjnKSYq59t77MP/OdG6zf5Al1GJ+gEgSSF5pGp0oZn+vvFspQIVvzC1qGUrXFD5qonu4omaER6NuJrqUMZGonOwG3Jj1SzTChhsAilZD8Ze5YXxpGPRTBQ2UnmsXKpzGKN6bxJ+cTpeP3pthkvMqb2AKFVPPNMYoqlQ4PitcmSU9mEUkhLX+ZjcUcOHAiH8PT5GpTrBfe5zUU+RgpeTB9uFZwo9HmzyQbjSj1XFHNdyQhYLFYjl8tRHz1gOjjaLlPP81EOOtSZ4woQ==', 6, 351, 1, 4, 1000, '2022-02-28', '2022-03-14 22:36:41', 1, 1, 1),
+(75, 'sCvq/GAaerNs/5SWh56fBdac0NEKIYcbTzu8Ie7dBE18TXq9MYcCiJ9xDhCsmJneQixQ8CaFaNmMdvfBKmeEerAl6sbxZpoc0LQAaWzR5Upt62bn0MNhXGc/v0RTunC7y4478UW+uQCdaR6HpIpxo0MNqhllsGjZaaXWOu1efkZw6zRtSEy3HXctKIrXEWmg2YfYy//WmrXOXwjhmQ8EuDuzOB77H9Dgyp+m9z84JH6wreTGCEjEBWVwpAoJ9uNkB/4Dz1D0EO1gvPl6zfyuBAhC6klawfc3C66e+gXrsMhkFudLUctLViu+jrKG69AeeGxk877ic9OQwroWgNio/w==', 3, 347, 1, 1, 1, '2022-03-01', '2022-03-23 16:35:43', 13, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -4748,7 +4850,79 @@ INSERT INTO `permisosOtrogados` (`po_id`, `po_permiso_id`, `po_usuario_id`, `po_
 (455, 80, 1, 1, '2022-03-12 13:34:57'),
 (456, 81, 1, 1, '2022-03-14 13:01:39'),
 (457, 82, 1, 1, '2022-03-14 13:08:22'),
-(458, 83, 1, 1, '2022-03-14 13:09:55');
+(458, 83, 1, 1, '2022-03-14 13:09:55'),
+(459, 1, 3, 1, '2021-06-17 13:19:59'),
+(460, 12, 3, 1, '2021-06-17 13:20:14'),
+(461, 27, 3, 0, '2022-03-23 17:55:33'),
+(462, 28, 3, 0, '2022-03-23 17:55:38'),
+(463, 42, 3, 0, '2022-03-23 17:55:39'),
+(464, 37, 3, 0, '2022-03-23 17:55:43'),
+(465, 29, 3, 0, '2022-03-23 17:55:47'),
+(466, 38, 3, 0, '2022-03-23 17:55:50'),
+(467, 43, 3, 0, '2022-03-23 17:55:53'),
+(468, 19, 3, 1, '2021-06-17 13:24:56'),
+(469, 39, 3, 0, '2022-03-23 17:56:01'),
+(470, 31, 3, 1, '2021-06-17 13:24:56'),
+(471, 32, 3, 1, '2021-06-17 13:24:56'),
+(472, 30, 3, 1, '2021-06-17 13:24:56'),
+(473, 33, 3, 0, '2022-03-23 17:56:09'),
+(474, 34, 3, 0, '2022-03-23 17:56:14'),
+(475, 35, 3, 0, '2022-03-23 17:56:18'),
+(476, 36, 3, 0, '2022-03-23 17:56:25'),
+(477, 40, 3, 0, '2022-03-23 17:56:51'),
+(478, 41, 3, 0, '2022-03-23 17:56:56'),
+(479, 45, 3, 0, '2022-03-23 17:57:02'),
+(480, 44, 3, 0, '2022-03-23 17:57:14'),
+(481, 46, 3, 0, '2022-03-23 17:57:18'),
+(482, 47, 3, 1, '2022-03-23 17:57:22'),
+(483, 9, 3, 1, '2021-06-17 13:24:57'),
+(484, 10, 3, 1, '2021-06-17 13:24:57'),
+(485, 11, 3, 1, '2021-06-17 13:24:57'),
+(486, 13, 3, 1, '2021-06-17 13:24:57'),
+(487, 14, 3, 0, '2022-03-23 17:57:29'),
+(488, 15, 3, 0, '2022-03-23 17:57:32'),
+(489, 16, 3, 0, '2022-03-23 17:57:37'),
+(490, 3, 3, 1, '2022-03-23 17:57:43'),
+(491, 5, 3, 1, '2022-03-23 17:59:07'),
+(492, 4, 3, 1, '2021-06-17 13:24:57'),
+(493, 49, 3, 0, '2022-03-23 17:59:43'),
+(494, 48, 3, 0, '2022-03-23 17:59:56'),
+(495, 6, 3, 0, '2022-03-23 18:00:02'),
+(496, 7, 3, 0, '2022-03-23 18:00:07'),
+(497, 8, 3, 0, '2022-03-23 18:00:11'),
+(498, 50, 3, 0, '2022-03-23 18:00:15'),
+(499, 51, 3, 0, '2022-03-23 18:00:21'),
+(500, 52, 3, 0, '2022-03-23 18:00:24'),
+(501, 53, 3, 0, '2022-03-23 18:00:27'),
+(502, 54, 3, 0, '2022-03-23 18:00:29'),
+(503, 55, 3, 0, '2022-03-23 18:00:32'),
+(504, 56, 3, 0, '2022-03-23 18:00:34'),
+(505, 57, 3, 0, '2022-03-23 18:00:38'),
+(506, 58, 3, 0, '2022-03-23 18:00:43'),
+(507, 59, 3, 0, '2022-03-23 18:00:45'),
+(508, 63, 3, 0, '2022-03-23 18:00:47'),
+(509, 60, 3, 0, '2022-03-23 18:00:56'),
+(510, 62, 3, 0, '2022-03-23 18:01:00'),
+(511, 61, 3, 0, '2022-03-23 18:01:05'),
+(512, 64, 3, 0, '2022-03-23 18:01:09'),
+(513, 65, 3, 0, '2022-03-23 18:01:12'),
+(514, 66, 3, 1, '2021-07-16 19:13:29'),
+(515, 67, 1, 0, '2022-03-14 13:44:30'),
+(516, 68, 3, 0, '2022-03-23 18:01:16'),
+(517, 69, 3, 0, '2022-03-23 18:01:20'),
+(518, 70, 3, 0, '2022-03-23 18:01:23'),
+(519, 71, 3, 0, '2022-03-23 18:01:27'),
+(520, 72, 3, 0, '2022-03-23 18:01:32'),
+(521, 73, 3, 1, '2021-08-31 00:56:23'),
+(522, 74, 3, 1, '2022-03-14 12:40:11'),
+(523, 75, 3, 1, '2022-03-14 12:40:17'),
+(524, 76, 3, 1, '2021-09-02 20:58:18'),
+(525, 78, 3, 1, '2022-03-12 13:34:14'),
+(526, 79, 3, 1, '2022-03-12 13:34:26'),
+(527, 80, 3, 1, '2022-03-12 13:34:57'),
+(528, 81, 3, 1, '2022-03-14 13:01:39'),
+(529, 82, 3, 1, '2022-03-14 13:08:22'),
+(530, 83, 3, 1, '2022-03-14 13:09:55');
 
 -- --------------------------------------------------------
 
@@ -5439,7 +5613,8 @@ CREATE TABLE `u5u405` (
 
 INSERT INTO `u5u405` (`usuarioID`, `fb_id`, `u5hUS8ir5`, `usuarioN1`, `usuarioN2`, `usuarioA1`, `usuarioA2`, `u5hSX8ir5`, `u5hpW8ir5`, `u5hHSH8ir5`, `u5hpV8ir5`, `u5hpU8ir5`, `u5hDpID8ir5`, `u5hDpNm8ir5`, `u5htK8ir5`, `u5hOn8ir5`, `u5hOn44P8ir5`, `u5hFt8ir5`, `config_navbar`, `config_accent`, `config_sidebar`, `config_brand`, `config_7im3Bl0`, `config_DrKm0d`, `config_m0dstr`, `config_vista`, `config_rDven`, `u5h8ir5_iDi`, `u5hpR0lr5`, `u5hFR8ir5`, `usuario_publicidad`, `Universo`) VALUES
 (1, '4075376249227669', 'alex@kumo.click', 'J4WXYiN7rW22fToySjnT6aOlRGjEJRfp9LVVa7+oee0T+BlbfpnU1V+AS5k02O9/mcYqWKby4x4nitoQHJejpP/T+X9fWh/Jw5qz670vMx3ppRMwnfYvik1oJfmWnXAasFe1vkXstZ7o+CAlYOp1mMYnen3x/Q/CMH4ETh7OoA61dVLImpc1xn6meEx5fEBuFlELQCydHmSO/TKCtSvX+yYaeG2ZCOK4cOLiX8BgwTDzX5ZlvtrQPVtGEzZLnmLJ57m6Np3GfP7unjeDEygMvqji5j0Fjt66+MoNebjmOUGQ135F3Cv+AqUgz5Ni5bXmI5xi9fP27YDckB6NPtXh2Q==', 'EI3VA6+99o7whWkAVDK+RMcYHs/8dK69h5GHffIkowNMft4o7GbRkA5N5RO2k5SdiKQmewV7ueYlTPVKx9Z9z0MHNmePos4n8leNhrDQs3PvtBVO6N0V4EQf1v3bSAyZVl79+96Le6TRGZH1n2Bc79YxvrK5Yt6CJgc3p8Qp8a6P7Zowz6ihrMHakqnlRMSMq4X3AJgLljvnTZeUOUCwnpygliHtckYVfwm/H/d9z8QjwW9SCdg/X+KfkFgzpq+48za4IsHzJ8sIp6HlxuW1+74u5nRRGocv3Y3RlrZsf0y2IF3w3HcSWHhduGjTTcyvoCreJNk3WrSVYLK5ETzL7A==', 'eKrN3ReNSIX3s73ms1lmNo8D95/8Kg7ePuxXO4nMFGdj2/ulLbQvVLygmGdW7NvCrGHaKLw/yLmjpjn3A05+a774SQ3V6sb/Hs8UcXG7mXMLMhVrc9swb3PN8NEb2SGHlUFKlrLxnhbb1NueSwM+4WyvnEBBt43qY7G18Oytgova6xcsWjIq90bIxuXjP46k5ogrg+Jph4OhlWDZqkUeKdTifpnEG6rsNHuSlPAeLbG8OyeKs1fI0DxN/d7fCle6Qx13oD1DkC40mVqUAIoeSd85az9keIAbAO40o3LmXBLu6oJWZxp/B66yYBwZg1+NVEezmr7fBDOZtwP9Tu9H9A==', 'ImxXYFAm/YvhqjmQJNBUEsob0S0kgJfvuuZMwYECUxbg+sWawqFCEpI1Wxaj1MV8ybdyYQ/VK9KsPjWCZe/9DoU6mXLt762cddN0k1EeFJOS3q1GIErtufJt4x0RIp3gfgzu+SfhaxE3N1uAIKV+vX77o4HgC5yEURs9DXzmgdAqSx4e6w8PIcltIW//+hMTWGSwJFuWr1kzxfD+s5Fsnn/rE3b9jmZTBIZTz29G03dR75mV4Fcx2uvtfvz02m87KtubdsmG647nGrBENlXijoiOr2Se9IJfHHRgSkwfXB71+ofKziwB8+5lDXjXcEDC925vyQWLb247+kUokGPkVA==', 1, '7e758a640ce1fb7f3ce09cccd38a9622', '', '17', '', '', '', '', 1, 0, 'dist/img/1.png', 'navbar-dark navbar-cyan', 'accent-info', 'sidebar-dark-info', 'navbar-info', 20, 1, 1, 2, 30, 'es_MX', 0, '2021-06-21 17:51:43', 0, 1),
-(2, '4075376249227669', 'dany@kumo.click', 'jN078hqzpHI+M/TdlLAJ+qMC2DKD9Iuu9bOhhQvjYZ5IoFkQ5iAr+PM4mUnUVfNj3cddWs78PsbkQPYMUsDy9N7S4Rrxu7xrRneWuUJze1C0DTLVUN4/3jJqkiCeu+LXtz4XUtw3nCKOXOdk0i7yFNk2ZS4YhVLQ3Uo+wYOZHiACYp6DUf1Ajpp82ke71BcLkqEWFndJyY6MjL8GhJSiQB/HLcBfhCBRQcGjd9sJvgk7NCe4XDUM2zA07eOOssao9ik2yZN5VVpHF6ciDU76Wge0qHk2OnZa1YewH06jmEVIQaXYhcvIQTqM5HC33uhJ5e45KzKcU2oE1oj7eFtUnQ==', 'KgS+tfTbetBGR8weJpgyw5sv8+Pu+CzdJ2TV972w6P0CVRaRB/H3WPq5Cy2RIGJPb8E4BAvG6fOE6pPDjEN1w/wZJETu9w9yO4JaK7qFjQ4kmrqq/NUw7bGFFqLyecN1fl+zglzghaIhXfzbp0Nn3n3yvB1BrzCTRw3ErEsuMtvgTHqXjRXxZzGu7DWRfEcUE5OXk0LBC7rvF4OuhgJnvrmHJSWwk/SuJW5YkaRjteHis44XmWeX163NJLnTkuDkZWzLcNMvxs1L6RjIJ2RJ73HOYdCHFXq523O8vMizP4d+vEt+r+aDt0QAYK2MpWTyiP0243G36bJkmC2DFTY3ag==', 'i7fGW6ImD8wwoJgoFjkfEmYfUVQ08X7Zwvx7FnmmQ7Rax6W7BjRop504TdX9jvxHYGB7Bj5Qf9QebUP79oZj+NdfOV/7OQCP1W2fdhBv04Hw4R7DBFY8AUESFlwBZEKgJd64L05OQ5969ayfQSYcKA4c0m7JV4JsrovHFAQ5AqfIFGd2g+Df+k40cY5WIprAI9TSc9Fj/5Npc2EbYZC7Ov/z+rJ9tMKXMcoIziHh8b8H/lH8N3iz3Iel7jyxphN46CMXEHK+m0sRIgWkkJWb0EGhrvx+N9ISuc/F8ebIFVEC7q4aQ4oSbMEwRgrc66+qwX6+iOeHqVNCppwkB9jAag==', 'bA4RGu6DmAsFqn0MXhcXFiYdWqS2lkeSIVTNkCk/gX8LEqInT+zkDoa42T2N+PMya59u2zr8ekzyINyaidCqZYnZdCHmi6XyqcbCaDPBcdi1ooWKyczVTJR+U6N1lq/7Ke9z06v1RrcmYNlA+NRcZfTWwW3tAkLKnP3x2Om+K+bpHaxvRDEnne0hyNJDx73fLuxaNf6amE5zTvpoczb0wWAsGetB6Z05/OpsUdQQ9ezE8kobtHsQWWOvwzOdc3J3zTBOIyOFyiik8LM3MKzB0ufr3wyLhwf3ff8/IHdQnYtkx8kcdD6O/wzXqC7QNmb59HBwG7TN3kwJvmkB8sGAnQ==', 1, '39c11ebdf5d0c1567d0e4fc5f3c9550f', '', '17', '', '', '', '', 1, 0, 'dist/img/1.png', 'navbar-dark navbar-cyan', 'accent-info', 'sidebar-dark-info', 'navbar-info', 10, 1, 1, 2, 30, 'es_MX', 0, '2021-06-21 17:51:43', 0, 1);
+(2, '4075376249227669', 'dany@kumo.click', 'jN078hqzpHI+M/TdlLAJ+qMC2DKD9Iuu9bOhhQvjYZ5IoFkQ5iAr+PM4mUnUVfNj3cddWs78PsbkQPYMUsDy9N7S4Rrxu7xrRneWuUJze1C0DTLVUN4/3jJqkiCeu+LXtz4XUtw3nCKOXOdk0i7yFNk2ZS4YhVLQ3Uo+wYOZHiACYp6DUf1Ajpp82ke71BcLkqEWFndJyY6MjL8GhJSiQB/HLcBfhCBRQcGjd9sJvgk7NCe4XDUM2zA07eOOssao9ik2yZN5VVpHF6ciDU76Wge0qHk2OnZa1YewH06jmEVIQaXYhcvIQTqM5HC33uhJ5e45KzKcU2oE1oj7eFtUnQ==', 'KgS+tfTbetBGR8weJpgyw5sv8+Pu+CzdJ2TV972w6P0CVRaRB/H3WPq5Cy2RIGJPb8E4BAvG6fOE6pPDjEN1w/wZJETu9w9yO4JaK7qFjQ4kmrqq/NUw7bGFFqLyecN1fl+zglzghaIhXfzbp0Nn3n3yvB1BrzCTRw3ErEsuMtvgTHqXjRXxZzGu7DWRfEcUE5OXk0LBC7rvF4OuhgJnvrmHJSWwk/SuJW5YkaRjteHis44XmWeX163NJLnTkuDkZWzLcNMvxs1L6RjIJ2RJ73HOYdCHFXq523O8vMizP4d+vEt+r+aDt0QAYK2MpWTyiP0243G36bJkmC2DFTY3ag==', 'i7fGW6ImD8wwoJgoFjkfEmYfUVQ08X7Zwvx7FnmmQ7Rax6W7BjRop504TdX9jvxHYGB7Bj5Qf9QebUP79oZj+NdfOV/7OQCP1W2fdhBv04Hw4R7DBFY8AUESFlwBZEKgJd64L05OQ5969ayfQSYcKA4c0m7JV4JsrovHFAQ5AqfIFGd2g+Df+k40cY5WIprAI9TSc9Fj/5Npc2EbYZC7Ov/z+rJ9tMKXMcoIziHh8b8H/lH8N3iz3Iel7jyxphN46CMXEHK+m0sRIgWkkJWb0EGhrvx+N9ISuc/F8ebIFVEC7q4aQ4oSbMEwRgrc66+qwX6+iOeHqVNCppwkB9jAag==', 'bA4RGu6DmAsFqn0MXhcXFiYdWqS2lkeSIVTNkCk/gX8LEqInT+zkDoa42T2N+PMya59u2zr8ekzyINyaidCqZYnZdCHmi6XyqcbCaDPBcdi1ooWKyczVTJR+U6N1lq/7Ke9z06v1RrcmYNlA+NRcZfTWwW3tAkLKnP3x2Om+K+bpHaxvRDEnne0hyNJDx73fLuxaNf6amE5zTvpoczb0wWAsGetB6Z05/OpsUdQQ9ezE8kobtHsQWWOvwzOdc3J3zTBOIyOFyiik8LM3MKzB0ufr3wyLhwf3ff8/IHdQnYtkx8kcdD6O/wzXqC7QNmb59HBwG7TN3kwJvmkB8sGAnQ==', 1, '39c11ebdf5d0c1567d0e4fc5f3c9550f', '', '17', '', '', '', '', 1, 0, 'dist/img/1.png', 'navbar-dark navbar-cyan', 'accent-info', 'sidebar-dark-info', 'navbar-info', 10, 1, 1, 2, 30, 'es_MX', 0, '2021-06-21 17:51:43', 0, 1),
+(3, '', 'alux@kumo.click', 'Qu9M+aVOwErs6SU6swpdFrV4xP2JmAP1Qhijg82mIp/GCl9mwq29HtsAz6gAjTA7VqtWl2a8uA4vpYshqfIPJal53OmtC4yp3cW1kmcPoG5oeATtPn/n0XGGVz6vSYeVo/3djVadbukGo3KZsUFol/TJP/FCClS/a6tkUYwHT5AE3AN63DMjr1ifE08++v7NgWqC/kUCDSmOjGfdaZlgqk9fejzu1zFOqT9QQfltbNNAzCESjWTI2N3oQ3cqKlCZSuSPR2ooE5IM0PR9ds5X/QdF4sonXized83o6/uHHD7r4Xlo9uOwKbRrbLiXM+KFVD5m5x+CdvMb2RFI8qLjSw==', 'cyr9Sc2KRwdk4i9f9goo53ojIcpsKtgbTvDdZCJxGYRaJ49UqC6dh1eD32m2mKORjQ4JWrgXsAV23blHUclhThfWiL3iKrrDosnBm0aNhGOX9h9HJK3xWZqcDm1PDFv/uW/QXgaeFCLv83BWuyGU3aAUsa3Yoadh2GbWmGVjbxbZmEfpFgo0uZoNu/T3jB+LWgDX0LLJS0jK5ozEnVU9PO7ZZ1HMeLWHnTpNwlaGujtUw6ZSHHT2HtvIt6BegG+aTkNvMUZyO9QPkkgOpfMZh8PAMZbNqRp8gF3NKNyjsm4z1C13GYOnI3kWKBDbmUQ/9Xdo4ZC4kZhthTRS6Wkhfg==', 'TaJMH0O9b/pPy3YLFyQ6eVhkTYsqUPoYpKYZMbfXn1E1YprjLI+JdqV3hH4N2Qjtgslqtf6uNn4NWQWme2df3uGOdJMXH67JfD/3HolHwuAl1GXU4+nP9e0KvwRZexizDS/ulx2xCeq+deXpue6CIlN00OAIY06ARjR9YP+TWTRS0PN5cKemhpUltzxYo2lYcqGaeAJzG0RJUWciXWNiGgOhM9phEGZIrEOqzWrAjHjYmCHWdyYH1EuLnMewFp9rGho0oklC4QwtFFjjQ5BO+qKnAe+OluxXoqhyy1er/zGPsfTmBmKpVFWfI90mk+gWfltKKbmUQ/Po2/XkIl1s7w==', 'CNlRjGv4HTcfUOU+3BlO8ORkoIjAVq/DhpmWdALDa0RDvc1vug40v6BY8LOgbj4llrWYSt1/Z28OxG5deWbo3auPGD78hNlRu9XpBD1kptHnURqweC9J/z8oVqxpxvNYsHk4bsajqQExL1FoUyJLifzvaF49S23GhnrWeK4Y9U2dowWEIZtQWQw2UTbr/NSgiJ2qDyvWRHxJoY0ZaV878txFLbTm7NvAwQIx1fd4F2pK07Ei1Ue2gwOyjKReiELN9IqJi67DhWWpLDFZbrc+jOkBz19Japp0xp3OSRgY0wk5yR/rLR3FnTPtlLdaeSaGeSEr428qwWOM6D61uJsbyw==', 1, 'ee97946f4c6503b27320cb7a07604172', '', '17', '', '', '', '', 1, 0, 'dist/img/usuario.png', 'navbar-dark navbar-cyan', 'accent-info', 'sidebar-dark-info', 'navbar-info', 20, 1, 1, 2, 30, 'es_MX', 0, '2021-06-21 17:51:43', 0, 2);
 
 -- --------------------------------------------------------
 
@@ -5648,6 +5823,12 @@ ALTER TABLE `8i74c0r4`
   ADD PRIMARY KEY (`x8iiD74`);
 
 --
+-- Indices de la tabla `binakuru`
+--
+ALTER TABLE `binakuru`
+  ADD PRIMARY KEY (`bi_id`);
+
+--
 -- Indices de la tabla `c4TD0cxxV`
 --
 ALTER TABLE `c4TD0cxxV`
@@ -5844,7 +6025,7 @@ ALTER TABLE `xXUNVrSXx`
 -- AUTO_INCREMENT de la tabla `1Bin4kuru`
 --
 ALTER TABLE `1Bin4kuru`
-  MODIFY `kuRuIDBiN` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=148;
+  MODIFY `kuRuIDBiN` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=161;
 
 --
 -- AUTO_INCREMENT de la tabla `3s7A2`
@@ -5862,7 +6043,13 @@ ALTER TABLE `7Ip0s`
 -- AUTO_INCREMENT de la tabla `8i74c0r4`
 --
 ALTER TABLE `8i74c0r4`
-  MODIFY `x8iiD74` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=236;
+  MODIFY `x8iiD74` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=305;
+
+--
+-- AUTO_INCREMENT de la tabla `binakuru`
+--
+ALTER TABLE `binakuru`
+  MODIFY `bi_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `c4TD0cxxV`
@@ -5880,7 +6067,7 @@ ALTER TABLE `c4TS3rxxV`
 -- AUTO_INCREMENT de la tabla `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `cliente_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `cliente_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT de la tabla `consultas`
@@ -5898,7 +6085,7 @@ ALTER TABLE `D0cUM3n705`
 -- AUTO_INCREMENT de la tabla `documentos`
 --
 ALTER TABLE `documentos`
-  MODIFY `doc_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `doc_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT de la tabla `especies`
@@ -5946,7 +6133,7 @@ ALTER TABLE `m4rC45v3Hi`
 -- AUTO_INCREMENT de la tabla `mascotas`
 --
 ALTER TABLE `mascotas`
-  MODIFY `mascota_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=75;
+  MODIFY `mascota_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
 
 --
 -- AUTO_INCREMENT de la tabla `MNcPi0s`
@@ -5964,7 +6151,7 @@ ALTER TABLE `p3rM5sx_e`
 -- AUTO_INCREMENT de la tabla `permisosOtrogados`
 --
 ALTER TABLE `permisosOtrogados`
-  MODIFY `po_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=459;
+  MODIFY `po_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=531;
 
 --
 -- AUTO_INCREMENT de la tabla `proveedores`
@@ -6024,7 +6211,7 @@ ALTER TABLE `tr4m7s`
 -- AUTO_INCREMENT de la tabla `u5u405`
 --
 ALTER TABLE `u5u405`
-  MODIFY `usuarioID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `usuarioID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `v3hiXu7l0s`

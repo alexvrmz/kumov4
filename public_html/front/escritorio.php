@@ -82,7 +82,7 @@ include('parciales/7i7ul0.php');
             <a href="app?accion=mascotas" class="small-box-footer"><?= agrergarUno ?><i class="fas fa-arrow-circle-right"></i></a>
         </div>
       </div>
-      <?php } ?>
+      <?php } /*?>
     
     
       <div class="col-lg-3 col-6">
@@ -118,7 +118,7 @@ include('parciales/7i7ul0.php');
             <a href="app?accion=pR0VxD" class="small-box-footer"><?= agrergarUno ?><i class="fas fa-arrow-circle-right"></i></a>
         </div>
       </div>
-      <?php } ?>
+      <?php } */?>
 
       <div class="col-lg-3 col-6">
         <div class="small-box bg-purple">
