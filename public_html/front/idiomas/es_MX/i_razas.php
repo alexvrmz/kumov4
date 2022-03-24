@@ -18,7 +18,7 @@ define('id', 'ID');
 define('nombre', 'Nombre');
 define('nuevaRaza', 'Agregar Raza');
 define('selecciona', 'Selecciona...');
-define('cerra', 'Cerrar');
+define('cerrar', 'Cerrar');
 define('guardar', 'Guardar');
 define('cliente', 'Cliente');
 define('continuarFormulario', 'Abrir Formulario');

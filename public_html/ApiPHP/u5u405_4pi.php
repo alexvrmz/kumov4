@@ -263,6 +263,14 @@ elseif ($accion === '5u540l_03') {
 				$d3s = eCry2($Bin4kuru[$accion]);
 				Bin4kuru($d3s, $accion, $V=0, $u5h8ir5nm, $F=0, $E=0, $D=0, $P=0);
 
+				$cambios = eCry2('El usuario'.$usuario.' Edito los datos de el usuario '.$u5h8ir5nm.': ');
+				$tipoAfectado = 1;
+				$IDAfectado = $u5h8ir5nm;
+				$usuario = $_SESSION['usuarioID'];
+				$accion = 3;
+				$universo = $_SESSION['Universo'];
+				Binakuru($cambios, $tipoAfectado, $IDAfectado, $usuario, $accion, $universo);
+
 			}
 			elseif ($p455wMd5 != '') {
 				$sQl_d474_4rr4y = ['usuarioN1' => $pp_xx001,

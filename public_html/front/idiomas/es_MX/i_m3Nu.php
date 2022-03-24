@@ -17,6 +17,7 @@ define('especies', 'Especies');
 define('razas', 'Razas');
 define('consultas', 'Consultas/Citas');
 define('listadoConsultas', 'Listado Consultas');
+define('listadoRazas', 'Listado Razas');
 
 
 

@@ -46,3 +46,10 @@ $Bin4kuru = [
   601 => 'Relaciono Proveedor/Marca',
   602 => 'Modifico Datos de el Proveedor'
 ];
+
+$acciones = [
+  1 => 'Entro al Sistema',
+  2 => 'Salio del Sistema',
+  3 => 'Edito al Usuario',
+];
+

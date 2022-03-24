@@ -40,125 +40,127 @@ include('parciales/7i7ul0.php');
                   
                   <!-- /.timeline-label -->
                   <?php foreach ($ldi as $key => $value) { ?>
-                    <?php if($value['kuAXIx'] == 100){ 
-                            $ttx = 'El usuario: <a href="app?accion=5u540l_02&u5u4oxX='.$eCry($value['kuUSIDx']).'" target="_blanck">'.$value['EdUS'].'</a> ';
-                            $ttx .= $value['kuD3Sx']; 
+                    <?php if($value['biAccion'] == 1){ 
+                            $ttx = 'El '.$value['biTipoA'].': <a href="app?accion=5u540l_02&u5u4oxX='.$eCry($value['biIDA']).'" target="_blanck">'.$value['afectadoID'].'</a> ';
+                            $ttx .= $acciones[$value['biAccion']];
+                            //$ttx .= $value['biCambios']; 
                             $ico = 'person-booth';
                             $bg = 'green';
                           } 
-                          elseif($value['kuAXIx'] == 101) {
-                            $ttx = 'El usuario: <a href="app?accion=5u540l_02&u5u4oxX='.$eCry($value['kuUSIDx']).'" target="_blanck">'.$value['EdUS'].'</a> '.$value['kuD3Sx'];
+                          elseif($value['biAccion'] == 2) {
+                            $ttx = 'El '.$value['biTipoA'].': <a href="app?accion=5u540l_02&u5u4oxX='.$eCry($value['biIDA']).'" target="_blanck">'.$value['afectadoID'].'</a> ';
+                            $ttx .= $acciones[$value['biAccion']];
                             $ico = 'door-open';
                             $bg = 'red';
                           }
-                          elseif ($value['kuAXIx'] == 200 || $value['kuAXIx'] == 201 || $value['kuAXIx'] == 202 || $value['kuAXIx'] == 203) {
-                            $ttx = 'El usuario: <a href="app?accion=5u540l_02&u5u4oxX='.$eCry($value['kuUSIDx']).'" target="_blanck">'.$value['EdUS'].'</a> '; 
-                            $ttx .= $value['kuD3Sx'].' ';
+                          /*elseif ($value['biAccion'] == 200 || $value['biAccion'] == 201 || $value['biAccion'] == 202 || $value['biAccion'] == 203) {
+                            $ttx = 'El usuario: <a href="app?accion=5u540l_02&u5u4oxX='.$eCry($value['biIDA']).'" target="_blanck">'.$value['biIDA'].'</a> '; 
+                            $ttx .= $value['biCambios'].' ';
                             $ttx .= '<a target="_blank" href="app?accion=5u540l_02&u5u4oxX='.$eCry($value['kuUUIDx']).'" target="_blanck">'.$value['Edu'].'</a>';
-                            if($value['kuAXIx'] == 200){
+                            if($value['biAccion'] == 200){
                               $ico = 'user-plus';
                               $bg = 'blue';
                             }
-                            elseif($value['kuAXIx'] == 201){
+                            elseif($value['biAccion'] == 201){
                               $ico = 'user-slash';
                               $bg = 'red';
                             }
-                            elseif($value['kuAXIx'] == 202){
+                            elseif($value['biAccion'] == 202){
                               $ico = 'user';
                               $bg = 'green';
                             }
-                            elseif($value['kuAXIx'] == 203){
+                            elseif($value['biAccion'] == 203){
                               $ico = 'edit';
                               $bg = 'warning';
                             }
-                          }
-                          elseif($value['kuAXIx'] == 300) {
-                            $ttx = 'El usuario: <a href="app?accion=5u540l_02&u5u4oxX='.$eCry($value['kuUSIDx']).'" target="_blanck">'.$value['EdUS'].'</a> '; 
-                            $ttx .= $value['kuD3Sx'].' ';
-                            $ttx .= '<a target="_blank" href="app?accion=x7l07iLl4&eMpr3='.$eCry($value['kuEMDx']).'" target="_blanck">'.$value['EeU'].'</a>';
+                          }*/
+                          elseif($value['biAccion'] == 3) {
+                            $ttx = 'El '.$value['biTipoA'].': <a href="app?accion=5u540l_02&u5u4oxX='.$eCry($value['biIDA']).'" target="_blanck">'.$value['biUsuario'].'</a> '; 
+                            $ttx .= $acciones[$value['biAccion']];
+                            $ttx .= ' <a target="_blank" href="app?accion=5u540l_02&u5u4oxX='.$eCry($value['biIDA']).'" target="_blanck">'.$value['afectadoID'].'</a>';
                             $ico = 'building';
                             $bg = 'indigo';
                           }
-                          elseif($value['kuAXIx'] == 301) {
-                            $ttx = 'El usuario: <a href="app?accion=5u540l_02&u5u4oxX='.$eCry($value['kuUSIDx']).'" target="_blanck">'.$value['EdUS'].'</a> '; 
-                            $ttx .= $value['kuD3Sx'].' ';
+                          elseif($value['biAccion'] == 301) {
+                            $ttx = 'El usuario: <a href="app?accion=5u540l_02&u5u4oxX='.$eCry($value['biIDA']).'" target="_blanck">'.$value['biIDA'].'</a> '; 
+                            $ttx .= $value['biCambios'].' ';
                             $ttx .= '<a target="_blank" href="app?accion=x7l07iLl4&eMpr3='.$eCry($value['kuEMDx']).'" target="_blanck">'.$value['EeU'].'</a> ';
                             $ico = 'edit';
                             $bg = 'gray';
                           }
-                          elseif($value['kuAXIx'] == 400 || $value['kuAXIx'] == 401) {
-                            $ttx = 'El usuario: <a href="app?accion=5u540l_02&u5u4oxX='.$eCry($value['kuUSIDx']).'" target="_blanck">'.$value['EdUS'].'</a> '; 
-                            $ttx .= $value['kuD3Sx'].' ';
+                          elseif($value['biAccion'] == 400 || $value['biAccion'] == 401) {
+                            $ttx = 'El usuario: <a href="app?accion=5u540l_02&u5u4oxX='.$eCry($value['biIDA']).'" target="_blanck">'.$value['biIDA'].'</a> '; 
+                            $ttx .= $value['biCambios'].' ';
                             $ttx .= '<a target="_blank" href="app?accion=v3hiXs&flo0='.$eCry($value['kuFLIDx']).'" target="_blanck">'.$value['EfU'].'</a>';
-                            if($value['kuAXIx'] == 400){
+                            if($value['biAccion'] == 400){
                               $ico = 'car-bus';
                               $bg = 'purple';
                             }
-                            elseif($value['kuAXIx'] == 401){
+                            elseif($value['biAccion'] == 401){
                               $ico = 'pen-to-square';
                               $bg = 'pink';
                             }
                           }
-                          elseif($value['kuAXIx'] == 402) {
-                            $ttx = 'El usuario: <a href="app?accion=5u540l_02&u5u4oxX='.$eCry($value['kuUSIDx']).'" target="_blanck">'.$value['EdUS'].'</a> '; 
-                            $ttx .= $value['kuD3Sx'].' ';
+                          elseif($value['biAccion'] == 402) {
+                            $ttx = 'El usuario: <a href="app?accion=5u540l_02&u5u4oxX='.$eCry($value['biIDA']).'" target="_blanck">'.$value['biIDA'].'</a> '; 
+                            $ttx .= $value['biCambios'].' ';
                             $ttx .= '<a target="_blank" href="app?accion=v3hiXs&flo0='.$eCry($value['kuFLIDx']).'" target="_blanck">'.$value['EfU'].'</a> ';
                             $ttx .= '<i class="fad fa-circle-arrow-right"></i> ';
                             $ttx .= '<a target="_blank" href="app?accion=x7l07iLl4&eMpr3='.$eCry($value['kuEMDx']).'" target="_blanck">'.$value['EeU'].'</a>';
                             $ico = 'link';
                             $bg = 'orange';
                           }
-                          elseif($value['kuAXIx'] == 403) {
-                            $ttx = 'El usuario: <a href="app?accion=5u540l_02&u5u4oxX='.$eCry($value['kuUSIDx']).'" target="_blanck">'.$value['EdUS'].'</a> '; 
-                            $ttx .= $value['kuD3Sx'].' ';
+                          elseif($value['biAccion'] == 403) {
+                            $ttx = 'El usuario: <a href="app?accion=5u540l_02&u5u4oxX='.$eCry($value['biIDA']).'" target="_blanck">'.$value['biIDA'].'</a> '; 
+                            $ttx .= $value['biCambios'].' ';
                             $ttx .= '<a target="_blank" href="app?accion=v3hiXs&flo0='.$eCry($value['kuFLIDx']).'" target="_blanck">'.$value['EfU'].'</a> ';
                             $ttx .= '<i class="fad fa-circle-arrow-right"></i> ';
                             $ttx .= '<a target="_blank" href="app?accion=x7l07iLl4&eMpr3='.$eCry($value['kuEMDx']).'" target="_blanck">'.$value['EeU'].'</a>';
                             $ico = 'link-slash';
                             $bg = 'red';
                           }
-                          elseif($value['kuAXIx'] == 500) {
-                            $ttx = 'El usuario: <a href="app?accion=5u540l_02&u5u4oxX='.$eCry($value['kuUSIDx']).'" target="_blanck">'.$value['EdUS'].'</a> '; 
-                            $ttx .= $value['kuD3Sx'].' ';
+                          elseif($value['biAccion'] == 500) {
+                            $ttx = 'El usuario: <a href="app?accion=5u540l_02&u5u4oxX='.$eCry($value['biIDA']).'" target="_blanck">'.$value['biIDA'].'</a> '; 
+                            $ttx .= $value['biCambios'].' ';
                             $ttx .= '<a target="_blank" href="app?accion=v3hFh4&vh3iP='.$eCry($value['kuVEIDx']).'" target="_blanck">'.$value['EdV'].'</a> ';
                             $ico = 'car';
                             $bg = 'teal';
                           }
-                          elseif($value['kuAXIx'] == 501) {
-                            $ttx = 'El usuario: <a href="app?accion=5u540l_02&u5u4oxX='.$eCry($value['kuUSIDx']).'" target="_blanck">'.$value['EdUS'].'</a> '; 
-                            $ttx .= $value['kuD3Sx'].' ';
+                          elseif($value['biAccion'] == 501) {
+                            $ttx = 'El usuario: <a href="app?accion=5u540l_02&u5u4oxX='.$eCry($value['biIDA']).'" target="_blanck">'.$value['biIDA'].'</a> '; 
+                            $ttx .= $value['biCambios'].' ';
                             $ttx .= '<a target="_blank" href="" target="_blanck">'.$value['EdD'].'</a> ';
                             $ttx .= '<i class="fad fa-circle-arrow-right"></i> ';
                             $ttx .= '<a target="_blank" href="app?accion=v3hFh4&vh3iP='.$eCry($value['kuVEIDx']).'" target="_blanck">'.$value['EdV'].'</a>';
                             $ico = 'input-numeric';
                             $bg = 'white';
                           }
-                          elseif($value['kuAXIx'] == 502) {
-                            $ttx = 'El usuario: <a href="app?accion=5u540l_02&u5u4oxX='.$eCry($value['kuUSIDx']).'" target="_blanck">'.$value['EdUS'].'</a> '; 
-                            $ttx .= $value['kuD3Sx'].' ';
+                          elseif($value['biAccion'] == 502) {
+                            $ttx = 'El usuario: <a href="app?accion=5u540l_02&u5u4oxX='.$eCry($value['biIDA']).'" target="_blanck">'.$value['biIDA'].'</a> '; 
+                            $ttx .= $value['biCambios'].' ';
                             $ttx .= '<a target="_blank" href="app?accion=v3hFh4&vh3iP='.$eCry($value['kuVEIDx']).'" target="_blanck">'.$value['EdV'].'</a>';
                             $ico = 'edit';
                             $bg = 'warning';
                           }
-                          elseif($value['kuAXIx'] == 503) {
-                            $ttx = 'El usuario: <a href="app?accion=5u540l_02&u5u4oxX='.$eCry($value['kuUSIDx']).'" target="_blanck">'.$value['EdUS'].'</a> '; 
-                            $ttx .= $value['kuD3Sx'].' ';
+                          elseif($value['biAccion'] == 503) {
+                            $ttx = 'El usuario: <a href="app?accion=5u540l_02&u5u4oxX='.$eCry($value['biIDA']).'" target="_blanck">'.$value['biIDA'].'</a> '; 
+                            $ttx .= $value['biCambios'].' ';
                             $ttx .= '<a target="_blank" href="" target="_blanck">'.$value['EdD'].'</a> ';
                             $ttx .= '<i class="fad fa-circle-arrow-right"></i> ';
                             $ttx .= '<a target="_blank" href="app?accion=v3hFh4&vh3iP='.$eCry($value['kuVEIDx']).'" target="_blanck">'.$value['EdV'].'</a>';
                             $ico = 'input-numeric';
                             $bg = 'danger';
                           }
-                          elseif($value['kuAXIx'] == 600) {
-                            $ttx = 'El usuario: <a href="app?accion=5u540l_02&u5u4oxX='.$eCry($value['kuUSIDx']).'" target="_blanck">'.$value['EdUS'].'</a> '; 
-                            $ttx .= $value['kuD3Sx'].' ';
+                          elseif($value['biAccion'] == 600) {
+                            $ttx = 'El usuario: <a href="app?accion=5u540l_02&u5u4oxX='.$eCry($value['biIDA']).'" target="_blanck">'.$value['biIDA'].'</a> '; 
+                            $ttx .= $value['biCambios'].' ';
                             $ttx .= '<a target="_blank" href="app?accion=xPr0xV='.$eCry($value['kuPIDx']).'" target="_blanck">'.$value['EdP'].'</a>';
                             $ico = 'truck-loading';
                             $bg = 'success';
                           }
-                          elseif($value['kuAXIx'] == 602) {
-                            $ttx = 'El usuario: <a href="app?accion=5u540l_02&u5u4oxX='.$eCry($value['kuUSIDx']).'" target="_blanck">'.$value['EdUS'].'</a> '; 
-                            $ttx .= $value['kuD3Sx'].' ';
+                          elseif($value['biAccion'] == 602) {
+                            $ttx = 'El usuario: <a href="app?accion=5u540l_02&u5u4oxX='.$eCry($value['biIDA']).'" target="_blanck">'.$value['biIDA'].'</a> '; 
+                            $ttx .= $value['biCambios'].' ';
                             $ttx .= '<a target="_blank" href="app?accion=xPr0xV='.$eCry($value['kuPIDx']).'" target="_blanck">'.$value['EdP'].'</a> ';
                             $ico = 'edit';
                             $bg = 'gray';
@@ -168,7 +170,7 @@ include('parciales/7i7ul0.php');
                         <i class="fad fa-<?= $ico ?> bg-<?= $bg ?>"></i>
                         <div class="timeline-item">
                           <span class="time"><a href="#"></a></span>
-                          <h3 class="timeline-header" style="color: orange;"><i class="fas fa-clock"></i> <?= date_create($value['kuTIMDx'])->format('H:i:s') ?>  </h3>
+                          <h3 class="timeline-header" style="color: orange;"><i class="fas fa-clock"></i> <?= date_create($value['biFecha'])->format('H:i:s') ?>  </h3>
                           <div class="timeline-body">
                             <?= $ttx ?>
                           </div>
@@ -304,11 +306,11 @@ include('parciales/7i7ul0.php');
                     <?php
                     foreach ($ldi as $key => $value) { ?>                     
                       <tr>
-                        <td><?= $value['EdUS'] ?></td>
+                        <td><?= $value['biIDA'] ?></td>
                         <td></td>
-                        <td><?= $value['kuD3Sx'] ?></td>
+                        <td><?= $value['biCambios'] ?></td>
                         <td><?= $value['Edu'] ?><?= $value['EeU'] ?><?= $value['EfU'] ?><?= $value['EdD'] ?><?= $value['EdV'] ?><?= $value['EdP'] ?></td>
-                        <td><?= $value['kuTIMDx'] ?></td>
+                        <td><?= $value['biFecha'] ?></td>
                       </tr>
                     <?php } ?>
                   </tbody>

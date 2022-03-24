@@ -94,6 +94,7 @@ Datos Consulta/Cita
   11 Observaciones x
   12 Usuario
 
+Se presento error al guardar mascota al insertar y limpiar una de las variables
 
 
 # Actualizaciones!

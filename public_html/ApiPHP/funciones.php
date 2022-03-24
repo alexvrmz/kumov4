@@ -148,6 +148,32 @@ function Bin4kuru($d3s=0, $accion=0, $V=0, $U=0, $F=0, $E=0, $D=0, $P=0) {
   }
 }
 
+function Binakuru($cambios='', $tipoAfectado=0, $IDAfectado, $usuario=0, $accion=0, $universo=0) {
+  $fecha = date("Y-m-d H:i:s");
+  $data = [];
+  $usuario = $_SESSION['usuarioID'];
+
+  
+
+  
+
+  $data = [
+    'bi_cambios' => $cambios, 
+    'bi_tipoA' => $tipoAfectado, 
+    'bi_IDA' => $IDAfectado, 
+    'bi_usuario' => $usuario, 
+    'bi_accion' => $accion,
+    'bi_fecha' => $fecha,
+    'universo' => $universo,
+  ];
+  if(ejecutaDB('binakuru', $data, 'insertar', $paramtros)){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+
 function su8iM6($Fxc47374, $Fxd3scR74) {
   
   // -- desarrollar fn subir imagenes en base a api de marcar

@@ -5,6 +5,12 @@ session_start();
 if(!isset($_SESSION['usuario'])){
 	header("location:../acceso.php?accion=entrar"); // --- llevame a login si no hay sesión ---
 }
+//include('../front/idiomas/'.$iDi['u5h8ir5_iDi'].'/i_Bin4kuru.php');
+$afectados = [
+    1 => 'Usuario',
+    2 => 'cliente',
+    3 => 'mascota',
+  ];
 
 if($accion === 'eDtDpp'){
 	include('conexion.php');
@@ -12,40 +18,56 @@ if($accion === 'eDtDpp'){
 }
 
 if($accion === "bin4kuru"){
-	$U = $_SESSION['usuarioID'];
-	$H = date('Y-m-d');
-	$C001 = "SELECT * FROM 1Bin4kuru WHERE kuRuUSIDBiN = $U AND kuRuTIMBiN LIKE '$H%' ORDER BY kuRuTIMBiN DESC";
+	$usuario = $_SESSION['usuarioID'];
+	$universo = $_SESSION['Universo'];
+	$fecha = date('Y-m-d');
+	$C001 = "SELECT * FROM binakuru WHERE bi_fecha BETWEEN '$fecha 00:00:00' AND '$fecha 23:59:59' AND universo = $universo ORDER BY bi_fecha DESC";
 	$S001 = $conexion->query($C001) or die ("Fallo al consultar bitacora: ".$C001);
 	$ldi = [];
 	while ($DdB = $S001->fetch_assoc()) {
-		$kuIDx = $DdB['kuRuIDBiN'];
-		$kuD3Sx = dCry2($DdB['kuRuD3SBiN']);
-		$kuUSIDx = $DdB['kuRuUSIDBiN'];
-		$kuUUIDx = $DdB['kuRuUUIDBiN'];
-		$kuVEIDx = $DdB['kuRuVEIDBiN'];
-		$kuEMDx = $DdB['kuRuEMDBiN'];
-		$kuFLIDx = $DdB['kuRuFLIDBiN'];	
-		$kuDIDx = $DdB['kuRuDIDBiN'];	
-		$kuPIDx = $DdB['kuRuPIDBiN'];	
-		$kuAXIx = $DdB['kuRuAXIBiN'];
-		$kuTIMDx = $DdB['kuRuTIMBiN'];
+		$biID = $DdB['bi_id'];
+		$biCambios = dCry2($DdB['bi_cambios']);
+		$biTipoA = $DdB['bi_tipoA'];
+		$biIDA = $DdB['bi_IDA'];
+		$biUsuario = $DdB['bi_usuario'];
+		$biAccion = $DdB['bi_accion'];
+		$biFecha = $DdB['bi_fecha'];	
 
-		if(!empty($kuUSIDx)){
-			$C002 = "SELECT u5hUS8ir5 FROM u5u405 WHERE usuarioID = $kuUSIDx";
+
+if($biTipoA == 1){
+	$C002 = "SELECT u5hUS8ir5 FROM u5u405 WHERE usuarioID = $biIDA ";
+	$S002 = $conexion->query($C002) or die ("Fallo al consultar usuario: ".$C002);
+	$datosUsuario = $S002->fetch_assoc();
+	$afectadoID = $datosUsuario['u5hUS8ir5'];
+	$biTipoA = $afectados[$DdB['bi_tipoA']];
+
+	$C003 = "SELECT u5hUS8ir5 FROM u5u405 WHERE usuarioID = $biUsuario ";
+	$S003 = $conexion->query($C003) or die ("Fallo al consultar usuario: ".$C003);
+	$datosUsuarioU = $S003->fetch_assoc();
+	$biUsuario = $datosUsuarioU['u5hUS8ir5'];
+
+
+}
+elseif($biTipoA == 2){
+
+}
+
+		/*if(!empty($biTipoA)){
+			$C002 = "SELECT u5hUS8ir5 FROM u5u405 WHERE usuarioID = $biTipoA";
 			$S002 = $conexion->query($C002) or die ("fallo al seleccionar usuario: ".$C002);
 			$DDU = $S002->fetch_assoc();
 			$EdUS =  $DDU['u5hUS8ir5'];
 		}
 
-		if(!empty($kuUUIDx)){
-			$C003 = "SELECT u5hUS8ir5 FROM u5u405 WHERE usuarioID = $kuUUIDx";
+		if(!empty($biIDA)){
+			$C003 = "SELECT u5hUS8ir5 FROM u5u405 WHERE usuarioID = $biIDA";
 			$S003 = $conexion->query($C003) or die ("fallo al seleccionar usuario: ".$C003);
 			$DDu = $S003->fetch_assoc();
 			$Edu =  $DDu['u5hUS8ir5'];
 		}
 
-		if(!empty($kuEMDx)){
-			$C004 = "SELECT eMNICEm FROM eMpR3sA5 WHERE eMIDEm = $kuEMDx";
+		if(!empty($biAccion)){
+			$C004 = "SELECT eMNICEm FROM eMpR3sA5 WHERE eMIDEm = $biAccion";
 			$S004 = $conexion->query($C004) or die ("Fallo al seleccionar empresa: ".$C004);
 			$DDe = $S004->fetch_assoc();
 			if($S004->num_rows == 0){
@@ -56,8 +78,8 @@ if($accion === "bin4kuru"){
 			}
 		}
 
-		if(!empty($kuFLIDx)){
-			$C005 = "SELECT xN4m37l0 FROM x7l07 WHERE xID7l0 = $kuFLIDx";
+		if(!empty($biFecha)){
+			$C005 = "SELECT xN4m37l0 FROM x7l07 WHERE xID7l0 = $biFecha";
 			$S005 = $conexion->query($C005) or die ("Fallo al seleccionar flota: ".$C005);
 			$DDf = $S005->fetch_assoc();
 
@@ -104,10 +126,10 @@ if($accion === "bin4kuru"){
 			else{
 				$EdV = dCry2($DDv['xV3hi3C0Xu7l0s']);
 			}
-		}
+		}*/
 
-		/*if(!empty($kuFLIDx)){
-			$C005 = "SELECT xN4m37l0 FROM x7l07 WHERE xID7l0 = $kuFLIDx";
+		/*if(!empty($biFecha)){
+			$C005 = "SELECT xN4m37l0 FROM x7l07 WHERE xID7l0 = $biFecha";
 			$S005 = $conexion->query($C005) or die ("Fallo al seleccionar flota: ".$C005);
 			$DDf = $S005->fetch_assoc();
 
@@ -123,15 +145,15 @@ if($accion === "bin4kuru"){
 		unset($it);
 		
 		$it = [
-			'kuIDx' => $kuIDx,
-			'kuD3Sx' => $kuD3Sx,
-			'kuUSIDx' => $kuUSIDx,
-			'kuUUIDx' => $kuUUIDx,
+			'biID' => $biID,
+			'biCambios' => $biCambios,
+			'biTipoA' => $biTipoA,
+			'biIDA' => $biIDA,
 			'kuVEIDx' => $kuVEIDx,
-			'kuEMDx' => $kuEMDx,
-			'kuFLIDx' => $kuFLIDx,
-			'kuDIDx' => $kuDIDx,	
-			'kuPIDx' => $kuPIDx,
+			'biAccion' => $biAccion,
+			'biFecha' => $biFecha,
+			'afectadoID' => $afectadoID,	
+			'biUsuario' => $biUsuario,
 			'kuAXIx' => $kuAXIx,
 			'kuTIMDx' => $kuTIMDx,
 			'EdUS' => $EdUS,
@@ -142,13 +164,13 @@ if($accion === "bin4kuru"){
 			'EdV' => $EdV,
 			'EdP' => $EdP
 		];
-		unset($kuD3Sx);
-		unset($kuUSIDx);
-		unset($kuUUIDx);
+		unset($biCambios);
+		unset($biTipoA);
+		unset($biIDA);
 		unset($kuVEIDx);
-		unset($kuEMDx);
-		unset($kuFLIDx);
-		unset($kuDIDx);
+		unset($biAccion);
+		unset($biFecha);
+		unset($afectadoID);
 		unset($kuAXIx);
 		unset($kuTIMDx);
 		unset($EdUS);

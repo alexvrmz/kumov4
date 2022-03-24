@@ -6,16 +6,12 @@ if($accion == 'salir'){
 	include('ApiPHP/conexion.php');
 	include('ApiPHP/funciones.php');
 
-	include('front/idiomas/'.$_SESSION['idioma'].'/i_8i74c0r4.php');
-  bi74c0('3xi7', lbl_8i7_x028.$_SESSION['usuarioID'], '');
-	
 	include('front/idiomas/'.$_SESSION['idioma'].'/i_Bin4kuru.php');
-	$accion = 101;
-	$d3s = eCry2($Bin4kuru[$accion]);
-	$U = $_SESSION['usuarioID'];
-	Bin4kuru($d3s, $accion, $V=0, $U, $F=0, $E=0, $D=0, $P=0);
+	$accion = 2;
+	$usuario = $_SESSION['usuarioID'];
+	$cambios = eCry2('El usuario salio del sistema');
+	Binakuru($cambios, 1, $usuario, $usuario, $accion, $_SESSION['Universo']);
 
-	bi74c0('3xi7e', lbl_8i7_x031.$_SESSION['usuarioID'], ''); 
 
 	session_destroy();
 	
@@ -102,13 +98,13 @@ elseif($accion == 'x005'){ // --- Validar datos ---
 		//chmod($fu2, 0777);*/
 
 		$m5y6 = lbl_8i7_x001 .' '. $_SESSION['usuarioID'].'<br>/= '.$_SERVER['HTTP_USER_AGENT'].'<br>/='.$_SERVER["REMOTE_ADDR"].'<br>/='.$_SERVER["REMOTE_PORT"];
-		bi74c0('acceso', $m5y6, '');
 		
 		include('front/idiomas/'.$_SESSION['idioma'].'/i_Bin4kuru.php');
-		$accion = 100;
-		$d3s = eCry2($Bin4kuru[$accion]);
-		$U = $_SESSION['usuarioID'];
-		Bin4kuru($d3s, $accion, $V=0, $U, $F=0, $E=0, $D=0, $P=0);
+		$accion = 1;
+		$usuario = $_SESSION['usuarioID'];
+		$cambios = eCry2('El usuario Ingreso al sistema: <br>'.$m5y6);
+		Binakuru($cambios, 1, $usuario, $usuario, $accion, $_SESSION['Universo']);
+
 
 		llevame('app?accion=escritorio');
 	} else{ 
