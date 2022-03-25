@@ -33,7 +33,7 @@ include('parciales/7i7ul0.php');
 
         </div>
       </div>
-      <!-- acciones -->
+      <!-- acciones --> 
       <!-- Default box -->
       <div class="card <?= $brr4 ?> card-outline col-lg-6">
       
@@ -74,19 +74,19 @@ include('parciales/7i7ul0.php');
 
                   <div class="form-group">
                     <label for="veterinariaRFC"><?= apellido1 ?>*</label>
-                    <input type="text" class="form-control" id="veterinariaRFC" name="veterinariaRFC" value="<?= $veterinariaRFC = $veterinaria['vet_rfc'] != '' ? dCry2($veterinaria['vet_rfc']):$_SESSION['formVeterinaria']['vet_rfc'] ?>">
+                    <input type="text" class="form-control" id="veterinariaRFC" name="veterinariaRFC" value="<?= $veterinariaRFC = $veterinaria['vet_rfc'] != '' ? dCry2($veterinaria['vet_rfc']):$_SESSION['formVeterinaria']['veterinariaRFC'] ?>">
                   </div>
 
                   <div class="form-group">
                     <label for="veterinariaCorreo"><?= usuario ?></label>
-                    <input type="text" class="form-control" id="veterinariaCorreo" name="veterinariaCorreo" value="<?= $veterinariaCorreo = $veterinaria['vet_correo'] != '' ? $veterinaria['vet_correo']:$_SESSION['formVeterinaria']['vet_correo'] ?>">
+                    <input type="text" class="form-control" id="veterinariaCorreo" name="veterinariaCorreo" value="<?= $veterinariaCorreo = $veterinaria['vet_correo'] != '' ? $veterinaria['vet_correo']:$_SESSION['formVeterinaria']['veterinariaCorreo'] ?>">
                   </div>
 
                   
                   <div class="form-group">
                     <label><?= nacimiento ?>*</label>
                     <div class="input-group date" id="veterinariaFundacion" data-target-input="nearest">
-                      <input type="text" class="form-control datetimepicker-input" data-target="#veterinariaFundacion" name="veterinariaFundacion" id="veterinariaFundacion" value="<?= $veterinaria['vet_fundacion'] ?>" />
+                      <input type="text" class="form-control datetimepicker-input" data-target="#veterinariaFundacion" name="veterinariaFundacion" id="veterinariaFundacion" value="<?= $fund = $veterinaria['vet_fundacion']!= '' ? $veterinaria['vet_fundacion'] : $_SESSION['formVeterinaria']['veterinariaFundacion'] ?>" />
                       <div class="input-group-append" data-target="#veterinariaFundacion" data-toggle="datetimepicker">
                         <div class="input-group-text"><i class="fad fa-calendar"></i></div>
                       </div>
@@ -100,24 +100,27 @@ include('parciales/7i7ul0.php');
                   <div class="form-group">
                     <label for="veterinariaPais"><?= pais ?></label>
                     <select class="form-control" id="veterinariaPais" name="veterinariaPais" onchange="this.form.submit()" >
-                      <option value="nada" <?php if ($veterinariaPais === 'nada'){ echo ' selected'; } ?>><?= selecciona ?></option>
+                      <option value="nada" <?php if ($veterinaria['vet_pais'] === 'nada' || $_SESSION['formVeterinaria']['veterinariaPaisActual'] === 'nada'){ echo ' selected'; } ?>><?= selecciona ?></option>
                         <?php foreach ($paises as $key => $ps) {  ?>
-                          <option value="<?= $key ?>"<?php if ($veterinariaPais === $key){ echo ' selected'; } ?> ><?= $ps ?></option>    
+                          <option value="<?= $key ?>"<?php if ($veterinaria['vet_pais'] === $key || $_SESSION['formVeterinaria']['veterinariaPaisActual'] === $key){ echo ' selected'; } ?> ><?= $ps ?></option>    
                         <?php } ?>
                     </select>
                   </div>
-                  <?= $veterinariaEstadoActual ?>
+                  s<?= $_SESSION['formVeterinaria']['veterinariaEstado'] ?>s
 
                   <div class="form-group">
                     <label for="veterinariaEstado"><?= estado ?></label>
                     <select class="form-control" id="veterinariaEstado" name="veterinariaEstado" onchange="this.form.submit()" >
-                      <option value="nada" selected><?= selecciona ?></option>
-                        <?php foreach (consulta_estados($veterinariaPais) as $key => $tR4ns) {  ?>
+                      <option value="nada"><?= selecciona ?></option>
+                        <?php 
+                        $veterinariaP = $veterinaria['vet_pais'] != '' ? $veterinaria['vet_pais']:$_SESSION['formVeterinaria']['veterinariaPais'];
+                        $veterinariaEstado = $veterinaria['vet_estado'] != '' ? $veterinaria['vet_estado']:$_SESSION['formVeterinaria']['veterinariaEstado'];
+                        foreach (consulta_estados($veterinariaP) as $key => $tR4ns) {  ?>
                           <option value="<?= $tR4ns['estadoID'] ?>"<?php if ($veterinariaEstado == $tR4ns['estadoID']){ echo ' selected'; }  ?> ><?= $tR4ns['estadoNombre'] ?></option>    
                         <?php } ?>
                     </select>
                   </div>
-                  <?php if($veterinariaPais == 'MX'){ ?>
+                  <?php if($veterinariaPais == 'MX' || $_SESSION['formVeterinaria']['veterinariaPais'] == 'MX' || $veterinaria['vet_pais'] == 'MX'){ ?>
                     <div class="form-group">
                       <label for="veterinariaMunicipio"><?= municipio ?></label>
                       <select class="form-control" id="veterinariaMunicipio" name="veterinariaMunicipio" >
@@ -161,10 +164,12 @@ include('parciales/7i7ul0.php');
                     <input type="text" class="form-control" id="veterinariaCP" name="veterinariaCP" value="<?= $veterinariaCP = $veterinaria['vet_cp'] != '' ? $veterinaria['vet_cp']:$_SESSION['formVeterinaria']['vet_cp'] ?>">
                   </div>
 
-                  <input type="hidden" name="editar" id="editar" value="editar">
-                  <input type="hidden" name="veterinariaID" id="veterinariaID" value="<?=$veterinariaID ?>">
-                  <input type="hidden" name="veterinariaPaisActual" value="<?= $veterinariaPais ?>">
-                  <input type="hidden" name="veterinariaEstadoActual" value="<?= $veterinariaEstado ?>">
+                  <?php if($veterinariaID != ''){ ?>
+                    <input type="hidden" name="editar" id="editar" value="editar">
+                    <input type="hidden" name="veterinriaID" id="veterinariaID" value="<?=$veterinariaID ?>">
+                  <?php } ?>
+                  <input type="hidden" name="veterinariaPaisActual" value="<?= $veterinariaPais = $veterinaria['vet_pais'] != '' ? $veterinaria['vet_pais']:$_SESSION['formVeterinaria']['veterinariaPaisActual'] ?>">
+                  <input type="hidden" name="veterinariaEstadoActual" value="<?= $veterinariaEstadoActual = $_SESSION['formVeterinaria']['veterinariaEstadoActual'] ?>">
 
               <button type="submit" class="btn btn-success"><i class="fad fa-save"></i> <?= guardar ?></button>
             </form>

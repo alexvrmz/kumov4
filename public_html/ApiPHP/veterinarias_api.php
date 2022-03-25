@@ -19,7 +19,7 @@ if($accion === 'veterinarias'){
 	while ($veterinaria = $S001->fetch_array()) {
 		unset($datosVeterinaria);
 		
-		$datosVeterinaria = [
+		$datosVeterinaria = [ 
 			'veterinariaID' => $veterinaria['veterinaria_id'],
 			'veterinariaNombre' => $veterinaria['vet_nombre'],
 			'veterinariaRZ' => $veterinaria['vet_razon'],
@@ -68,7 +68,7 @@ elseif($accion == 'procesaVeterinaria'){
 
 	$veterinariaNombre = limpia($veterinariaNombre);
 	$veterinariaRZ = limpia($veterinariaRZ);
-	$veterinariaRFC = limpia($veterinariaRFC);
+	$veterinariaRFC = strtoupper(limpia($veterinariaRFC));
 	$veterinariaNI = limpia($veterinariaNI);
 	$veterinariaNE = limpia($veterinariaNE);
 	$veterinariaCalle = limpia($veterinariaCalle);
@@ -81,7 +81,7 @@ elseif($accion == 'procesaVeterinaria'){
 	$_SESSION['formError'] = 0;
 	
 	if(empty($veterinariaNombre)){ $_SESSION['mensajeForm'][] = 'Necesitas Escribir por los menos un Nombre.'; $_SESSION['formError']++; }
-	if(empty($veterinariaRFC)){ $_SESSION['mensajeForm'][] = 'Necesitas Escribir el Apellido Paterno'; $_SESSION['formError']++; }
+	if(!v4l_rfc($veterinariaRFC)){ $_SESSION['mensajeForm'][] = 'Necesitas Escribir el RFC valido!.'; $_SESSION['formError']++; }
 	if(!empty($veterinariaCorreo) && !v4lEm4Il($veterinariaCorreo)){ $_SESSION['mensajeForm'][] = 'El Email no es Válido'; $_SESSION['formError']++; }
 	if(empty($veterinariaCorreo)){ $_SESSION['mensajeForm'][] = 'El Email es Obligatorio'; $_SESSION['formError']++; }
 	if(!empty($veterinariaCP) && !v4l_cp($veterinariaCP)){ $_SESSION['mensajeForm'][] = 'El Código Postal no Válido	'; $_SESSION['formError']++; }
@@ -112,10 +112,10 @@ elseif($accion == 'procesaVeterinaria'){
 		if($editar == 'editar' && $veterinariaID != ''){
 			unset($sql_array);
 			$sql_array = [
+				'vet_correo' => $veterinariaCorreo,
 				'vet_nombre' => eCry2($veterinariaNombre),
 				'vet_razon' => eCry2($veterinariaRZ),
 				'vet_rfc' => eCry2($veterinariaRFC),
-				'vet_correo' => $veterinariaCorreo,
 				'vet_int' => eCry2($veterinariaNI),
 				'vet_ext' => eCry2($veterinariaNE),
 				'vet_calle' => eCry2($veterinariaCalle),
@@ -125,8 +125,6 @@ elseif($accion == 'procesaVeterinaria'){
 				'vet_pais' => $veterinariaPais,
 				'vet_cp' => $veterinariaCP,
 				'vet_fundacion' => $veterinariaFundacion,
-				'vet_sistema' => date("Y-m-d H:i:s"),
-				'universo' => $Universo
 			];
 			if($veterinariaPsswd != ''){
 				$sql_array['veterinaria_psswd'] = md5($veterinariaPsswd);
@@ -146,19 +144,16 @@ elseif($accion == 'procesaVeterinaria'){
 				Binakuru($cambios, $tipoAfectado, $IDAfectado, $usuario, $accion, $universo);
 			///	----	Bitacora
 
-			llevame('../app?accion=fichaVeterinaria&veterinariaID='.$eCry($veterinariaID));
+			llevame('../app?accion=formVeterinaria&veterinariaID='.$eCry($veterinariaID));
 		}
 		else{
 			unset($sql_array);
 			$contrasenaTemp = g3n_ps(8);
 			$sql_array = [
 				'vet_correo' => $veterinariaCorreo,
-				'veterinaria_psswd' => md5($contrasenaTemp),
 				'vet_nombre' => eCry2($veterinariaNombre),
 				'vet_razon' => eCry2($veterinariaRZ),
 				'vet_rfc' => eCry2($veterinariaRFC),
-				'veterinaria_apellido2' => eCry2($veterinariaApellido2),
-				'veterinaria_sexo' => $veterinariaSexo,
 				'vet_int' => eCry2($veterinariaNI),
 				'vet_ext' => eCry2($veterinariaNE),
 				'vet_calle' => eCry2($veterinariaCalle),
@@ -167,12 +162,15 @@ elseif($accion == 'procesaVeterinaria'){
 				'vet_estado' => $veterinariaEstado,
 				'vet_pais' => $veterinariaPais,
 				'vet_cp' => $veterinariaCP,
-				'veterinaria_telefono1' => eCry2($veterinariaTelefono1),
-				'veterinaria_telefono2' => eCry2($veterinariaTelefono2),
+				'vet_activa' => 1,
 				'vet_fundacion' => $veterinariaFundacion,
 				'vet_sistema' => date("Y-m-d H:i:s"),
-				'Universo' => $Universo
+				'vet_principal' => 1,
+				'universo' => $Universo
 			];
+			echo '<pre>';
+			print_r($sql_array);
+			echo '/<pre>';
 			$accion = 'insertar';
 			$paramatros = NULL;
 			$veterinariaID = ejecutaDB('veterinarias', $sql_array, $accion, $paramatros);
@@ -189,19 +187,19 @@ elseif($accion == 'procesaVeterinaria'){
 				$universo = $_SESSION['Universo'];
 				Binakuru($cambios, $tipoAfectado, $IDAfectado, $usuario, $accion, $universo);
 			///	----	Bitacora
-			llevame('../app?accion=fichaVeterinaria&veterinariaID='.$eCry($veterinariaID).'&cltemp='.$eCry($contrasenaTemp));
+			llevame('../app?accion=formVeterinaria&veterinariaID='.$eCry($veterinariaID).'&cltemp='.$eCry($contrasenaTemp));
 		}
 	}
 	else{
 		if($editar == 'editar' && $veterinariaID != ''){
 			$_SESSION['formVeterinaria']['veterinariaPaisActual'] = $veterinariaPais;
 			$_SESSION['formVeterinaria']['veterinariaEstadoActual'] = $veterinariaEstado;
-			llevame('../app?accion=editarVeterinaria&veterinariaID='.$eCry($veterinariaID));
+			llevame('../app?accion=formVeterinaria&veterinariaID='.$eCry($veterinariaID));
 		}
 		else{
 			/*$_SESSION['formVeterinaria']['veterinariaPaisActual'] = $veterinariaPais;
 			$_SESSION['formVeterinaria']['veterinariaEstadoActual'] = $veterinariaEstado;*/
-			llevame('../app?accion=veterinarias');
+			llevame('../app?accion=formVeterinaria&veterinariaID='.$eCry($veterinariaID));
 		}
 	}
 
@@ -210,11 +208,11 @@ elseif($accion == 'borrarFormulario'){
 	unset($_SESSION['formVeterinaria']);
 	unset($_SESSION['formError']);
 	unset($_SESSION['mensajeForm']);
-	llevame('../app?accion=veterinarias');
+	llevame('../app?accion=formVeterinaria');
 }
-elseif($accion == 'fichaVeterinaria'){
-	$C004 = "SELECT * FROM veterinarias WHERE veterinaria_id = ".$dCry($veterinariaID)." ";
-	$S004 = $conexion->query($C004) or die ("Fallo al seleccionar Veterinaria");
+elseif($accion == 'fichaVeterinaria' || ($accion == 'formVeterinaria' && $dCry($veterinariaID) != '')){
+	$C004 = "SELECT * FROM veterinarias WHERE vet_id = ".$dCry($veterinariaID)." ";
+	$S004 = $conexion->query($C004) or die ("Fallo al seleccionar Veterinaria: ".$C004);
 	$veterinaria = $S004->fetch_assoc();
 	$nombre1 = dCry2($veterinaria['vet_nombre']);
 	$nombre2 = dCry2($veterinaria['vet_razon']);
