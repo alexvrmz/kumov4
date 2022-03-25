@@ -70,7 +70,15 @@ elseif($accion == 'procesaEspecie'){
 			$paramatros = 'especie_id = '.$especieID;
 			ejecutaDB('especies', $sql_array, $accion, $paramatros);
 			unset($_SESSION['formEspecie']);
-			//Bin4kuru('Se creo la especie -> ', $accion, $V=0, $U, $F=0, $E=0, $D=0, $P=0);
+			///	----	Bitacora
+				$usuario = $_SESSION['usuarioID'];
+				$cambios = eCry2('El Usuario '.$usuario.' Modifico la Especie '.$especieID);
+				$tipoAfectado = 4;
+				$IDAfectado = $especieID;
+				$accion = 500;
+				$universo = $_SESSION['Universo'];
+				Binakuru($cambios, $tipoAfectado, $IDAfectado, $usuario, $accion, $universo);
+			///	----	Bitacora
 			llevame('../app?accion=especies');
 			$_SESSION['m3ns4J3'] = 'Se actualizo con exito la especie: '.$especieNombre;
 		}
@@ -86,7 +94,15 @@ elseif($accion == 'procesaEspecie'){
 			$paramatros = NULL;
 			$especieID = ejecutaDB('especies', $sql_array, $accion, $paramatros);
 			unset($_SESSION['formEspecie']);
-			//Bin4kuru('Se creo la especie -> ', $accion, $V=0, $U, $F=0, $E=0, $D=0, $P=0);
+			///	----	Bitacora
+				$usuario = $_SESSION['usuarioID'];
+				$cambios = eCry2('El Usuario '.$usuario.' Agrego la Especie '.$especieID);
+				$tipoAfectado = 4;
+				$IDAfectado = $especieID;
+				$accion = 501;
+				$universo = $_SESSION['Universo'];
+				Binakuru($cambios, $tipoAfectado, $IDAfectado, $usuario, $accion, $universo);
+			///	----	Bitacora
 			llevame('../app?accion=especies');
 			$_SESSION['m3ns4J3'] = 'Se agrego con exito la especie: '.$especieNombre;
 		}

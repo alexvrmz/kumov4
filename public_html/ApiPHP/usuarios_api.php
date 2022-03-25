@@ -1,4 +1,4 @@
-<?php
+xf<?php
 foreach($_REQUEST as $k => $v){$$k=$v;}  //echo $k.' -> '.$v.' | ';
 session_start();
 //$accion = $dCry($accion);
@@ -7,13 +7,13 @@ if(!isset($_SESSION['usuario'])){
 }
 $Universo = $_SESSION['Universo'];
 
-if($accion === "5u540l_03" || $accion === '5u540l_04' || $accion === '10300' || $accion === '10400' || $accion === 'r3gu'){
+if($accion === "usuarios_03" || $accion === 'usuarios_04' || $accion === '10300' || $accion === '10400' || $accion === 'r3gu'){
 	include('conexion.php');
  	include('funciones.php');
  	include('fncnesF0rM5.php');
 }
 /// --- accion Listado de usuarios
-if($accion === "5u540l"){
+if($accion === "usuarios"){
 	if($pp_xx001_add != ''){ $pp_xx001_add = $dCry($pp_xx001_add); }
 	if($pp_xx002_add != ''){ $pp_xx002_add = $dCry($pp_xx002_add); }
 	if($pp_xx003_add != ''){ $pp_xx003_add = $dCry($pp_xx003_add); }
@@ -79,7 +79,7 @@ if($accion === "5u540l"){
 	}
 }
 /// --- accion Consultar Datos de un usuario
-elseif($accion === "5u540l_02"){
+elseif($accion === "usuarios_02"){
 	$u5u4oxX = $dCry($u5u4oxX);
 	if(!empty($u5u4oxX)){
     // --- Consulta para datos de usuario
@@ -132,12 +132,12 @@ elseif($accion === "5u540l_02"){
   else{
     $_SESSION['m3ns4J3'] = 'No habia ID de usuario a editar! (m-01).';
     $_SESSION['m3n3Rr0R'] = 'si';
-    llevame('app?accion=5u540l');
+    llevame('app?accion=usuarios');
   }
  
 }
 /// --- accion Actualizar Usuario en BD
-elseif ($accion === '5u540l_03') {
+elseif ($accion === 'usuarios_03') {
 	unset($_SESSION['m3ns4j3Frm']);
 	$_SESSION['m3ns4j3Frm'] = [];
 	$_SESSION['err'] = 0;
@@ -262,14 +262,15 @@ elseif ($accion === '5u540l_03') {
 				$accion = 203;
 				$d3s = eCry2($Bin4kuru[$accion]);
 				Bin4kuru($d3s, $accion, $V=0, $u5h8ir5nm, $F=0, $E=0, $D=0, $P=0);
-
-				$cambios = eCry2('El usuario'.$usuario.' Edito los datos de el usuario '.$u5h8ir5nm.': ');
-				$tipoAfectado = 1;
-				$IDAfectado = $u5h8ir5nm;
-				$usuario = $_SESSION['usuarioID'];
-				$accion = 3;
-				$universo = $_SESSION['Universo'];
-				Binakuru($cambios, $tipoAfectado, $IDAfectado, $usuario, $accion, $universo);
+				///	----	Bitacora
+					$cambios = eCry2('El usuario'.$usuario.' Edito los datos de el usuario '.$u5h8ir5nm.': ');
+					$tipoAfectado = 1;
+					$IDAfectado = $u5h8ir5nm;
+					$usuario = $_SESSION['usuarioID'];
+					$accion = 200;
+					$universo = $_SESSION['Universo'];
+					Binakuru($cambios, $tipoAfectado, $IDAfectado, $usuario, $accion, $universo);
+				///	----	Bitacora
 
 			}
 			elseif ($p455wMd5 != '') {
@@ -283,18 +284,27 @@ elseif ($accion === '5u540l_03') {
 				$xidu = ejecutaDB('u5u405', $sQl_d474_4rr4y, $accion, $p4r4m37r05);
 				include('../front/idiomas/'.$_SESSION['idioma'].'/i_8i74c0r4.php');
 				$_SESSION['m3ns4J3'] = lbl_8i7_x005.$pp_xx005;
-				bi74c0('3dtu5u2', $_SESSION['m3ns4J3'], '');
 
 				$pp_xx001 = dCry2($pp_xx001);
 				$pp_xx002 = dCry2($pp_xx002);
 				$pp_xx003 = dCry2($pp_xx003);
 				$pp_xx004 = dCry2($pp_xx004);
+
+				///	----	Bitacora
+					$cambios = eCry2('El usuario'.$usuario.' Edito los datos y contraseña del Usuario '.$u5h8ir5nm.': ');
+					$tipoAfectado = 1;
+					$IDAfectado = $u5h8ir5nm;
+					$usuario = $_SESSION['usuarioID'];
+					$accion = 201;
+					$universo = $_SESSION['Universo'];
+					Binakuru($cambios, $tipoAfectado, $IDAfectado, $usuario, $accion, $universo);
+				///	----	Bitacora
 			}
 			else {
 				$_SESSION['m3n3Rr0R']  = 'si';
 				include('../front/idiomas/'.$_SESSION['idioma'].'/i_8i74c0r4.php');
 				$_SESSION['m3ns4J3'] = lbl_8i7_x006.$pp_xx005;
-				bi74c0('3dtu5u3', $_SESSION['m3ns4J3'], '');
+				//bi74c0('3dtu5u3', $_SESSION['m3ns4J3'], '');
 			}
 		}
 	/*}
@@ -303,14 +313,14 @@ elseif ($accion === '5u540l_03') {
 		include('../front/idiomas/'.$_SESSION['idioma'].'/i_8i74c0r4.php');
 		$_SESSION['m3ns4J3'] = lbl_8i7_x007.$pp_xx005;	
 		bi74c0('3dtu5u4', $_SESSION['m3ns4J3'], '');
-    $r = '../app?accion=5u540l';
+    $r = '../app?accion=usuarios';
 	}*/
 
 	if($_SESSION['err'] == 0){
-		$r = '../app?accion=5u540l_02&u5u4oxX='.$eCry($u5h8ir5nm);
+		$r = '../app?accion=usuarios_02&u5u4oxX='.$eCry($u5h8ir5nm);
 	}
 	else{
-		$r = '../app?accion=5u540l_02&u5u4oxX='.$eCry($u5h8ir5nm);
+		$r = '../app?accion=usuarios_02&u5u4oxX='.$eCry($u5h8ir5nm);
 		if(!empty($pp_xx001)){ $r .= '&pp_xx001='.$eCry($pp_xx001);	}
 		if(!empty($pp_xx002)){ $r .= '&pp_xx002='.$eCry($pp_xx002);	}
 		if(!empty($pp_xx003)){ $r .= '&pp_xx003='.$eCry($pp_xx003);	}
@@ -326,7 +336,7 @@ elseif ($accion === '5u540l_03') {
 
 }
 /// --- accion agregar usuario
-elseif ($accion == '5u540l_04') {
+elseif ($accion == 'usuarios_04') {
 
 	unset($_SESSION['m3ns4j3Frm']);
 	$_SESSION['m3ns4j3Frm'] = [];
@@ -550,10 +560,10 @@ elseif ($accion == '5u540l_04') {
 
 	
 	if($xidu != ''){
-		$r = '../app?accion=5u540l_02&u5u4oxX='.$eCry($xidu);
+		$r = '../app?accion=usuarios_02&u5u4oxX='.$eCry($xidu);
 	}
 	else{
-		$r = '../app?accion=5u540l';
+		$r = '../app?accion=usuarios';
 		if(!empty($pp_xx001_add)){ $r .= '&pp_xx001_add='.$eCry($pp_xx001_add);	}
 		if(!empty($pp_xx002_add)){ $r .= '&pp_xx002_add='.$eCry($pp_xx002_add);	}
 		if(!empty($pp_xx003_add)){ $r .= '&pp_xx003_add='.$eCry($pp_xx003_add);	}
@@ -579,24 +589,27 @@ elseif ($accion === '10300') {
 											];		
 		ejecutaDB('u5u405', $sQl_d474_4rr4y, $accion, $p4r4m37r05);
 		
-		include('../front/idiomas/'.$_SESSION['idioma'].'/i_Bin4kuru.php');
-		$accion = 201;
-		$d3s = eCry2($Bin4kuru[$accion]);
-		Bin4kuru($d3s, $accion, $V=0, $u5h8ir5nm, $F=0, $E=0, $D=0, $P=0);
-
-
 		include('../front/idiomas/'.$_SESSION['idioma'].'/i_8i74c0r4.php');
 		$_SESSION['m3ns4J3'] = lbl_8i7_x008.$u5h8ir5nm;
-		bi74c0('susPu5u', $_SESSION['m3ns4J3'], '');
+
+		///	----	Bitacora
+			$cambios = eCry2('El usuario'.$usuario.' Suspendio al Usuario '.$u5h8ir5nm);
+			$tipoAfectado = 1;
+			$IDAfectado = $u5h8ir5nm;
+			$usuario = $_SESSION['usuarioID'];
+			$accion = 202;
+			$universo = $_SESSION['Universo'];
+			Binakuru($cambios, $tipoAfectado, $IDAfectado, $usuario, $accion, $universo);
+		///	----	Bitacora
+
 	}
 	else{
 		$_SESSION['m3n3Rr0R']  = 'si';
 		include('../front/idiomas/'.$_SESSION['idioma'].'/i_8i74c0r4.php');
 		$_SESSION['m3ns4J3'] = lbl_8i7_x009;
-		bi74c0('susPu5u2', $_SESSION['m3ns4J3'], '');
     
 	}
-  llevame('../app?accion=5u540l');
+  llevame('../app?accion=usuarios');
 	
 }
 /// --- accion activar usuario
@@ -611,22 +624,22 @@ elseif ($accion === '10400') {
 											];		
 		ejecutaDB('u5u405', $sQl_d474_4rr4y, $accion, $p4r4m37r05);
 
-		include('../front/idiomas/'.$_SESSION['idioma'].'/i_8i74c0r4.php');
-		$_SESSION['m3ns4J3'] = lbl_8i7_x010.$u5h8ir5nm;
-		bi74c0('4ctPu5u', $_SESSION['m3ns4J3'], '');
-
-		include('../front/idiomas/'.$_SESSION['idioma'].'/i_Bin4kuru.php');
-		$accion = 202; 
-		$d3s = eCry2($Bin4kuru[$accion]);
-		Bin4kuru($d3s, $accion, $V=0, $u5h8ir5nm, $F=0, $E=0, $D=0, $P=0);
+		///	----	Bitacora
+			$cambios = eCry2('El usuario'.$usuario.' Activo al Usuario '.$u5h8ir5nm);
+			$tipoAfectado = 1;
+			$IDAfectado = $u5h8ir5nm;
+			$usuario = $_SESSION['usuarioID'];
+			$accion = 203;
+			$universo = $_SESSION['Universo'];
+			Binakuru($cambios, $tipoAfectado, $IDAfectado, $usuario, $accion, $universo);
+		///	----	Bitacora
 	}
 	else{
 		$_SESSION['m3n3Rr0R']  = 'si';
 		include('../front/idiomas/'.$_SESSION['idioma'].'/i_8i74c0r4.php');
 		$_SESSION['m3ns4J3'] = lbl_8i7_x011;
-		bi74c0('4ctPu5u2', $_SESSION['m3ns4J3'], '');
     
 	}
-  llevame('../app?accion=5u540l');
+  llevame('../app?accion=usuarios');
 	
 }

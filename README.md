@@ -98,6 +98,28 @@ Se presento error al guardar mascota al insertar y limpiar una de las variables
 
 
 # Actualizaciones!
+- V 2022.03.24
+  - Se crea la tabla y columnas para la nueva bitacora
+  - Se desarrola la funcion binakuru para la bitacora
+  - Se establecen tipos de afectados
+  - Se establecen las acciones para bitacora
+  - Se agrega la funcion a:
+    - Agregar Usuario
+    - Modificar Usuario
+    - Agregar/Activar permisos de usuario
+    - Desactivar permisos de usuario
+    - Agregar Mascota
+    - Modificar Mascota
+    - Agregar Cliente
+    - Modificar Cliente
+    - Agregar Especie
+    - Modificar Especie
+    - Agregar Raza
+    - Editar Raza
+    - Ingreso al sistema
+    - Salida del sistema
+
+
 - V 2022.03.14
   - Se termina el modulo de administracion de Especies.
   - Modulo Razas

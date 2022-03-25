@@ -2,7 +2,7 @@
 date_default_timezone_set("America/Mexico_City");
 setlocale(LC_MONETARY, 'es_MX');
 error_reporting(E_ALL ^ E_NOTICE);
-$versionKUMO = 'V 2022.03.12.01';
+$versionKUMO = 'V 2022.03.24.01';
 
 //error_reporting(0);
 $servidor = $_SERVER['SERVER_NAME'];

@@ -109,7 +109,12 @@
     <!-- Brand Logo -->
     <a href="index.php" class="brand-link <?= $iDi['config_brand'] ?>">
       <img src="dist/img/noPixcuaMieke.png" alt="noPixcua Mieke" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">KUMO <b>雲</b></span>
+      <span class="brand-text font-weight-light">
+        <?php if($hayvet == 'sihayvet'){ ?>
+          <?= $nombreVetPrincipal ?> | 
+        <?php } ?>
+        KUMO <b>雲</b> 
+      </span>
     </a>
 
     <!-- Sidebar -->
@@ -158,7 +163,7 @@
 
           <?php if(v4lID44x50("500-001", $usuario_id) == TRUE){ /// --- ?>
             <li class="nav-item <?= $menu_u5u405_abierto ?>">
-              <a href="app?accion=5u540l" class="nav-link <?= $menu_u5u405 ?>">
+              <a href="app?accion=usuarios" class="nav-link <?= $menu_u5u405 ?>">
                 <i class="nav-icon fad fa-users-cog"></i>
                 <p>
                   <?= lbl_u5u4ri05 ?>
@@ -167,7 +172,7 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="app?accion=5u540l" class="nav-link <?= $menu_u5u405 ?>">
+                  <a href="app?accion=usuarios" class="nav-link <?= $menu_u5u405 ?>">
                     <i class="fad fa-list nav-icon"></i>
                     <p><?= lbl_lI574D0_u5u ?></p>
                   </a>

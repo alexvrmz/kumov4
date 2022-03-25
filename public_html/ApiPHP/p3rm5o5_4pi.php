@@ -101,7 +101,7 @@ elseif ($accion == 'xu5sdS7l') { /// --- Accion cargar datos de permiso
   else{
     $_SESSION['m3ns4J3'] = 'No habia ID de permiso a editar! (m-01).';
     $_SESSION['m3n3Rr0R'] = 'si';
-    llevame('app?accion=5u540l');
+    llevame('app?accion=usuarios');
   }
 		
 }
@@ -184,12 +184,11 @@ elseif ($accion === 'permisosAsignados') {
   else{
     $_SESSION['m3ns4J3'] = 'No habia ID de permiso a editar! (m-01).';
     $_SESSION['m3n3Rr0R'] = 'si';
-    llevame('app?accion=5u540l');
+    llevame('app?accion=usuarios');
   }
 }
 elseif ($accion === 'sD4xG5d5') { /// --- carga permisos por modulo
-	if($pt5_xx02 != '' && ($pt5_xx05 == '' ||  $pt5_xx05 == 'nada')){
-    // --- Consulta para permisos de usuario
+	// --- Consulta para permisos de usuario
     $q5u5xXd = "SELECT * FROM p3rM5sx_e WHERE p3ry6m0DuXx = '".$pt5_xx02."' ";
     $c5u5xXd = $conexion->query($q5u5xXd) or die ("Falló al obtener permisos " . $q5u5xXd);
     $d4705_u5u = [];
@@ -202,6 +201,8 @@ elseif ($accion === 'sD4xG5d5') { /// --- carga permisos por modulo
                   ];
       array_push($d4705_u5u, $x4rr36l0); 
     }
+	if($pt5_xx02 != '' && ($pt5_xx05 == '' ||  $pt5_xx05 == 'nada')){
+    
 
 		$_SESSION['pt5_xx02'] = $pt5_xx02;
 		unset($_SESSION['pt5_xx05']);
@@ -221,9 +222,17 @@ elseif ($accion === 'sD4xG5d5') { /// --- carga permisos por modulo
 											];		
     ejecutaDB('permisosOtrogados', $sQl_d474_4rr4y, $accion, $p4r4m37r05);
 		$_SESSION['m3n3Rr0R'] = 'no';
-		include('../front/idiomas/'.$_SESSION['idioma'].'/i_8i74c0r4.php');
-		$_SESSION['m3ns4J3'] = lbl_8i7_x014.$pt5_xx05.' / '.$pt5_xx04;
-		bi74c0('4ddP3rm', $_SESSION['m3ns4J3'], '');
+
+		///	----	Bitacora
+			$cambios = eCry2('El usuario'.$usuario.' Agrego el permiso "'.$pt5_xx05.'" al Usuario '.$pt5_xx04);
+			$tipoAfectado = 1;
+			$IDAfectado = $pt5_xx04;
+			$usuario = $_SESSION['usuarioID'];
+			$accion = 204;
+			$universo = $_SESSION['Universo'];
+			Binakuru($cambios, $tipoAfectado, $IDAfectado, $usuario, $accion, $universo);
+		///	----	Bitacora
+
 		unset($_SESSION['pt5_xx02']);
 		unset($_SESSION['pt5_xx05']);
 		llevame('../app?accion=permisosAsignados&u5u4oxX='.$eCry($pt5_xx04));
@@ -233,7 +242,6 @@ elseif ($accion === 'sD4xG5d5') { /// --- carga permisos por modulo
     $_SESSION['m3n3Rr0R'] = 'si';
 		include('../front/idiomas/'.$_SESSION['idioma'].'/i_8i74c0r4.php');
 		$_SESSION['m3ns4J3'] = lbl_8i7_x015;
-		bi74c0('4ddP3rm2', $_SESSION['m3ns4J3'], '');
     llevame('../app?accion=permisosAsignados&u5u4oxX='.$eCry($pt5_xx04));
   }
 }
@@ -258,10 +266,17 @@ elseif ($accion == 'psDef4Gg') { /// --- Accion actualizar estado permiso
 		
 
 		ejecutaDB('permisosOtrogados', $sQl_d474_4rr4y, $accion, $p4r4m37r05);
-
-		
 		$_SESSION['m3ns4J3'] = $ssx.lbl_8i7_x016.' '.$h7gr;
-		bi74c0('3dtP3rm', $_SESSION['m3ns4J3'], '');
+
+		///	----	Bitacora
+			$cambios = eCry2('El usuario'.$usuario.' Desactivo el permiso "'.$pt5_xx05.'" al Usuario '.$u5u4oxX);
+			$tipoAfectado = 1;
+			$IDAfectado = $u5u4oxX;
+			$usuario = $_SESSION['usuarioID'];
+			$accion = 205;
+			$universo = $_SESSION['Universo'];
+			Binakuru($cambios, $tipoAfectado, $IDAfectado, $usuario, $accion, $universo);
+		///	----	Bitacora
 
     llevame('../app?accion=permisosAsignados&u5u4oxX='.$eCry($u5u4oxX));
 

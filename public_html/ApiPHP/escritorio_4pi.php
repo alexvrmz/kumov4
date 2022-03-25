@@ -5,7 +5,7 @@ if(!isset($_SESSION['usuario'])){
 	header("location:../acceso.php?accion=entrar"); // --- llevame a login si no hay sesión ---
 }
 $Universo = $_SESSION['Universo'];
-if($accion === "5u540l_03"){
+if($accion === "usuarios_03"){
 	include('conexion.php');
  	include('funciones.php');
 }

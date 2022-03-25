@@ -7,7 +7,7 @@ if($accion == 'salir'){
 	include('ApiPHP/funciones.php');
 
 	include('front/idiomas/'.$_SESSION['idioma'].'/i_Bin4kuru.php');
-	$accion = 2;
+	$accion = 101;
 	$usuario = $_SESSION['usuarioID'];
 	$cambios = eCry2('El usuario salio del sistema');
 	Binakuru($cambios, 1, $usuario, $usuario, $accion, $_SESSION['Universo']);
@@ -100,7 +100,7 @@ elseif($accion == 'x005'){ // --- Validar datos ---
 		$m5y6 = lbl_8i7_x001 .' '. $_SESSION['usuarioID'].'<br>/= '.$_SERVER['HTTP_USER_AGENT'].'<br>/='.$_SERVER["REMOTE_ADDR"].'<br>/='.$_SERVER["REMOTE_PORT"];
 		
 		include('front/idiomas/'.$_SESSION['idioma'].'/i_Bin4kuru.php');
-		$accion = 1;
+		$accion = 100;
 		$usuario = $_SESSION['usuarioID'];
 		$cambios = eCry2('El usuario Ingreso al sistema: <br>'.$m5y6);
 		Binakuru($cambios, 1, $usuario, $usuario, $accion, $_SESSION['Universo']);

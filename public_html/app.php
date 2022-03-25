@@ -12,6 +12,40 @@ $paises = [
   'US' => 'Estados Unidos',
   'MX' => 'México',
 ];
+
+/// ---- Verifica si existe una veterinaria registrada
+$CVET = "SELECT * FROM veterinarias WHERE universo = ".$_SESSION['Universo']." AND vet_activa = 1 ";
+$SVET = $conexion->query($CVET) or die ("Fallo al consultar veterinarias: ".$CVET);
+$nvets = $SVET->num_rows;
+$listaVeterinarias = [];
+while ($datosVeterinaria = $SVET->fetch_array()) {
+  unset($veterinaria);
+  $veterinaria = [
+    'vetID' => $datosVeterinaria['vet_id'],
+    'vetNombre' => dCry2($datosVeterinaria['vet_nombre']),
+    'vetRZ' => $datosVeterinaria['vet_rz'],
+    'vetPrincipal' => $datosVeterinaria['vet_principal']
+  ];
+  array_push($listaVeterinarias, $veterinaria);
+}
+
+foreach ($listaVeterinarias as $key => $veterinaria) {
+  if($key == 'vetPrincipal' && $veterinaria['vetPrincipal'] == 1){
+    $nombreVetPrincipal = $veterinaria['vetNombre'];
+    break;
+  }
+  else{
+    $nombreVetPrincipal = $veterinaria['vetNombre'].' np';
+  }
+}
+
+if($nvets >= 1){
+  $hayvet = 'sihayvet'; 
+}
+else{
+  $hayvet = 'nohayvet'; 
+}
+
  
 if(!isset($_SESSION['usuario'])){
 	header("location:acceso.php?accion=entrar"); // --- llevame a login si no hay sesión ---
@@ -70,7 +104,7 @@ if(v4lID44x50("100-001", $usuario_id) == TRUE){
 		// --- BACKEND ----
 		include('front/cuenta.php');		
 	}
-	elseif($accion == '5u540l'){ /// --- Usuarios
+	elseif($accion == 'usuarios'){ /// --- Usuarios
 
     if(v4lID44x50("500-001", $usuario_id) == TRUE){
       
@@ -80,7 +114,7 @@ if(v4lID44x50("100-001", $usuario_id) == TRUE){
       $menu_u5u405 = 'active';
       
       // --- BACKEND ----
-      include('ApiPHP/u5u405_4pi.php');
+      include('ApiPHP/usuarios_api.php');
       include('front/u5u405.php');
       
     }
@@ -91,7 +125,7 @@ if(v4lID44x50("100-001", $usuario_id) == TRUE){
     }
 		
 	}
-	elseif($accion == '5u540l_02'){	/// ---Editar usuario
+	elseif($accion == 'usuarios_02'){	/// ---Editar usuario
 		if(v4lID44x50("500-003", $usuario_id) == TRUE){
 			
       // ---- Marcar la sección en el menú ---
@@ -100,8 +134,8 @@ if(v4lID44x50("100-001", $usuario_id) == TRUE){
 			$menu_u5u405 = 'active';
       
       // --- BACKEND ----
-      include('ApiPHP/u5u405_4pi.php');
-			include('front/u5u405-3di7.php');
+      include('ApiPHP/usuarios_api.php');
+			include('front/usuarios_editar.php');
 			
 		}
     else{
@@ -336,6 +370,25 @@ if(v4lID44x50("100-001", $usuario_id) == TRUE){
       // --- BACKEND ----
       include('ApiPHP/razas_api.php');
       include('front/razas_editar.php');
+      
+    }
+    else{
+      $_SESSION['m3ns4J3'] = 'No tienes acceso a este Módulo';
+      $_SESSION['m3n3Rr0R'] = 'si';
+      include('front/404.php');
+    }
+  }
+  elseif($accion == 'formVeterinaria'){
+    if(v4lID44x50("800-002", $usuario_id) == TRUE || v4lID44x50("800-003", $usuario_id) == TRUE){
+      
+      // ---- Marcar la sección en el menú ---
+      $menu_veterinarias_t = 'active';
+      $menu_veterinarias_abierto = 'menu-open';
+      $menu_veterinarias = 'active';
+      
+      // --- BACKEND ----
+      include('ApiPHP/veterinarias_api.php');
+      include('front/veterinarias_editar.php');
       
     }
     else{

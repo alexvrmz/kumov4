@@ -5,7 +5,13 @@
   <meta name="propeller" content="4f2629dc422985311cae5baeefebd7c3">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="refresh" content="<?php // / $_SESSION['MAX_SESSION_TIEMPO']/2 ?>">
-  <title>KUMO 雲 | <?= lbl_7i7uL0 ?></title>
+  <title>KUMO 雲 | 
+    <?php if($hayvet == 'sihayvet'){ ?>
+      <?= $nombreVetPrincipal ?> |
+    <?php } ?>
+    <?= lbl_7i7uL0 ?> 
+       
+  </title>
   <link rel="icon" type="image/png" href="dist/img/favicon.png">
   <!-- Google Font: Poppins -->
   <link rel="stylesheet" href="dist/css/fonts/poppins/poppins.css?family=Poppins:300,400,400i,700&display=fallback">

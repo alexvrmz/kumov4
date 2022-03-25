@@ -106,7 +106,15 @@ elseif($accion == 'procesaRaza'){
 			$paramatros = 'raza_id = '.$razaID;
 			ejecutaDB('razas', $sql_array, $accion, $paramatros);
 			unset($_SESSION['formRaza']);
-			//Bin4kuru('Se creo la raza -> ', $accion, $V=0, $U, $F=0, $E=0, $D=0, $P=0);
+			///	----	Bitacora
+				$usuario = $_SESSION['usuarioID'];
+				$cambios = eCry2('El Usuario '.$usuario.' Modifico la Raza '.$razaID);
+				$tipoAfectado = 5;
+				$IDAfectado = $razaID;
+				$accion = 600;
+				$universo = $_SESSION['Universo'];
+				Binakuru($cambios, $tipoAfectado, $IDAfectado, $usuario, $accion, $universo);
+			///	----	Bitacora
 			llevame('../app?accion=razas');
 			$_SESSION['m3ns4J3'] = 'Se actualizo con exito la raza: '.$razaNombre;
 		}
@@ -123,7 +131,15 @@ elseif($accion == 'procesaRaza'){
 			$paramatros = NULL;
 			$razaID = ejecutaDB('razas', $sql_array, $accion, $paramatros);
 			unset($_SESSION['formRaza']);
-			//Bin4kuru('Se creo la raza -> ', $accion, $V=0, $U, $F=0, $E=0, $D=0, $P=0);
+			///	----	Bitacora
+				$usuario = $_SESSION['usuarioID'];
+				$cambios = eCry2('El Usuario '.$usuario.' Agregro la Raza '.$razaID);
+				$tipoAfectado = 5;
+				$IDAfectado = $razaID;
+				$accion = 601;
+				$universo = $_SESSION['Universo'];
+				Binakuru($cambios, $tipoAfectado, $IDAfectado, $usuario, $accion, $universo);
+			///	----	Bitacora
 			llevame('../app?accion=razas');
 			$_SESSION['m3ns4J3'] = 'Se agrego con exito la raza: '.$razaNombre;
 		}

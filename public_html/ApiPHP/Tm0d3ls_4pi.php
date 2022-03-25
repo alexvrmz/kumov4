@@ -5,7 +5,7 @@ session_start();
 if(!isset($_SESSION['usuario'])){
 	header("location:../acceso.php?accion=entrar"); // --- llevame a login si no hay sesión ---
 }
-if($accion === "Tm0d3ls_9i45" || $accion === '5u540l_04' || $accion === '10300' || $accion === '10400'){
+if($accion === "Tm0d3ls_9i45" || $accion === 'usuarios_04' || $accion === '10300' || $accion === '10400'){
 	include('conexion.php');
  	include('funciones.php');
 }
@@ -159,7 +159,7 @@ elseif ($accion === 'Tm0d3ls_9i45') {
 	
 }
 /// --- accion agregar usuario
-elseif ($accion == '5u540l_04') {
+elseif ($accion == 'usuarios_04') {
   
 	if (empty($pp_xx001_add) OR empty($pp_xx005_add) OR empty($pp_xx003_add) OR empty($cxxt453_add)){
 		$_SESSION['m3n3Rr0R']  = 'si';
@@ -241,7 +241,7 @@ elseif ($accion == '5u540l_04') {
 
 		
 	}
-	llevame('../app?accion=5u540l');
+	llevame('../app?accion=usuarios');
 }
 /// --- accion suspender usuario
 elseif ($accion === '10300') {
@@ -266,7 +266,7 @@ elseif ($accion === '10300') {
 		bi74c0('susPu5u2', $_SESSION['m3ns4J3'], '');
     
 	}
-  llevame('../app?accion=5u540l');
+  llevame('../app?accion=usuarios');
 	
 }
 /// --- accion activar usuario
@@ -292,6 +292,6 @@ elseif ($accion === '10400') {
 		bi74c0('4ctPu5u2', $_SESSION['m3ns4J3'], '');
     
 	}
-  llevame('../app?accion=5u540l');
+  llevame('../app?accion=usuarios');
 	
 }

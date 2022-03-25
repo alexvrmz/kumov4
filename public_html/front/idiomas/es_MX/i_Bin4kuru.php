@@ -16,6 +16,8 @@ define('lbl_n3wp3rm50','Servicio Grupo');
 define('lbl_n3w53lL3xi0N4aD','Selecciona...');
 define('btn_C4nC3L4raD','Cancelar');
 define('btn_6u4rD4raD','Guardar');
+define('ver', 'Ver');
+
 
 /// ---- js de botones tabla
 define('lbl_prt', 'Imprimir');
@@ -24,32 +26,22 @@ define('lbl_excel', 'Excel');
 define('lbl_csv', 'CSV');
 define('lbl_copy', 'Copiar');
 
-
-$Bin4kuru = [
-  100 => 'Accedio al Sistema',
-  101 => 'Salio del Sistema',
-  200 => 'Registro al Usuario',
-  201 => 'Suspendio al Usuario',
-  202 => 'Activo al Usuario',
-  203 => 'Modifico Datos del Usuario',
-  300 => 'Agrego a la Empresa',
-  301 => 'Modifico Datos de la Empresa',
-  400 => 'Agrego la Flota',
-  401 => 'Modifico Datos de la Flota',
-  402 => 'Relaciono Flota/Empresa',
-  403 => 'Elimino la Relación Flota/Empresa',
-  500 => 'Agrego el Automovil',
-  501 => 'Agrego las Placas/Automovil',
-  502 => 'Modifico Datos del Automovil',
-  503 => 'Desactivo las Placas/Automovil',
-  600 => 'Agrego el Proveedor',
-  601 => 'Relaciono Proveedor/Marca',
-  602 => 'Modifico Datos de el Proveedor'
-];
-
 $acciones = [
-  1 => 'Entro al Sistema',
-  2 => 'Salio del Sistema',
-  3 => 'Edito al Usuario',
+  100 => 'Ingresó al Sistema',
+  101 => 'Salio del Sistema',
+  200 => 'Edito datos al Usuario',
+  201 => 'Edito datos y contraseña al Usuario',
+  202 => 'Suspendio al Usuario',
+  203 => 'Activo al Usuario',
+  204 => 'Agrego un permiso al Usuario',
+  205 => 'Desactivo un permiso al Usuario',
+  300 => 'Modifico datos al Cliente',
+  301 => 'Agrego al Cliente',
+  400 => 'Modifico datos a la Mascota',
+  401 => 'Agrego la Mascota',
+  500 => 'Modifico la Especie',
+  501 => 'Agrego la Especie',
+  600 => 'Modifico la Raza',
+  601 => 'Agrego la Raza',
 ];
 

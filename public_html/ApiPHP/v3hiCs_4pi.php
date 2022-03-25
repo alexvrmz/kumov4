@@ -290,7 +290,7 @@ elseif($accion === "v3hFh4_sd04"){
   else{
     $_SESSION['m3ns4J3'] = 'No habia ID de usuario a editar! (m-01).';
     $_SESSION['m3n3Rr0R'] = 'si';
-    llevame('app?accion=5u540l');
+    llevame('app?accion=usuarios');
   }
  
 }

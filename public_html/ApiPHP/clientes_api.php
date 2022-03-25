@@ -147,7 +147,17 @@ elseif($accion == 'procesaCliente'){
 			$paramatros = 'cliente_id = '.$clienteID;
 			ejecutaDB('clientes', $sql_array, $accion, $paramatros);
 			unset($_SESSION['formCliente']);
-			//Bin4kuru('Se creo la cliente -> ', $accion, $V=0, $U, $F=0, $E=0, $D=0, $P=0);
+
+			///	----	Bitacora
+				$usuario = $_SESSION['usuarioID'];
+				$cambios = eCry2('El Usuario '.$usuario.' Edito datos del Cliente '.$clienteID);
+				$tipoAfectado = 2;
+				$IDAfectado = $clienteID;
+				$accion = 300;
+				$universo = $_SESSION['Universo'];
+				Binakuru($cambios, $tipoAfectado, $IDAfectado, $usuario, $accion, $universo);
+			///	----	Bitacora
+
 			llevame('../app?accion=fichaCliente&clienteID='.$eCry($clienteID));
 		}
 		else{
@@ -182,7 +192,15 @@ elseif($accion == 'procesaCliente'){
 			mkdir($carpetaCliente, 0777, true);
 			chmod($carpetaCliente, 0777);
 			unset($_SESSION['formCliente']);
-			//Bin4kuru('Se creo la cliente -> ', $accion, $V=0, $U, $F=0, $E=0, $D=0, $P=0);
+			///	----	Bitacora
+				$usuario = $_SESSION['usuarioID'];
+				$cambios = eCry2('El Usuario '.$usuario.' Agrego al Cliente '.$clienteID);
+				$tipoAfectado = 2;
+				$IDAfectado = $clienteID;
+				$accion = 301;
+				$universo = $_SESSION['Universo'];
+				Binakuru($cambios, $tipoAfectado, $IDAfectado, $usuario, $accion, $universo);
+			///	----	Bitacora
 			llevame('../app?accion=fichaCliente&clienteID='.$eCry($clienteID).'&cltemp='.$eCry($contrasenaTemp));
 		}
 	}

@@ -62,7 +62,7 @@
   <script src="plugins/moment/locale/es.js"></script>
 <?php } ?>
 
-<?php if($accion === '5u540l'){ ?>
+<?php if($accion === 'usuarios'){ ?>
   <script>
     $(document).ready(function() {
     $("#cxxt453_add a").on('click', function(event) {
@@ -200,7 +200,7 @@
   </script>
 <?php } ?>
   
-<?php if($accion == '5u540l'){ ?>
+<?php if($accion == 'usuarios'){ ?>
   <?php if($pp_xx007_add != ''){ ?>
     <script type="text/javascript">
       $(window).on('load', function() {

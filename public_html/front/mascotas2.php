@@ -85,7 +85,7 @@ include('parciales/7i7ul0.php');
                         <td><?= $u5h34r5['xuus'] ?></td>
                         <?php if(v4lID44x50("500-003", $usuario_id) == TRUE){ /// --- EDITAR mascota ?>
                           <td>
-                            <a href="app?accion=5u540l_02&u5u4oxX=<?= $eCry($u5h34r5['xuid']) ?>" type="button" class="btn btn-block bg-gradient-warning btn-xs"><i class="fad fa-edit"></i></a>
+                            <a href="app?accion=usuarios_02&u5u4oxX=<?= $eCry($u5h34r5['xuid']) ?>" type="button" class="btn btn-block bg-gradient-warning btn-xs"><i class="fad fa-edit"></i></a>
                           </td>
                         <?php } ?>
                       </tr>
@@ -109,7 +109,7 @@ include('parciales/7i7ul0.php');
       <div class="modal fade" id="modal-nuevo">
         <div class="modal-dialog">
           <div class="modal-content"> 
-            <form name="nuevo" method="post" action="ApiPHP/u5u405_4pi.php?accion=5u540l_04">
+            <form name="nuevo" method="post" action="ApiPHP/usuarios_api.php?accion=usuarios_04">
               <div class="modal-header">
                 <h4 class="modal-title"><?= lbl_n3wu5u4ri0 ?></h4>
                 

@@ -10,6 +10,14 @@ include('parciales/7i7ul0.php');
     <p><i class="fad fa-bullhorn"></i> <?= actualizacionesSistema ?> <a href="app?accion=v3r" class="btn btn-info btn-xs">Ver</a></p>
   </div>
 
+  <?php if($hayvet == 'nohayvet'){ ?>
+    <div class="alert alert-danger col-12 alert-dismissible">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+      <h5><i class="icon fas fa-ban"></i> <?= tituloNohayvet ?></h5>
+      <?= mensajeNohayvet ?> <a href="app?accion=formVeterinaria" class="btn btn-success btn-xs"><?= completar ?></a>
+    </div>
+  <?php } ?>
+
   <?php if($rll == 0 || $rll == 2 || $rll == 3){ ?>
     <div class="row">
       
@@ -130,7 +138,7 @@ include('parciales/7i7ul0.php');
             <div class="icon">
               <i class="fad fa-user-astronaut" style="--fa-secondary-opacity: 1.0; --fa-primary-color: #c1c1c1; --fa-secondary-color: #08a2ff;"></i>
             </div>
-              <a href="app?accion=5u540l" class="small-box-footer"><?= ver ?><i class="fas fa-arrow-circle-right"></i></a>
+              <a href="app?accion=usuarios" class="small-box-footer"><?= ver ?><i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
             <?php }
@@ -140,7 +148,7 @@ include('parciales/7i7ul0.php');
             <div class="icon">
               <i class="fad fa-user-astronaut" style="--fa-secondary-opacity: 1.0; --fa-primary-color: #c1c1c1; --fa-secondary-color: #08a2ff;"></i>
             </div>
-              <a href="app?accion=5u540l" class="small-box-footer"><?= ver ?><i class="fas fa-arrow-circle-right"></i></a>
+              <a href="app?accion=usuarios" class="small-box-footer"><?= ver ?><i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <?php }
@@ -150,7 +158,7 @@ include('parciales/7i7ul0.php');
           <div class="icon">
             <i class="fad fa-user-astronaut" style="--fa-secondary-opacity: 1.0; --fa-primary-color: #c1c1c1; --fa-secondary-color: #08a2ff;"></i>
           </div>
-            <a href="app?accion=5u540l" class="small-box-footer"><?= agrergarUno ?><i class="fas fa-arrow-circle-right"></i></a>
+            <a href="app?accion=usuarios" class="small-box-footer"><?= agrergarUno ?><i class="fas fa-arrow-circle-right"></i></a>
         </div>
       </div>
       <?php } ?>

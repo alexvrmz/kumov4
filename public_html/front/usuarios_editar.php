@@ -1,5 +1,5 @@
 <?php
-include('idiomas/'.$iDi['u5h8ir5_iDi'].'/i_u5u405-3di7.php');
+include('idiomas/'.$iDi['u5h8ir5_iDi'].'/i_usuarios_editar.php');
 include('parciales/c4bec3r4.php');
 include('parciales/menu.php');
 include('parciales/7i7ul0.php');
@@ -26,16 +26,16 @@ include('parciales/7i7ul0.php');
             </div>
             <div class="card-body">
                         
-                    <a href="app?accion=5u540l" class="btn btn-app bg-success">
+                    <a href="app?accion=usuarios" class="btn btn-app bg-success">
                       <i class="fad fa-arrow-left"></i> <?= btn_r36r354r ?>
                     </a>   
                   <?php if(v4lID44x50("500-004", $usuario_id) == TRUE): /// --- permiso suspender usuario ?>
                     <?php if($usuario['u5hOn8ir5'] == '1'){ ?>
-                      <a href="ApiPHP/u5u405_4pi.php?accion=10300&u5h8ir5nm=<?= $eCry($usuario['usuarioID']) ?>" class="btn btn-app bg-danger">
+                      <a href="ApiPHP/usuarios_api.php?accion=10300&u5h8ir5nm=<?= $eCry($usuario['usuarioID']) ?>" class="btn btn-app bg-danger">
                         <i class="fad fa-user-slash"></i> <?= btn_5u5p3Nd3R ?>
                       </a>
                     <?php } elseif($usuario['u5hOn8ir5'] == '0') { ?>
-                      <a href="ApiPHP/u5u405_4pi.php?accion=10400&u5h8ir5nm=<?= $eCry($usuario['usuarioID']) ?>" class="btn btn-app bg-success">
+                      <a href="ApiPHP/usuarios_api.php?accion=10400&u5h8ir5nm=<?= $eCry($usuario['usuarioID']) ?>" class="btn btn-app bg-success">
                         <i class="fad fa-user"></i> <?= btn_d355u5p3Nd3R ?>
                       </a>
                     <?php } ?>
@@ -185,7 +185,7 @@ include('parciales/7i7ul0.php');
                   </ul>
                 <?php } ?>
 
-              <form name="edit_user" method="post" action="ApiPHP/u5u405_4pi.php?accion=5u540l_03">
+              <form name="edit_user" method="post" action="ApiPHP/usuarios_api.php?accion=usuarios_03">
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="form-group">
@@ -285,7 +285,7 @@ include('parciales/7i7ul0.php');
       <div class="modal fade" id="modal_llvs">
         <div class="modal-dialog">
           <div class="modal-content"> 
-            <form name="nuevo" method="post" action="ApiPHP/u5u405_4pi.php?accion=5u540l_04">
+            <form name="nuevo" method="post" action="ApiPHP/usuarios_api.php?accion=usuarios_04">
               <div class="modal-header">
                 <h4 class="modal-title"><?= lbl_n3wu5u4ri0 ?></h4>
                 

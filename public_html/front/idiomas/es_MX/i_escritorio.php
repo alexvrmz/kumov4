@@ -21,6 +21,10 @@ define('razaRegistrada', 'Raza');
 define('especiesRegistradas', 'Especies');
 define('razasRegistradas', 'Razas');
 
+define('tituloNohayvet', 'No se han registrado los datos de tu Veterinaria!!!');
+define('mensajeNohayvet', 'Por favor registra los datos de tu veterinaria');
+define('completar', 'Completar');
+
 
  
 

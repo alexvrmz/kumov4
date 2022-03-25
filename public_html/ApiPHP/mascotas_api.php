@@ -209,7 +209,15 @@ elseif($accion == 'procesaMascota'){
 			echo '</pre>';*/
 			ejecutaDB('mascotas', $sql_array, $accion, $paramatros);
 			unset($_SESSION['formMascota']);
-			//Bin4kuru('Se creo la mascota -> ', $accion, $V=0, $U, $F=0, $E=0, $D=0, $P=0);
+			///	----	Bitacora
+				$usuario = $_SESSION['usuarioID'];
+				$cambios = eCry2('El Usuario '.$usuario.' Modifico la Mascota '.$mascotaID);
+				$tipoAfectado = 3;
+				$IDAfectado = $mascotaID;
+				$accion = 400;
+				$universo = $_SESSION['Universo'];
+				Binakuru($cambios, $tipoAfectado, $IDAfectado, $usuario, $accion, $universo);
+			///	----	Bitacora
 			llevame('../app?accion=fichaMascota&mascotaID='.$eCry($mascotaID));
 		}
 		else{
@@ -341,7 +349,15 @@ elseif($accion == 'procesaMascota'){
 				$_SESSION['m3ns4J3'] = ''.$_FILES['mascotaFoto']['error'];
 			}
 			unset($_SESSION['formMascota']);
-			//Bin4kuru('Se creo la mascota -> ', $accion, $V=0, $U, $F=0, $E=0, $D=0, $P=0);
+			///	----	Bitacora
+				$usuario = $_SESSION['usuarioID'];
+				$cambios = eCry2('El Usuario '.$usuario.' Agrego la Mascota '.$mascotaID);
+				$tipoAfectado = 3;
+				$IDAfectado = $mascotaID;
+				$accion = 401;
+				$universo = $_SESSION['Universo'];
+				Binakuru($cambios, $tipoAfectado, $IDAfectado, $usuario, $accion, $universo);
+			///	----	Bitacora
 			llevame('../app?accion=fichaMascota&mascotaID='.$eCry($mascotaID));
 		}
 	}

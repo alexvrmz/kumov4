@@ -52,7 +52,7 @@ if ($accion === '50210') {
 		bi74c0('gN7kn2', $_SESSION['m3ns4J3'], '');
     
 	}
-	llevame('../app?accion=5u540l_02&u5u4oxX='.$eCry($u5h8ir5nm));
+	llevame('../app?accion=usuarios_02&u5u4oxX='.$eCry($u5h8ir5nm));
 	
 }
 elseif ($accion === '50200') {

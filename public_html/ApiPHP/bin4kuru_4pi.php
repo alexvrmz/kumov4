@@ -8,8 +8,10 @@ if(!isset($_SESSION['usuario'])){
 //include('../front/idiomas/'.$iDi['u5h8ir5_iDi'].'/i_Bin4kuru.php');
 $afectados = [
     1 => 'Usuario',
-    2 => 'cliente',
-    3 => 'mascota',
+    2 => 'Cliente',
+    3 => 'Mascota',
+    4 => 'Especie',
+    5 => 'Raza'
   ];
 
 if($accion === 'eDtDpp'){
@@ -33,114 +35,45 @@ if($accion === "bin4kuru"){
 		$biAccion = $DdB['bi_accion'];
 		$biFecha = $DdB['bi_fecha'];	
 
+		$C003 = "SELECT u5hUS8ir5 FROM u5u405 WHERE usuarioID = $biUsuario ";
+		$S003 = $conexion->query($C003) or die ("Fallo al consultar usuario: ".$C003);
+		$datosUsuarioU = $S003->fetch_assoc();
+		$biUsuario = $datosUsuarioU['u5hUS8ir5'];
 
-if($biTipoA == 1){
-	$C002 = "SELECT u5hUS8ir5 FROM u5u405 WHERE usuarioID = $biIDA ";
-	$S002 = $conexion->query($C002) or die ("Fallo al consultar usuario: ".$C002);
-	$datosUsuario = $S002->fetch_assoc();
-	$afectadoID = $datosUsuario['u5hUS8ir5'];
-	$biTipoA = $afectados[$DdB['bi_tipoA']];
-
-	$C003 = "SELECT u5hUS8ir5 FROM u5u405 WHERE usuarioID = $biUsuario ";
-	$S003 = $conexion->query($C003) or die ("Fallo al consultar usuario: ".$C003);
-	$datosUsuarioU = $S003->fetch_assoc();
-	$biUsuario = $datosUsuarioU['u5hUS8ir5'];
-
-
-}
-elseif($biTipoA == 2){
-
-}
-
-		/*if(!empty($biTipoA)){
-			$C002 = "SELECT u5hUS8ir5 FROM u5u405 WHERE usuarioID = $biTipoA";
-			$S002 = $conexion->query($C002) or die ("fallo al seleccionar usuario: ".$C002);
-			$DDU = $S002->fetch_assoc();
-			$EdUS =  $DDU['u5hUS8ir5'];
+		if($biTipoA == 1){
+			$C002 = "SELECT u5hUS8ir5 FROM u5u405 WHERE usuarioID = $biIDA ";
+			$S002 = $conexion->query($C002) or die ("Fallo al consultar usuario: ".$C002);
+			$datosUsuario = $S002->fetch_assoc();
+			$afectadoID = $datosUsuario['u5hUS8ir5'];
 		}
-
-		if(!empty($biIDA)){
-			$C003 = "SELECT u5hUS8ir5 FROM u5u405 WHERE usuarioID = $biIDA";
-			$S003 = $conexion->query($C003) or die ("fallo al seleccionar usuario: ".$C003);
-			$DDu = $S003->fetch_assoc();
-			$Edu =  $DDu['u5hUS8ir5'];
+		elseif($biTipoA == 2){
+			$C002 = "SELECT cliente_usuario FROM clientes WHERE cliente_id = $biIDA ";
+			$S002 = $conexion->query($C002) or die ("Fallo al consultar cliente: ".$C002);
+			$datosCliente = $S002->fetch_assoc();
+			$afectadoID = $datosCliente['cliente_usuario'];
 		}
-
-		if(!empty($biAccion)){
-			$C004 = "SELECT eMNICEm FROM eMpR3sA5 WHERE eMIDEm = $biAccion";
-			$S004 = $conexion->query($C004) or die ("Fallo al seleccionar empresa: ".$C004);
-			$DDe = $S004->fetch_assoc();
-			if($S004->num_rows == 0){
-				$EeU = "";
-			}
-			else{
-				$EeU = dCry2($DDe['eMNICEm']);
-			}
+		elseif($biTipoA == 3){
+			$C002 = "SELECT mascota_nombre FROM mascotas WHERE mascota_id = $biIDA ";
+			$S002 = $conexion->query($C002) or die ("Fallo al consultar mascota: ".$C002);
+			$datosMascota = $S002->fetch_assoc();
+			$afectadoID = dCry2($datosMascota['mascota_nombre']);
 		}
-
-		if(!empty($biFecha)){
-			$C005 = "SELECT xN4m37l0 FROM x7l07 WHERE xID7l0 = $biFecha";
-			$S005 = $conexion->query($C005) or die ("Fallo al seleccionar flota: ".$C005);
-			$DDf = $S005->fetch_assoc();
-
-			
-			if($S005->num_rows == 0){
-				$EfU = "";
-			}
-			else{
-				$EfU = dCry2($DDf['xN4m37l0']);
-			}
+		elseif($biTipoA == 4){
+			$C002 = "SELECT especie_descripcion FROM especies WHERE especie_id = $biIDA ";
+			$S002 = $conexion->query($C002) or die ("Fallo al consultar especies: ".$C002);
+			$datosEspecie = $S002->fetch_assoc();
+			$afectadoID = $datosEspecie['especie_descripcion'];
 		}
-
-		if(!empty($kuDIDx)){
-			$C006 = "SELECT D0cD3SxS FROM D0cUM3n705 WHERE D0cIDxS = $kuDIDx";
-			$S006 = $conexion->query($C006) or die ("Fallo al seleccionar documento: ".$C006);
-			$DDd = $S006->fetch_assoc();
-			if($S006->num_rows == 0){
-				$EdD = "";
-			}
-			else{
-				$EdD = dCry2($DDd['D0cD3SxS']);
-			}
+		elseif($biTipoA == 5){
+			$C002 = "SELECT raza_descripcion FROM razas WHERE raza_id = $biIDA ";
+			$S002 = $conexion->query($C002) or die ("Fallo al consultar razas: ".$C002);
+			$datosRaza = $S002->fetch_assoc();
+			$afectadoID = $datosRaza['raza_descripcion'];
 		}
+		
+		$biTipoA = $afectados[$DdB['bi_tipoA']];
 
-		if(!empty($kuPIDx)){
-			$C008 = "SELECT pR0nic FROM proveedores WHERE prov_id = $kuPIDx";
-			$S008 = $conexion->query($C008) or die ("Fallo al seleccionar proveedor: ".$C008);
-			$DDp = $S008->fetch_assoc();
-			if($S008->num_rows == 0){
-				$EdP = "";
-			}
-			else{
-				$EdP = dCry2($DDp['pR0nic']);
-			}
-		}
-
-		if(!empty($kuVEIDx)){
-			$C007 = "SELECT xV3hi3C0Xu7l0s FROM v3hiXu7l0s WHERE xV3hiIDXu7l0s = $kuVEIDx";
-			$S007 = $conexion->query($C007) or die ("Fallo al seleccionar Automovil: ".$C007);
-			$DDv = $S007->fetch_assoc();
-			if($S007->num_rows == 0){
-				$EdV = "";
-			}
-			else{
-				$EdV = dCry2($DDv['xV3hi3C0Xu7l0s']);
-			}
-		}*/
-
-		/*if(!empty($biFecha)){
-			$C005 = "SELECT xN4m37l0 FROM x7l07 WHERE xID7l0 = $biFecha";
-			$S005 = $conexion->query($C005) or die ("Fallo al seleccionar flota: ".$C005);
-			$DDf = $S005->fetch_assoc();
-
-			
-			if($S005->num_rows == 0){
-				$EfU = "";
-			}
-			else{
-				$EfU = dCry2($DDf['xN4m37l0']);
-			}
-		}*/
+		
 
 		unset($it);
 		
