@@ -19,6 +19,7 @@ define('consultas', 'Consultas/Citas');
 define('listadoConsultas', 'Listado Consultas');
 define('listadoRazas', 'Listado Razas');
 
+define('Veterinarias', 'Veterinarias');
 
 
 

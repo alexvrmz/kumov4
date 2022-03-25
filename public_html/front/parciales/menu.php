@@ -127,6 +127,7 @@
         <div class="info">
           <a href="#" class="d-block"><?= $_SESSION['nombre_corto'] ?></a>
         </div>
+      <a href="app?accion=c0Nfi6" class="btn btn-link"><i class="fad fa-wrench"></i></a>
       </div>
 
       
@@ -412,8 +413,9 @@
       <!-- /.sidebar-menu -->
     </div>
     <!-- /.sidebar -->
+
     <div class="sidebar-custom">
-      <a href="app?accion=c0Nfi6" class="btn btn-link"><i class="fad fa-cogs"></i></a>
+      <a href="app?accion=veterinarias" class="btn btn-link" alt="Configurar Veterinaria"><i class="fad fa-cogs"></i> <?= Veterinarias ?></a>
       <a href="app?accion=l00k5cR3n" class="btn btn-link" style="--fa-secondary-opacity: 1.0; --fa-primary-color: gold; --fa-secondary-color: silver;"><i class="fad fa-lock"></i></a>
       <a href="acceso?accion=salir" class="btn btn-danger hide-on-collapse pos-right"><i class="fad fa-door-open"></i></a>
     </div>

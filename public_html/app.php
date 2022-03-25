@@ -378,6 +378,25 @@ if(v4lID44x50("100-001", $usuario_id) == TRUE){
       include('front/404.php');
     }
   }
+  elseif($accion == 'veterinarias'){
+    if(v4lID44x50("800-001", $usuario_id) == TRUE){
+      
+      // ---- Marcar la sección en el menú ---
+      $menu_veterinarias_t = 'active';
+      $menu_veterinarias_abierto = 'menu-open';
+      $menu_veterinarias = 'active';
+      
+      // --- BACKEND ----
+      include('ApiPHP/veterinarias_api.php');
+      include('front/veterinarias_editar.php');
+      
+    }
+    else{
+      $_SESSION['m3ns4J3'] = 'No tienes acceso a este Módulo';
+      $_SESSION['m3n3Rr0R'] = 'si';
+      include('front/404.php');
+    }
+  }
   elseif($accion == 'formVeterinaria'){
     if(v4lID44x50("800-002", $usuario_id) == TRUE || v4lID44x50("800-003", $usuario_id) == TRUE){
       
